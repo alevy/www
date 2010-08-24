@@ -1,0 +1,8 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Levy;Amit;;;
+FN:Amit Levy
+ORG:University of Washington;
+EMAIL;type=INTERNET;type=WORK:levya@cs.washington.edu
+TEL;type=WORK;type=pref:(206) 651-5389
+END:VCARD
