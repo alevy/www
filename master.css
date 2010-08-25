@@ -17,7 +17,6 @@ h1 {
   font: Normal 65px Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
   line-height: 60px;
   letter-spacing: -1px;
-  width: 70%;
   opacity: 0.9;
   -moz-opacity: 0.9;
   filter: alpha(opacity=90);
@@ -134,8 +133,18 @@ ul.horizontal-list li {
 
 #footer {
   margin: auto;
-  text-align: center;
+  width: 90%;
   margin-top: 45px;
   padding-bottom: 35px; 
+}
+
+#footer .left {
+  text-align: center;
+  width: 35%;
+}
+
+#footer .right {
+  text-align: center;
+  width: 60%;
 }
 
