@@ -1,3 +1,7 @@
+body, html {
+  height: 100%;
+}
+
 body {
   color: #fff;
   background: #002c43 url('bg.gif') top left fixed repeat;
@@ -7,7 +11,7 @@ body {
 }
 
 h1 {
-  padding: 25px 0px 25px 0px;
+  padding: 25px 0px 65px 0px;
   margin: 0px;
   text-align: center;
   font: Normal 65px Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
@@ -33,6 +37,12 @@ h3 {
   font-size: 16px;
 }
 
+hr {
+  width: 500px;
+  border: 0;
+  border-top: 1px solid #002c43;
+}
+
 a {
   color: #f90
 }
@@ -43,6 +53,10 @@ a img {
 
 .clear {
   clear: both;
+}
+
+ol, ul {
+ margin-left: -20px;
 }
 
 ul.horizontal {
@@ -59,11 +73,11 @@ ul.horizontal-list li {
   background: #005885 url('content_bg.png');
   border-left: solid 10px #003955;
   border-right: solid 10px #003955;
-  padding-bottom: 5em;
+  min-height: 100%;
 }
 
 #details {
-  margin: 2em;
+  margin-bottom: 45px;
 }
 
 #details div {
@@ -81,6 +95,10 @@ ul.horizontal-list li {
   text-align: left;
 }
 
+#menu {
+  margin-bottom: 25px;
+}
+
 #menu a {
   font-weight: bold;
   text-decoration: none;
@@ -96,7 +114,6 @@ ul.horizontal-list li {
 
 #menu ul {
   padding: 0;
-  margin-left: -20px;
   text-align: center;
 }
 
@@ -113,5 +130,12 @@ ul.horizontal-list li {
   border-bottom: solid 10px #002c43;
   padding: 1em;
   padding-top: 0;
+}
+
+#footer {
+  margin: auto;
+  text-align: center;
+  margin-top: 45px;
+  padding-bottom: 35px; 
 }
 
