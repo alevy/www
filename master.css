@@ -148,3 +148,6 @@ ul.horizontal-list li {
   width: 60%;
 }
 
+#qrcode img {
+  border: 5px solid white;
+}
