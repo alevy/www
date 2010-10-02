@@ -68,11 +68,11 @@ ul.horizontal-list li {
 
 #body {
   margin: 0 auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
   width: 700px;
   background: #005885 url('content_bg.png');
-  border-left: solid 10px #003955;
-  border-right: solid 10px #003955;
-  min-height: 100%;
+  border: solid 10px #003955;
 }
 
 #details {
