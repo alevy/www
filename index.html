@@ -1,55 +1,50 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html lang="en-US" xml:lang="en-US" xmlns="http://www.w3.org/1999/xhtml"> 
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <link rel="openid2.provider" href="https://www.google.com/accounts/o8/ud?source=profiles" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Amit Levy's Home Page</title>
+	<link rel="openid2.provider" href="https://www.google.com/accounts/o8/ud?source=profiles" />
   <link rel="openid2.local_id" href="http://www.google.com/profiles/aalevy" />
-	<link rel="stylesheet" href="master.css" type="text/css" charset="utf-8"/>
-	<link rel="shortcut icon" href="favicon.png" />
+  <link rel="shortcut icon" href="favicon.png" />
 	<script src="scripts/jquery-1.4.2.js" type="text/javascript" charset="utf-8"></script>
 	<script src="scripts/jquery.history.js" type="text/javascript" charset="utf-8"></script>
 	<script src="scripts/menu.js" type="text/javascript" charset="utf-8"></script>
-	<title>Amit Levy's Home Page</title>
-	<meta name="author" content="Amit Levy"/>
+  <link rel="stylesheet" href="css/main.css" type="text/css" media="screen" title="no title" />
+	<meta name="author" content="Amit Levy">
+	<!-- Date: 2011-05-26 -->
 </head>
 <body>
-  <div id="body">
-  <div id="header">
-    <h1>Amit A. Levy</h1>
-    <div id="details">
-    <div class="left">
-      <img src="profile.jpg" title="The perfect skipping rock" alt="The perfect skipping rock" />
-    </div>
-    <div class="right">
-      <strong>Masters Student</strong><br/><br/>
-      <a href="http://www.cs.washington.edu" title="UW CSE">Computer Science &amp; Engineering</a><br/>
-      <a href="http://www.washington.edu" title="UW">University of Washington</a><br/><br/>
-      E-mail: levya at cs <em>dot</em> washington <em>dot</em> edu
-    </div>
-    <div class="clear"></div>
-    </div>
-  </div>
-  <div id="menu">
-    <hr/>
-    <ul class="horizontal-list">
-      <li><a href="#bio">About</a></li>
-      <li><a href="#research">Research</a></li>
-      <li><a href="#teaching">Teaching</a></li>
-      <li><a href="#academic">Academic</a></li>
-      <li><a href="#personal">Personal</a></li>
-      <li><a href="resume.pdf" target="new">Resume</a></li>
-    </ul>
-  </div>
-  
-  <div id="content">
-  <a name="bio"></a>
+<div id="header">
+  <h1><a href="#">Amit Levy's Home Page</a></h1>
+</div>
+<div id="navbar">
+  <ul id="menu" class="horizontal">
+    <li><a href="#bio">About</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#teaching">Teaching</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#personal">Personal</a></li>
+    <li><a href="#resume">Resume</a></li>
+  </ul>
+  <div id="qrcode"><a href="contact.vcf" title="VCard"><img src="contact.png" alt="Contact QR Code"/></a></div>
+  <p id="short_info">
+    <strong>Masters Student</strong><br/>
+    <a href="http://www.cs.washington.edu" title="UW CSE">Computer Science &amp; Engineering</a><br/>
+    <a href="http://www.washington.edu" title="UW">University of Washington</a><br/>
+    E-mail: amit <i>at</i> amitlevy <em>dot</em> com
+  </p>
+</div>
+<div id="content">
   <div id="bio">
     <h2>About</h2>
+    <p>
+    <span id="avatar">
+      <img src="profile.jpg" title="The perfect skipping rock" alt="The perfect skipping rock" />
+    </span>
     In 2009 I graduated from the University of Washington with a B.S. in Computer Science and Economics (double major). Since then I've continued towards a 5th year masters also at the UW, where I work with Hank Levy, Tadayoshi Kohno, Arvind Krishnamurthy, and Roxana Geambasu on web privacy and distributed systems. I've interned at Google once developing distributed testing tools and again building tools to help developers schedule their cluster jobs. Before that I worked at the <a href="http://www.grameenfoundation.org/">Grameen Foundation</a> as an intern on the <a href="http://www.mifos.org/">MIFOS</a> (<b>M</b>icros <b>F</b>inance <b>O</b>pen <b>S</b>ource) project. This fall I will be applying to PhD programs in computer science for Fall 2011.
+    </p>
   </div>
-  
-  <a name="research"></a>
+
   <div id="research">
     <h2>Research</h2>
     <ul>
@@ -64,8 +59,7 @@
       </li>
     </ul>
   </div>
-  
-  <a name="teaching"></a>
+
   <div id="teaching">
     <h2>Teaching</h2>
     I have been a teaching assistant for three courses over seven quarters:
@@ -75,8 +69,7 @@
       <li><a href="http://www.cs.washington.edu/education/courses/341/">CSE 341</a> (Programming Languages) - Fall 08, Winter 09</li>
     </ol>
   </div>
-  
-  <a name="academic"></a>
+
   <div id="academic">
     <h2>Graduate Coursework</h2>
     <p>
@@ -112,7 +105,11 @@
   </p>
   </div>
   
-  <a name="personal"></a>
+  <div id="projects">
+    <h2>Projects</h2>
+    Coming soon...
+  </div>
+  
   <div id="personal">
     <h2>Personal</h2>
     <p>
@@ -124,9 +121,8 @@
       <li>Facebook: <a href="http://www.facebook.com/aalevy">aalevy</a></li>
       <li>GPG Key: <a href="gpg.public.key">1083196F</a></li>
     </ul>
-    
+
     <h3>A Partial List of Awesome Movies...</h3>
-    <p>
     <ul>
       <li>Pulp Fiction</li>
       <li>Y tu mamá también</li>
@@ -140,11 +136,12 @@
       <li>The Bubble</li>
       <li>Le Placard</li>
     </ul>
-	Special Category: The Room
-	</p>
+    <p>Special Category: The Room</p>
+    
     <h3>Places I've Traveled</h3>
     <p>
-    I try to travel as much as possible - usually alone, but sometimes with friends. Sometimes I relate my experiences in my <a href="http://blog.amitlevy.com/">travel blog</a>, but not often. Alphabetically by region, then country, I've been to:
+      I try to travel as much as possible - usually alone, but sometimes with friends. Sometimes I relate my experiences in my <a href="http://blog.amitlevy.com/">travel blog</a>, but not often. Alphabetically by region, then country, I've been to:
+    </p>
     <ul>
       <li>Americas:
         <ul>
@@ -170,28 +167,19 @@
         </ul>
       </li>
     </ul>
-    I'll be traveling in Central and South America from January until whenever the next saga of my life begins (hopefully in the Fall). I'll try to update my <a href="http://blog.amitlevy.com/">travel blog</a> as much as possible.
+    <p>
+      I'll be traveling in Central and South America from January until whenever the next saga of my life begins (hopefully in the Fall). I'll try to update my <a href="http://blog.amitlevy.com/">travel blog</a> as much as possible.
     </p>
   </div>
+  
+  <div id="resume">
+    My resume is available in PDF format <a href="resume.pdf">here</a>. If you need a more up to date version please e-mail me.
   </div>
-  <div id="footer">
-    <hr/>
-    <div class="left" id="qrcode"><a href="contact.vcf" title="VCard"><img src="contact.png" alt="Contact QR Code"/></a></div>
-    <div class="right">
-    <a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br />This <span xmlns:dc="http://purl.org/dc/elements/1.1/" href="http://purl.org/dc/dcmitype/InteractiveResource" rel="dc:type">work</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Amit Levy</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.
-    </div>
-    <div class="clear"></div>
+</div>
+<div id="footer">
+  <div id="copyleft">
+  <a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.
   </div>
-  </div>
-  <script type="text/javascript">
-    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-  </script>
-  <script type="text/javascript">
-    try {
-      var pageTracker = _gat._getTracker("UA-9965931-2");
-      pageTracker._trackPageview();
-    } catch(err) {}
-  </script>
+</div>
 </body>
 </html>
