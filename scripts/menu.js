@@ -1,6 +1,6 @@
 function handleHistory(hash) {
   if (hash == "") {
-    hash = "bio";
+    hash = "about";
   }
   $("#content div").hide();
   $("#" + hash).show();
