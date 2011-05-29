@@ -1,0 +1,50 @@
+## Personal
+
+When I'm not hacking on software, I might be playing guitar or piano, planning my next escape (see travel below), or enjoying the wonderful [coffee](http://www.herkimercoffee.com/), [food](http://www.yelp.com/biz/kingfish-cafe-seattle) and [beer](http://www.yelp.com/biz/brouwers-cafe-seattle) that Seattle has to offers. I like any and all water sports (including floating) and also try to hike or ski as much as possible. Since I stopped [rowing](http://www.gohuskies.com/sports/c-crew/mtt/levy_amit00.html) I'm constantly trying to get back/stay in shape. Often this involves squash, running or tennis, but so far I've found that with cycling I have the best excuses for being slow...
+
+### Web Presence
+- Blog: <http://blog.amitlevy.com>
+- Twitter: [@aalevy](http://twitter.com/aalevy)
+- Facebook: [aalevy](http://www.facebook.com/aalevy)
+- GPG Key: [1083196F](gpg.public.key)
+
+### A Partial List of Awesome Movies...
+- Pulp Fiction
+- Y tu mamá también
+- The Diving Bell &amp; The Butterfly
+- Eternal Sunshine of the Spotless Mind
+- Volver
+- Annie Hall
+- Slackers
+- I Heart Huckabees
+- The Life Aquatic, The Royal Tenenbaums, Fantastic Mr. Fox, and everything else Wes Anderson...
+- The Bubble
+- Le Placard
+
+Special Category: The Room
+
+### Places I've Traveled
+
+I try to travel as much as possible - usually alone, but sometimes with friends. Sometimes I relate my experiences in my [travel blog](http://travel.amitlevy.com), but not often. Alphabetically by region, then country, I've been to:
+
+- Americas:
+  - Canada: Vancouver, Victoria, Montreal, Jasper, Lake Louise
+  - Mexico: Cancun, Chichen Itza, Tulum, Valladolid, Playa del Carmen, Cozumel
+  - Guatemala: Antigua
+  - El Salvador: San Salvador, Los Cobanos, Morazan
+  - Honduras: San Pedro Sula, Utila
+  - Nicaragua: Leon, San Juan Del Sur
+  - Costa Rica: San Jose, Alajuale, Monteverde, Tamarindo, Samara
+- Europe:
+  - Belgium: Bruges
+  - France: Paris, La Plagne, Chamonix
+  - Germany: Frankfurt
+  - Italy: Rome, Florence, Bologna, Milan, Venice, Padua, Treviso, Trieste, Ischia
+  - Spain: Barcelona, Granada, Seville
+  - Switzerland: Geneva, Zurich, Gimmelwald
+  - Netherlands: Amsterdam
+  - UK: London, Edinburgh
+- Middle East:
+  - Jordan: Petra
+
+I'll be traveling in Central and South America from January until whenever the next saga of my life begins (hopefully in the Fall). I'll try to update my [travel blog](http://travel.amitlevy.com/) as much as possible.

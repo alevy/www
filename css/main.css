@@ -8,18 +8,41 @@ h1, h2, h3 {
  font-family: "Helvetica", Arial, "MS Trebuchet", sans-serif;
 }
 
-#header, #content, #footer {
+#header, #navbar, #content, #footer {
   clear: both;
 }
 
+#header {
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 50px;
+}
+
 #header h1 {
- margin-left: 100px;
- margin-top: 50px;
+  float: left;
 }
 
 #header h1 a {
   color: black;
   text-decoration: none;
+}
+
+#header #links li span.desc {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 100px;
+  color: white;
+  padding: 5px;
+  background-color: #f6921e;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -khtml-border-radius: 2px;
+  border-radius: 2px;
+}
+
+#header #links li:hover span.desc {
+  display: block;
 }
 
 #navbar {
@@ -64,7 +87,10 @@ ul.horizontal {
 
 ul.horizontal li {
  display: inline;
- margin-left: 20px;
+}
+
+#navbar ul.horizontal li {
+  margin-left: 20px;
 }
 
 #content {
@@ -72,7 +98,7 @@ ul.horizontal li {
  margin-right: 100px;
 }
 
-#avatar {
+#content #about img:first-child {
   float: left;
   margin-right: 7px;
 }

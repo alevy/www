@@ -16,10 +16,32 @@
 <body>
 <div id="header">
   <h1><a href="#">Amit Levy's Home Page</a></h1>
+  <ul id="links" class="horizontal">
+    <li>
+      <a href="http://blog.amitlevy.com" rel="me"><img src="images/blogger-32.png" /></a>
+      <span class="desc">Copies in Code</span>
+    </li>
+    <li>
+      <a href="http://www.linkedin.com/in/amitlevy" rel="me"><img src="images/linkedin-32.png" /></a>
+      <span class="desc">My LinkedIn Profile</span>
+    </li>
+    <li>
+      <a href="http://fb.me/aalevy" rel="me"><img src="images/facebook-32.png" /></a>
+      <span class="desc">fb://aalevy</span>
+    </li>
+    <li>
+      <a href="http://twitter.com/aalevy" rel="me"><img src="images/twitter-32.png" /></a>
+      <span class="desc">@aalevy</span>
+    </li>
+    <li>
+      <a href="http://www.reddit.com/user/exobrain/" rel="me"><img src="images/reddit-32.png" /></a>
+      <span class="desc">My Reddit Profile</span>
+    </li>
+  </ul>
 </div>
 <div id="navbar">
   <ul id="menu" class="horizontal">
-    <li><a href="#bio">About</a></li>
+    <li><a href="#about">About</a></li>
     <li><a href="#research">Research</a></li>
     <li><a href="#academic">Coursework</a></li>
     <li><a href="#teaching">Teaching</a></li>
@@ -36,151 +58,184 @@
   </p>
 </div>
 <div id="content">
-  <div id="bio">
-    <h2>About</h2>
-    <p>
-    <span id="avatar">
-      <img src="images/profile.jpg" title="The perfect skipping rock" alt="The perfect skipping rock" />
-    </span>
-    In 2009 I graduated from the University of Washington with a B.S. in Computer Science and Economics (double major). Since then I've continued towards a 5th year masters also at the UW, where I work with Hank Levy, Tadayoshi Kohno, Arvind Krishnamurthy, and Roxana Geambasu on web privacy and distributed systems. I've interned at Google once developing distributed testing tools and again building tools to help developers schedule their cluster jobs. Before that I worked at the <a href="http://www.grameenfoundation.org/">Grameen Foundation</a> as an intern on the <a href="http://www.mifos.org/">MIFOS</a> (<b>M</b>icros <b>F</b>inance <b>O</b>pen <b>S</b>ource) project. This fall I will be applying to PhD programs in computer science for Fall 2011.
-    </p>
+  <div id="about">
+    <h2 id='about'>About</h2>
+
+<p><img src='images/profile.jpg' alt='The perfect skipping rock' /></p>
+
+<p>In 2009 I graduated from the University of Washington with a B.S. in Computer Science and Economics (double major). Since then I&#8217;ve continued towards a 5th year masters also at the UW, where I work with <a href='http://www.cs.washington.edu/homes/levy/'>Hank Levy</a>, <a href='http://www.cs.washington.edu/homes/yoshi/'>Tadayoshi Kohno</a>, <a href='http://www.cs.washington.edu/homes/arvind'>Arvind Krishnamurthy</a>, and <a href='http://www.cs.washington.edu/homes/roxana/'>Roxana Geambasu</a> on web privacy and distributed systems. I&#8217;ve interned at Google once developing distributed testing tools and again building tools to help developers schedule their cluster jobs. Before that I worked at the <a href='http://www.grameenfoundation.org/'>Grameen Foundation</a> as an intern on the <a href='http://www.mifos.org/'>MIFOS</a> (<b>M</b>icros <b>F</b>inance <b>O</b>pen <b>S</b>ource) project. This fall I will be applying to PhD programs in computer science for Fall 2011.</p>
   </div>
 
   <div id="research">
-    <h2>Research</h2>
-    <ul>
-      <li>
-      <strong>Comet</strong>: An active distributed key-value store. With <a href="http://www.cs.washington.edu/homes/roxana/">Roxana Geambasu</a>, <a href="http://www.cs.washington.edu/homes/yoshi/">Tadayoshi Kohno</a>, <a href="http://www.cs.washington.edu/homes/arvind">Arvind Krishnamurthy</a>and <a href="http://www.cs.washington.edu/homes/levy/">Hank Levy</a>. In Proceedings of OSDI, Vancouver, Canada, October 2010.<br/>
-      Paper: <em>[<a href="papers/comet-osdi2010.pdf">PDF</a>]</em>
-      </li>
-      <li>
-        <strong>Vanish</strong>: Increasing Data Privacy with DHTs that forget. With <a href="http://www.cs.washington.edu/homes/roxana/">Roxana Geambasu</a>, <a href="http://www.cs.washington.edu/homes/yoshi/">Tadayoshi Kohno</a>, and <a href="http://www.cs.washington.edu/homes/levy/">Hank Levy</a>. In Proceedings of the USENIX Security Symposium, Montreal, Canada, August 2009.<br/>
-        Won the Outstanding Student Paper Award.<br/>
-        Paper: <em>[<a href="papers/vanish-usenixsec09.pdf">PDF</a>]</em>
-      </li>
-    </ul>
-  </div>
+    <h2 id='research'>Research</h2>
 
-  <div id="teaching">
-    <h2>Teaching</h2>
-    I have been a teaching assistant for three courses over seven quarters:
-    <ol>
-      <li><a href="http://www.cs.washington.edu/education/courses/143/">CSE 143</a> (Intro II) - Spring, Summer, Fall 07, Winter 08</li>
-      <li><a href="http://www.cs.washington.edu/education/courses/190m/08sp/">CSE 190M</a> (Web Programming) - Spring 08</li>
-      <li><a href="http://www.cs.washington.edu/education/courses/341/">CSE 341</a> (Programming Languages) - Fall 08, Winter 09</li>
-    </ol>
+<ul>
+<li>
+<p><strong>Comet</strong>: An active distributed key-value store. With <a href='http://www.cs.washington.edu/homes/roxana/'>Roxana Geambasu</a>, <a href='http://www.cs.washington.edu/homes/yoshi/'>Tadayoshi Kohno</a>, <a href='http://www.cs.washington.edu/homes/arvind'>Arvind Krishnamurthy</a> and <a href='http://www.cs.washington.edu/homes/levy/'>Hank Levy</a>. In Proceedings of OSDI, Vancouver, Canada, October 2010.<br />Paper: <em>[<a href='papers/comet-osdi2010.pdf'>PDF</a>]</em></p>
+</li>
+
+<li>
+<p><strong>Vanish</strong>: Increasing Data Privacy with DHTs that forget. With <a href='http://www.cs.washington.edu/homes/roxana/'>Roxana Geambasu</a>, <a href='http://www.cs.washington.edu/homes/yoshi/'>Tadayoshi Kohno</a>, and <a href='http://www.cs.washington.edu/homes/levy/'>Hank Levy</a>. In Proceedings of the USENIX Security Symposium, Montreal, Canada, August 2009.<br />Won the Outstanding Student Paper Award.<br />Paper: <em>[<a href='papers/vanish-usenixsec09.pdf'>PDF</a>]</em></p>
+</li>
+</ul>
   </div>
 
   <div id="academic">
-    <h2>Graduate Coursework</h2>
-    <p>
-      Implementation of Programming Languages (<a href="http://www.cs.washington.edu/education/courses/cse501/10au/">CSE 501</a>): Autumn 2010, instructor <a href="http://www.cs.washington.edu/homes/mernst/">Michael Ernst</a>
-      <br/>
-      <em>Project: Faster Real-Time Classification Using Compilation. Materials forthcoming.</em>
-    </p>
-    <p>
-      Molecular Programming (<a href="http://www.cs.washington.edu/education/courses/cse599x/10sp/">CSE 505</a>): Spring 2010, instructor <a href="http://www.cs.washington.edu/homes/seelig/">Georg Seeling</a> 
-    </p>
-    <p>
-      Human Computer Interaction (<a href="http://www.cs.washington.edu/education/courses/cse510/10sp/">CSE 510</a>): Spring 2010, instructor <a href="http://www.cs.washington.edu/homes/jfogarty/">James Fogarty</a>
-      <br/>
-      <em>Project: Community detection in Social Networks. Presentation [<a href="papers/community_pres.pptx">PPTX</a>, <a href="papers/community_pres.pdf">PDF</a>], Paper [<a href="papers/community.pdf">PDF</a>]</em>
-    </p>
-    <p>
-      Operating Systems and the Web (<a href="http://www.cs.washington.edu/education/courses/599w/10wi/">CSE 599W</a>): Winter 2010, instructor <a href="http://www.cs.washington.edu/homes/gribble/">Steve Gribble</a> 
-    </p>
-    <p>
-      Design and Analysis of Algorithms (<a href="http://www.cs.washington.edu/education/courses/521/10wi/">CSE 521</a>): Winter 2010, instructor <a href="http://www.cs.washington.edu/homes/beame/">Paul Beame</a>
-    </p>
-    <p>
-      Computer Systems Research (<a href="http://www.cs.washington.edu/education/courses/cse551/09au/">CSE 551</a>): Autumn 2009, instructor <a href="http://www.cs.washington.edu/homes/tom/">Tom Anderson</a>.
-      <br/>
-      <em>Project: Distribued Queue. Presentation [<a href="papers/blizzard_pres.pdf">PDF</a>], Paper [<a href="papers/blizzard.pdf">PDF</a>]</em>
-    </p>
+    <h2 id='graduate_coursework'>Graduate Coursework</h2>
 
-    <h2>Selected Undergraduate Coursework</h2>
-    <p>
-     Design & Implementation of Large Scale Clusters (<a href="http://www.cs.washington.edu/education/courses/cse490h/09wi/">CSE 490H</a>):<br/>Autumn 2009, instructor <a href="http://lazowska.cs.washington.edu/">Ed Lazowska</a>.
-     <br/>
-     <em>Project: Distributed Hash Table. <a href="http://alevy.github.com/donut/">Website</a> (contains paper and presentation links)</em>
-    </p>
+<p>Implementation of Programming Languages (<a href='http://www.cs.washington.edu/education/courses/cse501/10au/'>CSE 501</a>): Autumn 2010, instructor <a href='http://www.cs.washington.edu/homes/mernst/'>Michael Ernst</a><br /><em>Project: Faster Real-Time Classification Using Compilation. Materials forthcoming.</em></p>
+
+<p>Molecular Programming (<a href='http://www.cs.washington.edu/education/courses/cse599x/10sp/'>CSE 505</a>): Spring 2010, instructor <a href='http://www.cs.washington.edu/homes/seelig/'>Georg Seeling</a></p>
+
+<p>Human Computer Interaction (<a href='http://www.cs.washington.edu/education/courses/cse510/10sp/'>CSE 510</a>): Spring 2010, instructor <a href='http://www.cs.washington.edu/homes/jfogarty/'>James Fogarty</a><br /><em>Project: Community detection in Social Networks. Presentation [<a href='papers/community_pres.pptx'>PPTX</a>, <a href='papers/community_pres.pdf'>PDF</a>], Paper [<a href='papers/community.pdf'>PDF</a>]</em></p>
+
+<p>Operating Systems and the Web (<a href='http://www.cs.washington.edu/education/courses/599w/10wi/'>CSE 599W</a>): Winter 2010, instructor <a href='http://www.cs.washington.edu/homes/gribble/'>Steve Gribble</a></p>
+
+<p>Design and Analysis of Algorithms (<a href='http://www.cs.washington.edu/education/courses/521/10wi/'>CSE 521</a>): Winter 2010, instructor <a href='http://www.cs.washington.edu/homes/beame/'>Paul Beame</a></p>
+
+<p>Computer Systems Research (<a href='http://www.cs.washington.edu/education/courses/cse551/09au/'>CSE 551</a>): Autumn 2009, instructor <a href='http://www.cs.washington.edu/homes/tom/'>Tom Anderson</a>.<br /><em>Project: Distribued Queue. Presentation [<a href='papers/blizzard_pres.pdf'>PDF</a>], Paper [<a href='papers/blizzard.pdf'>PDF</a>]</em></p>
+
+<h2 id='selected_undergraduate_coursework'>Selected Undergraduate Coursework</h2>
+
+<p>Design &#38; Implementation of Large Scale Clusters (<a href='http://www.cs.washington.edu/education/courses/cse490h/09wi/'>CSE 490H</a>):<br />Autumn 2009, instructor <a href='http://lazowska.cs.washington.edu/'>Ed Lazowska</a>.<br /><em>Project: Distributed Hash Table. <a href='http://alevy.github.com/donut/'>Website</a> (contains paper and presentation links)</em></p>
+  </div>
+
+  <div id="teaching">
+    <h2 id='teaching'>Teaching</h2>
+
+<p>I have been a teaching assistant for three courses over seven quarters</p>
+
+<ul>
+<li>
+<p><a href='http://www.cs.washington.edu/education/courses/143/'>CSE 143</a> (Intro II) - Spring, Summer, Fall 07, Winter 08</p>
+</li>
+
+<li>
+<p><a href='http://www.cs.washington.edu/education/courses/190m/08sp/'>CSE 190M</a> (Web Programming) - Spring 08</p>
+</li>
+
+<li>
+<p><a href='http://www.cs.washington.edu/education/courses/341/'>CSE 341</a> (Programming Languages) - Fall 08, Winter 09</p>
+</li>
+</ul>
   </div>
   
   <div id="projects">
-    <h2>Projects</h2>
-    Coming soon...
+    <h2 id='projects'>Projects</h2>
+
+<p>Content forthcoming&#8230;</p>
   </div>
   
   <div id="personal">
-    <h2>Personal</h2>
-    <p>
-    When I'm not hacking on software, I might be playing guitar or piano, planning my next escape (see travel below), or enjoying the wonderful <a href="http://www.herkimercoffee.com/">coffee</a>, <a href="http://www.yelp.com/biz/kingfish-cafe-seattle">food</a> and <a href="http://www.yelp.com/biz/brouwers-cafe-seattle">beer</a> that Seattle has to offers. I like any and all water sports (including floating) and also try to hike or ski as much as possible. Since I stopped <a href="http://www.gohuskies.com/sports/c-crew/mtt/levy_amit00.html">rowing</a> I'm constantly trying to get back/stay in shape. Often this involves squash, running or tennis, but so far I've found that with cycling I have the best excuses for being slow...
-    </p>
-    <h3>Web Presence</h3>
-    <ul>
-      <li>Twitter: <a href="http://twitter.com/aalevy">@aalevy</a></li>
-      <li>Facebook: <a href="http://www.facebook.com/aalevy">aalevy</a></li>
-      <li>GPG Key: <a href="gpg.public.key">1083196F</a></li>
-    </ul>
+    <h2 id='personal'>Personal</h2>
 
-    <h3>A Partial List of Awesome Movies...</h3>
-    <ul>
-      <li>Pulp Fiction</li>
-      <li>Y tu mamá también</li>
-      <li>The Diving Bell &amp; The Butterfly</li>
-      <li>Eternal Sunshine of the Spotless Mind</li>
-      <li>Volver</li>
-      <li>Annie Hall</li>
-      <li>Slackers</li>
-      <li>I Heart Huckabees</li>
-      <li>The Life Aquatic, The Royal Tenenbaums, Fantastic Mr. Fox, and everything else Wes Anderson...</li>
-      <li>The Bubble</li>
-      <li>Le Placard</li>
-    </ul>
-    <p>Special Category: The Room</p>
-    
-    <h3>Places I've Traveled</h3>
-    <p>
-      I try to travel as much as possible - usually alone, but sometimes with friends. Sometimes I relate my experiences in my <a href="http://blog.amitlevy.com/">travel blog</a>, but not often. Alphabetically by region, then country, I've been to:
-    </p>
-    <ul>
-      <li>Americas:
-        <ul>
-          <li>Canada: Vancouver, Montreal, Jasper, Lake Louise</li>
-          <li>Mexico: Cancun, Chichen Itza, Tulum, Valladolid, Playa del Carmen, Cozumel</li>
-        </ul>
-      </li>
-      <li>Europe:
-        <ul>
-          <li>Belgium: Bruges</li>
-          <li>France: Paris, La Plagne, Chamonix</li>
-          <li>Germany: Frankfurt</li>
-          <li>Italy: Rome, Florence, Bologna, Milan, Venice, Padua, Treviso, Trieste, Ischia</li>
-          <li>Spain: Barcelona, Granada, Seville</li>
-          <li>Switzerland: Geneva, Zurich, Gimmelwald</li>
-          <li>Netherlands: Amsterdam</li>
-          <li>UK: London, Edinburgh</li>
-        </ul>
-      </li>
-      <li>Middle East:
-        <ul>
-          <li>Jordan: Petra</li>
-        </ul>
-      </li>
-    </ul>
-    <p>
-      I'll be traveling in Central and South America from January until whenever the next saga of my life begins (hopefully in the Fall). I'll try to update my <a href="http://blog.amitlevy.com/">travel blog</a> as much as possible.
-    </p>
+<p>When I&#8217;m not hacking on software, I might be playing guitar or piano, planning my next escape (see travel below), or enjoying the wonderful <a href='http://www.herkimercoffee.com/'>coffee</a>, <a href='http://www.yelp.com/biz/kingfish-cafe-seattle'>food</a> and <a href='http://www.yelp.com/biz/brouwers-cafe-seattle'>beer</a> that Seattle has to offers. I like any and all water sports (including floating) and also try to hike or ski as much as possible. Since I stopped <a href='http://www.gohuskies.com/sports/c-crew/mtt/levy_amit00.html'>rowing</a> I&#8217;m constantly trying to get back/stay in shape. Often this involves squash, running or tennis, but so far I&#8217;ve found that with cycling I have the best excuses for being slow&#8230;</p>
+
+<h3 id='web_presence'>Web Presence</h3>
+
+<ul>
+<li>Blog: <a href='http://blog.amitlevy.com'>http://blog.amitlevy.com</a></li>
+
+<li>Twitter: <a href='http://twitter.com/aalevy'>@aalevy</a></li>
+
+<li>Facebook: <a href='http://www.facebook.com/aalevy'>aalevy</a></li>
+
+<li>GPG Key: <a href='gpg.public.key'>1083196F</a></li>
+</ul>
+
+<h3 id='a_partial_list_of_awesome_movies'>A Partial List of Awesome Movies&#8230;</h3>
+
+<ul>
+<li>Pulp Fiction</li>
+
+<li>Y tu mamá también</li>
+
+<li>The Diving Bell &#38; The Butterfly</li>
+
+<li>Eternal Sunshine of the Spotless Mind</li>
+
+<li>Volver</li>
+
+<li>Annie Hall</li>
+
+<li>Slackers</li>
+
+<li>I Heart Huckabees</li>
+
+<li>The Life Aquatic, The Royal Tenenbaums, Fantastic Mr. Fox, and everything else Wes Anderson&#8230;</li>
+
+<li>The Bubble</li>
+
+<li>Le Placard</li>
+</ul>
+
+<p>Special Category: The Room</p>
+
+<h3 id='places_ive_traveled'>Places I&#8217;ve Traveled</h3>
+
+<p>I try to travel as much as possible - usually alone, but sometimes with friends. Sometimes I relate my experiences in my <a href='http://travel.amitlevy.com'>travel blog</a>, but not often. Alphabetically by region, then country, I&#8217;ve been to:</p>
+
+<ul>
+<li>
+<p>Americas:</p>
+
+<ul>
+<li>Canada: Vancouver, Victoria, Montreal, Jasper, Lake Louise</li>
+
+<li>Mexico: Cancun, Chichen Itza, Tulum, Valladolid, Playa del Carmen, Cozumel</li>
+
+<li>Guatemala: Antigua</li>
+
+<li>El Salvador: San Salvador, Los Cobanos, Morazan</li>
+
+<li>Honduras: San Pedro Sula, Utila</li>
+
+<li>Nicaragua: Leon, San Juan Del Sur</li>
+
+<li>Costa Rica: San Jose, Alajuale, Monteverde, Tamarindo, Samara</li>
+</ul>
+</li>
+
+<li>
+<p>Europe:</p>
+
+<ul>
+<li>Belgium: Bruges</li>
+
+<li>France: Paris, La Plagne, Chamonix</li>
+
+<li>Germany: Frankfurt</li>
+
+<li>Italy: Rome, Florence, Bologna, Milan, Venice, Padua, Treviso, Trieste, Ischia</li>
+
+<li>Spain: Barcelona, Granada, Seville</li>
+
+<li>Switzerland: Geneva, Zurich, Gimmelwald</li>
+
+<li>Netherlands: Amsterdam</li>
+
+<li>UK: London, Edinburgh</li>
+</ul>
+</li>
+
+<li>
+<p>Middle East: - Jordan: Petra</p>
+</li>
+</ul>
+
+<p>I&#8217;ll be traveling in Central and South America from January until whenever the next saga of my life begins (hopefully in the Fall). I&#8217;ll try to update my <a href='http://travel.amitlevy.com/'>travel blog</a> as much as possible.</p>
   </div>
   
   <div id="resume">
-    My resume is available in PDF format <a href="resume.pdf">here</a>. If you need a more up to date version please e-mail me.
+    <p>My resume is available in PDF format <a href='resume.pdf'>here</a>. If you need a more up to date version please e-mail me.</p>
+<iframe src='http://docs.google.com/viewer?url=http%3A%2F%2Fwww.amitlevy.com%2Fresume.pdf&embedded=true' height='780' width='900' style='border: none;' />
   </div>
 </div>
 <div id="footer">
-  <div id="copyleft">
-  <a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.
-  </div>
+  <p id="updated">Updated: 05-28-2011 05:00PM</p>
+  <p id="copyleft">
+    <a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.
+  </p>
 </div>
 </body>
 </html>

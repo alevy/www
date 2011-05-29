@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Amit Levy's Home Page</title>
+	<link rel="openid2.provider" href="https://www.google.com/accounts/o8/ud?source=profiles" />
+  <link rel="openid2.local_id" href="http://www.google.com/profiles/aalevy" />
+  <link rel="shortcut icon" href="favicon.png" />
+	<script src="scripts/jquery-1.4.2.js" type="text/javascript" charset="utf-8"></script>
+	<script src="scripts/jquery.history.js" type="text/javascript" charset="utf-8"></script>
+	<script src="scripts/menu.js" type="text/javascript" charset="utf-8"></script>
+  <link rel="stylesheet" href="css/main.css" type="text/css" media="screen" title="no title" />
+	<meta name="author" content="Amit Levy">
+	<!-- Date: 2011-05-26 -->
+</head>
+<body>
+<div id="header">
+  <h1><a href="#">Amit Levy's Home Page</a></h1>
+  <ul id="links" class="horizontal">
+    <li>
+      <a href="http://blog.amitlevy.com" rel="me"><img src="images/blogger-32.png" /></a>
+      <span class="desc">Copies in Code</span>
+    </li>
+    <li>
+      <a href="http://www.linkedin.com/in/amitlevy" rel="me"><img src="images/linkedin-32.png" /></a>
+      <span class="desc">My LinkedIn Profile</span>
+    </li>
+    <li>
+      <a href="http://fb.me/aalevy" rel="me"><img src="images/facebook-32.png" /></a>
+      <span class="desc">fb://aalevy</span>
+    </li>
+    <li>
+      <a href="http://twitter.com/aalevy" rel="me"><img src="images/twitter-32.png" /></a>
+      <span class="desc">@aalevy</span>
+    </li>
+    <li>
+      <a href="http://www.reddit.com/user/exobrain/" rel="me"><img src="images/reddit-32.png" /></a>
+      <span class="desc">My Reddit Profile</span>
+    </li>
+  </ul>
+</div>
+<div id="navbar">
+  <ul id="menu" class="horizontal">
+    <li><a href="#about">About</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#academic">Coursework</a></li>
+    <li><a href="#teaching">Teaching</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#personal">Personal</a></li>
+    <li><a href="#resume">Resume</a></li>
+  </ul>
+  <div id="qrcode"><a href="contact.vcf" title="VCard"><img src="images/contact.png" alt="Contact QR Code"/></a></div>
+  <p id="short_info">
+    <strong>Masters Student</strong><br/>
+    <a href="http://www.cs.washington.edu" title="UW CSE">Computer Science &amp; Engineering</a><br/>
+    <a href="http://www.washington.edu" title="UW">University of Washington</a><br/>
+    E-mail: amit <i>at</i> amitlevy <em>dot</em> com
+  </p>
+</div>
+<div id="content">
+  <div id="about">
+    <%= yield(:about) %>
+  </div>
+
+  <div id="research">
+    <%= yield(:research) %>
+  </div>
+
+  <div id="academic">
+    <%= yield(:academic) %>
+  </div>
+
+  <div id="teaching">
+    <%= yield(:teaching) %>
+  </div>
+  
+  <div id="projects">
+    <%= yield(:projects) %>
+  </div>
+  
+  <div id="personal">
+    <%= yield(:personal) %>
+  </div>
+  
+  <div id="resume">
+    <%= yield(:resume) %>
+  </div>
+</div>
+<div id="footer">
+  <p id="updated">Updated: <%= Time.now.strftime("%m-%d-%Y %I:%M%p") %></p>
+  <p id="copyleft">
+    <a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.
+  </p>
+</div>
+</body>
+</html>
