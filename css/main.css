@@ -6,6 +6,7 @@ body {
 
 h1, h2, h3 {
  font-family: "Helvetica", Arial, "MS Trebuchet", sans-serif;
+ text-shadow: #999 1px 1px 1px;
 }
 
 #header, #navbar, #content, #footer {

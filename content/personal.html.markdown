@@ -2,11 +2,26 @@
 
 When I'm not hacking on software, I might be playing guitar or piano, planning my next escape (see travel below), or enjoying the wonderful [coffee](http://www.herkimercoffee.com/), [food](http://www.yelp.com/biz/kingfish-cafe-seattle) and [beer](http://www.yelp.com/biz/brouwers-cafe-seattle) that Seattle has to offers. I like any and all water sports (including floating) and also try to hike or ski as much as possible. Since I stopped [rowing](http://www.gohuskies.com/sports/c-crew/mtt/levy_amit00.html) I'm constantly trying to get back/stay in shape. Often this involves squash, running or tennis, but so far I've found that with cycling I have the best excuses for being slow...
 
-### Web Presence
-- Blog: <http://blog.amitlevy.com>
-- Twitter: [@aalevy](http://twitter.com/aalevy)
-- Facebook: [aalevy](http://www.facebook.com/aalevy)
-- GPG Key: [1083196F](gpg.public.key)
+GPG Key: [1083196F](gpg.public.key)
+
+### Some Friends' Websites:
+- [Kaitlin Morrison][]{:rel="friend sweetheart"}
+- [Courtlandt Stanton][]{:rel=friend}
+- [Justine Sherry][]{:rel=friend}
+- [Gilbert Bertstein][]{:rel=friend}
+- [Shiri Raphaely][]{:rel=friend}
+- [Alex Loddengaard][]{:rel=friend}
+- [Lucie Baker][]{:rel=friend}
+- [Goni Eshed][]{:rel=friend}
+- [Daniel Dor][]{:rel=friend}
+- [Ronen Shmueli][]{:rel=friend}
+
+### And Family...
+- [Eyal Levy][]{:rel=parent}
+- [Zehava Chen-Levy][]{:rel=parent}
+- [Eran Chen][]{:rel=sibling}
+- [Omer Levy][]{:rel=sibling}
+- [Adi Madden][]{:rel=sibling}
 
 ### A Partial List of Awesome Movies...
 - Pulp Fiction
