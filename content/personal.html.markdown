@@ -15,6 +15,8 @@ GPG Key: [1083196F](gpg.public.key)
 - [Goni Eshed][]{:rel=friend}
 - [Daniel Dor][]{:rel=friend}
 - [Ronen Shmueli][]{:rel=friend}
+- [Silvio Lattanzi][]{:rel=friend}
+- [Sascha Trifunivic][]{:rel=friend}
 
 ### And Family...
 - [Eyal Levy][]{:rel=parent}

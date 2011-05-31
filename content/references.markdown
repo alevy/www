@@ -28,6 +28,9 @@
 [Daniel Dor]:         https://www.facebook.com/danieldor12
 [Ronen Shmueli]:      http://www.myspace.com/ronenshmueli
 [Kaitlin Morrison]:   http://www.myspace.com/vindikait
+[Silvio Lattanzi]:    http://sites.google.com/site/silviolattanzi/
+[Sascha Trifunivic]:  http://www.csg.ethz.ch/people/sachat
+
 [Eyal Levy]:          http://www.wa-israel.biz/
 [Zehava Chen-Levy]:   http://myprofile.cos.com/zclevy
 [Eran Chen]:          http://www.oda-architecture.com/
