@@ -30,6 +30,7 @@
 [Kaitlin Morrison]:   http://www.myspace.com/vindikait
 [Silvio Lattanzi]:    http://sites.google.com/site/silviolattanzi/
 [Sascha Trifunivic]:  http://www.csg.ethz.ch/people/sachat
+[Aaron Block]:        https://plus.google.com/111656247334398575735/about
 
 [Eyal Levy]:          http://www.wa-israel.biz/
 [Zehava Chen-Levy]:   http://myprofile.cos.com/zclevy

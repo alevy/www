@@ -17,6 +17,7 @@ GPG Key: [1083196F](gpg.public.key)
 - [Ronen Shmueli][]{:rel=friend}
 - [Silvio Lattanzi][]{:rel=friend}
 - [Sascha Trifunivic][]{:rel=friend}
+- [Aaron Block][]{:rel=friend}
 
 ### And Family...
 - [Eyal Levy][]{:rel=parent}
