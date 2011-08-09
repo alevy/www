@@ -45,6 +45,10 @@ h1, h2, h3 {
   -o-transition: all 0.1s ease-out;
 }
 
+a img {
+  border-width: 0px;
+}
+
 #header #links li:hover span.desc {
   opacity: 1;
   -webkit-transform: translateY(-2px);

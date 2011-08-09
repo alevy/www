@@ -2,7 +2,7 @@
 
 When I'm not hacking on software, I might be playing guitar or piano, planning my next escape (see travel below), or enjoying the wonderful [coffee](http://www.herkimercoffee.com/), [food](http://www.yelp.com/biz/kingfish-cafe-seattle) and [beer](http://www.yelp.com/biz/brouwers-cafe-seattle) that Seattle has to offers. I like any and all water sports (including floating) and also try to hike or ski as much as possible. Since I stopped [rowing](http://www.gohuskies.com/sports/c-crew/mtt/levy_amit00.html) I'm constantly trying to get back/stay in shape. Often this involves squash, running or tennis, but so far I've found that with cycling I have the best excuses for being slow...
 
-GPG Key: [1083196F](gpg.public.key)
+GPG Key: [A211 AA8C B817 13AF 6352  F8B5 838F A1C7 17F6 0F73](gpg.public.key)
 
 ### Some Friends' Websites:
 - [Kaitlin Morrison][]{:rel="friend sweetheart"}
