@@ -7,6 +7,7 @@ body {
 h1, h2, h3 {
  font-family: "Helvetica", Arial, "MS Trebuchet", sans-serif;
  text-shadow: #999 1px 1px 1px;
+ text-transform:lowercase
 }
 
 #header, #navbar, #content, #footer {
@@ -95,6 +96,10 @@ a img {
 
 #menu {
   font-size: 16px;
+}
+
+#menu a {
+  text-transform:lowercase
 }
 
 #menu a.disabled {
