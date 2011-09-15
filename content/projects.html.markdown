@@ -1,5 +1,13 @@
 ## Projects
 
+### Coypond
+_Source: [GitHub](http://github.com/alevy/coypond)_
+_Gem: [RubyGems](https://rubygems.org/gems/coypond)_
+
+Coypond is a semantic grep-like tool for Ruby. You can use coypond to search through ruby code for class, module, or method definitions. It indexes the class, module and method names in a Ruby code base, noting the files they were found in and the locations within those files. It can search through specific files, source code directory trees, or through locally installed gems.
+
+Coypond uses ripper (a built in library as of Ruby 1.9) to generate parse trees from Ruby source files. These parse trees are then use to create an inverted index of the code, annotated with semantic information like whether the definition is a class, module or method.
+
 ### Jsss - JavaScript Secret Sharing
 _Source: [GitHub](http://github.com/alevy/jsss)_
 
