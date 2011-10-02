@@ -17,6 +17,7 @@
 [Paul Beame]:           http://www.cs.washington.edu/homes/beame/
 [Tom Anderson]:         http://www.cs.washington.edu/homes/tom/
 [Ed Lazowska]:          http://lazowska.cs.washington.edu/
+[David Mazières]:       http://www.scs.stanford.edu/~dm/
 
 [Courtlandt Stanton]: http://www.courtlandtstanton.com
 [Justine Sherry]:     http://www.cs.berkeley.edu/~justine/
@@ -38,5 +39,6 @@
 [Omer Levy]:          http://olts.co.il/
 [Adi Madden]:         http://hackensack.nj.k12us.com/a.madden
 
-[Grameen Foundation]: http://www.grameenfoundation.org/
-[MIFOS]:              http://www.mifos.org/
+[Secure Computer Systems]:  http://www.scs.stanford.edu
+[Grameen Foundation]:       http://www.grameenfoundation.org/
+[MIFOS]:                    http://www.mifos.org/

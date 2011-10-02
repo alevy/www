@@ -1,6 +1,8 @@
 ## Personal
 
-When I'm not hacking on software, I might be playing guitar or piano, planning my next escape (see travel below), or enjoying the wonderful [coffee](http://www.herkimercoffee.com/), [food](http://www.yelp.com/biz/kingfish-cafe-seattle) and [beer](http://www.yelp.com/biz/brouwers-cafe-seattle) that Seattle has to offers. I like any and all water sports (including floating) and also try to hike or ski as much as possible. Since I stopped [rowing](http://www.gohuskies.com/sports/c-crew/mtt/levy_amit00.html) I'm constantly trying to get back/stay in shape. Often this involves squash, running or tennis, but so far I've found that with cycling I have the best excuses for being slow...
+_**UPDATE**: I moved to the bay area in September, so this page is pretty out of date (particularly the part about any of the people listed below being my friends). I plan on adding more current details as soon as I develop a personality._
+
+When I'm not hacking on software, I might be playing guitar or piano, planning my next escape (see travel below), or enjoying the wonderful [coffee](http://www.herkimercoffee.com/), [food](http://www.yelp.com/biz/kingfish-cafe-seattle) and [beer](http://www.yelp.com/biz/brouwers-cafe-seattle) that Seattle has to offers. I like any and all water sports (including floating) and also try to hike or ski as much as possible. I used to [row](http://www.gohuskies.com/sports/c-crew/mtt/levy_amit00.html), but now I mostly use faster methods of transportation.
 
 GPG Key: [A211 AA8C B817 13AF 6352  F8B5 838F A1C7 17F6 0F73](gpg.public.key)
 

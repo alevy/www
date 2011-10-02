@@ -69,15 +69,15 @@
     <li><a href="#research">Research</a></li>
     <li><a href="#academic">Coursework</a></li>
     <li><a href="#teaching">Teaching</a></li>
-    <li><a href="#projects">Projects</a></li>
+    <li><a href="#hacking">Hacking</a></li>
     <li><a href="#personal">Personal</a></li>
     <li><a href="#resume">Resume</a></li>
   </ul>
   <div id="qrcode"><a href="contact.vcf" title="VCard"><img src="images/contact.png" alt="Contact QR Code"/></a></div>
   <p id="short_info">
-    <strong>Masters Student</strong><br/>
-    <a href="http://www.cs.washington.edu" title="UW CSE">Computer Science &amp; Engineering</a><br/>
-    <a href="http://www.washington.edu" title="UW">University of Washington</a><br/>
+    <strong>PhD Student</strong><br/>
+    <a href="http://www.cs.stanford.edu" title="Stanford CS">Computer Science</a><br/>
+    <a href="http://www.stanford.edu" title="Stanford">Stanford</a><br/>
     E-mail: amit <i>at</i> amitlevy <em>dot</em> com
   </p>
 </div>
@@ -85,23 +85,41 @@
   <div id="about">
     <h2 id='about'>About</h2>
 
-<p><img alt='The perfect skipping rock' src='images/profile.jpg' /></p>
+<p><img alt='In the spotlight!' src='images/profile.jpg' /></p>
 
-<p>In December 2010 I graduated from the University of Washington with an MSc in Computer Science and a BSc in Computer Science and Economics (double major). I worked with <a href='http://www.cs.washington.edu/homes/levy/'>Hank Levy</a>, <a href='http://www.cs.washington.edu/homes/yoshi/'>Tadayoshi Kohno</a>, <a href='http://www.cs.washington.edu/homes/arvind'>Arvind Krishnamurthy</a>, and <a href='http://www.cs.washington.edu/homes/roxana/'>Roxana Geambasu</a> on web privacy and distributed systems. I&#8217;ve interned at Google, once developing distributed testing tools and again building tools to help developers schedule their cluster jobs. Before that I worked at the <a href='http://www.grameenfoundation.org/'>Grameen Foundation</a> as an intern on the <a href='http://www.mifos.org/'>MIFOS</a> (<b>M</b>icros <b>F</b>inance <b>O</b>pen <b>S</b>ource) project. In September I&#8217;ll move to the bay area to start a PhD program in Computer Science at Stanford. In the meantime I&#8217;ve been sitting at <a href='http://www.startpad.org'>StartPad</a>, a co-working space, where I hack on projects with my friend <a href='http://www.courtlandtstanton.com' rel='friend co-worker'>Courtlandt Stanton</a> for <a href='http://github.com/alevy'>fun</a> and <a href='http://www.groundflooranalytics.com'>profit</a>.</p>
+<p>In September 2011 I joined the Computer Science PhD program at Stanford University. Currently I work with <a href='http://www.scs.stanford.edu/~dm/'>David Mazières</a> in the <a href='http://www.scs.stanford.edu'>Secure Computer Systems</a> group on projects mostly TBD. I&#8217;m generally interested in distributed systems security, privacy, distributed storage and good will towards people.</p>
+
+<p>In December 2010 I graduated from the University of Washington with an MSc in Computer Science and a BSc in Computer Science and Economics (double major). I worked with <a href='http://www.cs.washington.edu/homes/levy/'>Hank Levy</a>, <a href='http://www.cs.washington.edu/homes/yoshi/'>Tadayoshi Kohno</a>, <a href='http://www.cs.washington.edu/homes/arvind'>Arvind Krishnamurthy</a>, and <a href='http://www.cs.washington.edu/homes/roxana/'>Roxana Geambasu</a> on web privacy and distributed systems. I&#8217;ve interned at Google, once developing distributed testing tools and again building tools to help developers schedule their cluster jobs. Before that I worked at the <a href='http://www.grameenfoundation.org/'>Grameen Foundation</a> as an intern on the <a href='http://www.mifos.org/'>MIFOS</a> (<b>M</b>icros <b>F</b>inance <b>O</b>pen <b>S</b>ource) project.</p>
+
+<p>Between UW and Stanford I sat at <a href='http://www.startpad.org'>StartPad</a>, a co-working space in Seattle, where I hacked on projects with my friend <a href='http://www.courtlandtstanton.com' rel='friend co-worker'>Courtlandt Stanton</a> for <a href='http://github.com/alevy'>fun</a> and <a href='http://www.groundflooranalytics.com'>profit</a>.</p>
   </div>
 
   <div id="research">
     <h2 id='research'>Research</h2>
 
-<ul>
+<h4 id='comet'>Comet</h4>
+
+<p>Comet extended the distributed key-value storage abstraction to facilitate the sharing of a single storage system by applications with diverse needs, allowing them to reap the consolidation benefits inherent in today&#8217;s massive clouds. Distributed key-value storage systems are widely used in corporations and across the Internet. We wanted to greatly expand the application space for these systems through application-specific customization. We designed and implemented Comet, an extensible, distributed key-value store. Each Comet node stores a collection of active storage objects (ASOs) that consist of a key, a value, and a set of handlers. Comet handlers run as a result of timers or storage operations, such as get or put, allowing an ASO to take dynamic, application-specific actions to customize its behavior. Handlers are written in a simple sandboxed extension language, providing safety and isolation properties. We implemented a Comet prototype for the Vuze distributed hash table, deployed Comet nodes on Vuze from PlanetLab, and built and evaluated over a dozen Comet applications.</p>
+
+<h4 id='vanish'>Vanish</h4>
+
+<p>Today&#8217;s technical and legal landscape presents formidable challenges to personal data privacy. First, our increasing reliance on Web services causes personal data to be cached, copied, and archived by third parties, often without our knowledge or control. Second, the disclosure of private data has become commonplace due to carelessness, theft, or legal actions. In Vanish our goal was to protect the privacy of past, archived data - such as copies of e-mails maintained by an email provider - against accidental, malicious, and legal attacks. Specifically, we wanted to ensure that all copies of data become unreadable after a user-specified time, without any specific action on the part of a user, and even if an attacker obtains both a cached copy of that data and the user’s cryptographic keys and passwords. Vanish achieved this by integrating cryptographic techniques with global-scale, peer-to-peer, distributed hash tables.</p>
+
+<h4 id='workload_characterization'>Workload Characterization</h4>
+
+<p>During summer 2010, I worked with Joseph L. Hellerstein at Google. We targeted a set of key questions that developers scheduling jobs on a cluster care about, but are hard or impossible to answer with existing tools: Will a job schedule? What changes to a job would make it more likely to schedule? Which resources can a job consume more of without impacting the ability to schedule it? Our challenge was to define metrics that accurately and predictively describe a job given the cluster it was scheduled on, and to compute those metrics efficiently enough to allow for interactive exploration of job configuration. We chose to estimate the number of scheduling slots available to a job over the past two weeks. However, computing the actual count is too expensive to do interactively. Our approach was to perform continuous statistical characterization of machine loads, and to compute an estimate of the number of slots based on that characterization. As a result we were able to build tools that give developers a meaningful way to compare different job configurations.</p>
+
+<h3 id='publications'>Publications</h3>
+
+<ol>
 <li>
-<p><strong>Comet</strong>: An active distributed key-value store. With <a href='http://www.cs.washington.edu/homes/roxana/'>Roxana Geambasu</a>, <a href='http://www.cs.washington.edu/homes/yoshi/'>Tadayoshi Kohno</a>, <a href='http://www.cs.washington.edu/homes/arvind'>Arvind Krishnamurthy</a> and <a href='http://www.cs.washington.edu/homes/levy/'>Hank Levy</a>. In Proceedings of OSDI, Vancouver, Canada, October 2010.<br />Paper: <em>[<a href='papers/comet-osdi2010.pdf'>PDF</a>]</em> Poster: <em>[<a href='papers/comet-poster.pdf'>PDF</a>]</em></p>
+<p><strong>Comet</strong>: An active distributed key-value store. With <a href='http://www.cs.washington.edu/homes/roxana/'>Roxana Geambasu</a>, <a href='http://www.cs.washington.edu/homes/yoshi/'>Tadayoshi Kohno</a>, <a href='http://www.cs.washington.edu/homes/arvind'>Arvind Krishnamurthy</a> and <a href='http://www.cs.washington.edu/homes/levy/'>Hank Levy</a>. In Proceedings of OSDI, Vancouver, Canada, October 2010. Paper: <em>[<a href='papers/comet-osdi2010.pdf'>PDF</a>]</em> Poster: <em>[<a href='papers/comet-poster.pdf'>PDF</a>]</em></p>
 </li>
 
 <li>
-<p><strong>Vanish</strong>: Increasing Data Privacy with DHTs that forget. With <a href='http://www.cs.washington.edu/homes/roxana/'>Roxana Geambasu</a>, <a href='http://www.cs.washington.edu/homes/yoshi/'>Tadayoshi Kohno</a>, and <a href='http://www.cs.washington.edu/homes/levy/'>Hank Levy</a>. In Proceedings of the USENIX Security Symposium, Montreal, Canada, August 2009.<br />Won the Outstanding Student Paper Award.<br />Paper: <em>[<a href='papers/vanish-usenixsec09.pdf'>PDF</a>]</em></p>
+<p><strong>Vanish</strong>: Increasing Data Privacy with DHTs that forget. With <a href='http://www.cs.washington.edu/homes/roxana/'>Roxana Geambasu</a>, <a href='http://www.cs.washington.edu/homes/yoshi/'>Tadayoshi Kohno</a>, and <a href='http://www.cs.washington.edu/homes/levy/'>Hank Levy</a>. In Proceedings of the USENIX Security Symposium, Montreal, Canada, August 2009. Won the Outstanding Student Paper Award. Paper: <em>[<a href='papers/vanish-usenixsec09.pdf'>PDF</a>]</em></p>
 </li>
-</ul>
+</ol>
   </div>
 
   <div id="academic">
@@ -144,7 +162,7 @@
 </ul>
   </div>
   
-  <div id="projects">
+  <div id="hacking">
     <h2 id='projects'>Projects</h2>
 
 <h3 id='coypond'>Coypond</h3>
@@ -183,7 +201,9 @@
   <div id="personal">
     <h2 id='personal'>Personal</h2>
 
-<p>When I&#8217;m not hacking on software, I might be playing guitar or piano, planning my next escape (see travel below), or enjoying the wonderful <a href='http://www.herkimercoffee.com/'>coffee</a>, <a href='http://www.yelp.com/biz/kingfish-cafe-seattle'>food</a> and <a href='http://www.yelp.com/biz/brouwers-cafe-seattle'>beer</a> that Seattle has to offers. I like any and all water sports (including floating) and also try to hike or ski as much as possible. Since I stopped <a href='http://www.gohuskies.com/sports/c-crew/mtt/levy_amit00.html'>rowing</a> I&#8217;m constantly trying to get back/stay in shape. Often this involves squash, running or tennis, but so far I&#8217;ve found that with cycling I have the best excuses for being slow&#8230;</p>
+<p><em><strong>UPDATE</strong>: I moved to the bay area in September, so this page is pretty out of date (particularly the part about any of the people listed below being my friends). I plan on adding more current details as soon as I develop a personality.</em></p>
+
+<p>When I&#8217;m not hacking on software, I might be playing guitar or piano, planning my next escape (see travel below), or enjoying the wonderful <a href='http://www.herkimercoffee.com/'>coffee</a>, <a href='http://www.yelp.com/biz/kingfish-cafe-seattle'>food</a> and <a href='http://www.yelp.com/biz/brouwers-cafe-seattle'>beer</a> that Seattle has to offers. I like any and all water sports (including floating) and also try to hike or ski as much as possible. I used to <a href='http://www.gohuskies.com/sports/c-crew/mtt/levy_amit00.html'>row</a>, but now I mostly use faster methods of transportation.</p>
 
 <p>GPG Key: <a href='gpg.public.key'>A211 AA8C B817 13AF 6352 F8B5 838F A1C7 17F6 0F73</a></p>
 
@@ -320,7 +340,7 @@
   </div>
 </div>
 <div id="footer">
-  <p id="updated">Updated: 09-15-2011 11:11AM</p>
+  <p id="updated">Updated: 10-01-2011 05:16PM</p>
   <p id="copyleft">
     <a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.
   </p>

@@ -125,6 +125,10 @@ ul.horizontal li {
  margin-right: 100px;
 }
 
+#content div {
+  max-width: 850px
+}
+
 #content #about img:first-child {
   float: left;
   margin-right: 7px;
