@@ -1,13 +1,16 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu|Open+Sans);
+
 body {
  margin: 0;
- font-family: Verdana, Helvetica, Arial;
+ font-family: "Open sans", Verdana, Helvetica, Arial;
  font-size: 14px;
 }
 
 h1, h2, h3 {
- font-family: "Helvetica", Arial, "MS Trebuchet", sans-serif;
- text-shadow: #999 1px 1px 1px;
- text-transform:lowercase
+ font-family: "Ubuntu", "Helvetica", Arial, sans-serif;
+ text-shadow: #aaa 1px 1px 1px;
+ text-transform:lowercase;
+ font-weight: lighter;
 }
 
 #header, #navbar, #content, #footer {
