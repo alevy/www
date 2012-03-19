@@ -1,4 +1,11 @@
-## Graduate Coursework
+## Graduate Coursework ##
+
+### Stanford
+
+Functional Systems in Haskell ([CS 240H][]): Autumn 2011, instructor [David Mazières][] 
+_Project: FriendStar: Extensible Web Applications with Information Flow Control. Paper \[[PDF](papers/friendstar.pdf)\], Code \[[GitHub](http://github.com/alevy/friendstar)\]_
+
+### University of Washington
 
 Implementation of Programming Languages ([CSE 501][]): Autumn 2010, instructor [Michael Ernst][]  
 _Project: Faster Real-Time Classification Using Compilation. Materials forthcoming._

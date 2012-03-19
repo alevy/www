@@ -6,6 +6,8 @@
 [CSE 551]:  http://www.cs.washington.edu/education/courses/cse551/09au/
 [CSE 490H]: http://www.cs.washington.edu/education/courses/cse490h/09wi/
 
+[CS 240H]:  http://www.scs.stanford.edu/11au-cs240h/
+
 [Roxana Geambasu]:      http://www.cs.washington.edu/homes/roxana/
 [Tadayoshi Kohno]:      http://www.cs.washington.edu/homes/yoshi/
 [Arvind Krishnamurthy]: http://www.cs.washington.edu/homes/arvind
