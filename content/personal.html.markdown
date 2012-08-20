@@ -67,4 +67,4 @@ I try to travel as much as possible - usually alone, but sometimes with friends.
 - Middle East:
   - Jordan: Petra
 
-I'll be traveling in Central and South America from January until whenever the next saga of my life begins (hopefully in the Fall). I'll try to update my [travel blog](http://travel.amitlevy.com/) as much as possible.
+<strike>I'll be traveling in Central and South America from January until whenever the next saga of my life begins (hopefully in the Fall). I'll try to update my [travel blog](http://travel.amitlevy.com/) as much as possible.</strike>

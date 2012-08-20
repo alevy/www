@@ -1,5 +1,22 @@
 ## Projects
 
+### Wai-Lite (working title)
+_Source: [GitStar](http://gitstar.com/alevy/wai-lite)_
+_Package: [Hackage](http://hackage.haskell.org/package/wai-lite)_
+
+My second attempt at a Haskell web-framework, this time based on the WAI web server interface. Wai-lite takes a more deliberate approach, specifically everything is implemented in terms of a basic `Routeable` type-class, making all components (various kinds of routes and controllers) composable and nestable. Even a native WAI `Application` is an instance of `Routeable` and can be embedded at any stage. It features a Monadic `Route` type that enables readable route specifications, Sinatra-inspired shorthands, a REST-Controller Monad for simplifying resource routing and a controller Monad that simplifies such tasks as cookie and form parsing.
+
+### MemJS
+_Source: [GitHub](http://github.com/alevy/memjs)_
+
+MemJS is a pure Node.js client library for accessing the MemCachier service and other memcache servers. It uses the binary protocol and support SASL authentication.
+
+### iterio-server
+_Source: [GitHub](http://github.com/alevy/iterio-server)_
+_Package: [Hackage](http://hackage.haskell.org/package/iterio-server)_
+
+A web-server framework for Haskell based on [David Mazières][]'s iteratee libarary, [IterIO](http://hackage.haskell.org/package/iterIO).
+
 ### Coypond
 _Source: [GitHub](http://github.com/alevy/coypond)_
 _Gem: [RubyGems](https://rubygems.org/gems/coypond)_
