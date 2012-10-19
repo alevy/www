@@ -14,9 +14,13 @@ During summer 2010, I worked with Joseph L. Hellerstein at Google. We targeted a
 
 ### Publications
 
-1. __Comet__: An active distributed key-value store. With [Roxana Geambasu], [Tadayoshi Kohno][], [Arvind Krishnamurthy][] and [Hank Levy][]. In Proceedings of OSDI, Vancouver, Canada, October 2010. 
+1. __Hails__: Protecting Data Privacy in Untrusted Web Applications. With [Daniel Giffin], [Deian Stefan], [David Terei], [David Mazières], [John Mitchell], [Alejandro Russo]. In Proceedings of OSDI, Los Angeles, USA, October 2010. Paper: _\[[PDF](papers/hails-osdi2012.pdf)\]_
+
+2. Addressing Covert Termination and Timing Channels in Concurrent Information Flow Systems. With [Deian Stefan], [Alejandro Russo], [Pablo Buiras], [John Mitchell], [David Mazières]. In In Proceedings of ICFP, Copenhagen, Denmark . 2012. Paper: _\[[PDF](papers/lio-icfp2012.pdf)\]_
+
+3. __Comet__: An active distributed key-value store. With [Roxana Geambasu], [Tadayoshi Kohno][], [Arvind Krishnamurthy][] and [Hank Levy][]. In Proceedings of OSDI, Vancouver, Canada, October 2010. 
 Paper: _\[[PDF](papers/comet-osdi2010.pdf)\]_ Poster: _\[[PDF](papers/comet-poster.pdf)\]_
 
-2. __Vanish__: Increasing Data Privacy with DHTs that forget. With [Roxana Geambasu][], [Tadayoshi Kohno][], and [Hank Levy][]. In Proceedings of the USENIX Security Symposium, Montreal, Canada, August 2009.
+4. __Vanish__: Increasing Data Privacy with DHTs that forget. With [Roxana Geambasu][], [Tadayoshi Kohno][], and [Hank Levy][]. In Proceedings of the USENIX Security Symposium, Montreal, Canada, August 2009.
 Won the Outstanding Student Paper Award.
 Paper: _\[[PDF](papers/vanish-usenixsec09.pdf)\]_

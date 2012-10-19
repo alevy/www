@@ -20,6 +20,12 @@
 [Tom Anderson]:         http://www.cs.washington.edu/homes/tom/
 [Ed Lazowska]:          http://lazowska.cs.washington.edu/
 [David Mazières]:       http://www.scs.stanford.edu/~dm/
+[Deian Stefan]:         http://deian.net
+[Daniel Giffin]:        http://www.scs.stanford.edu/~dbg/
+[John Mitchell]:         http://theory.stanford.edu/people/jcm/
+[David Terei]:          http://davidterei.com/
+[Alejandro Russo]:      http://www.cse.chalmers.se/~russo/
+[Pablo Buiras]:         http://www.chalmers.se/cse/EN/people/pablo-buiras
 
 [Courtlandt Stanton]: http://www.courtlandtstanton.com
 [Justine Sherry]:     http://www.cs.berkeley.edu/~justine/
