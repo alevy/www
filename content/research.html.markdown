@@ -14,7 +14,7 @@ During summer 2010, I worked with Joseph L. Hellerstein at Google. We targeted a
 
 ### Publications
 
-1. __Hails__: Protecting Data Privacy in Untrusted Web Applications. With [Daniel Giffin], [Deian Stefan], [David Terei], [David Mazières], [John Mitchell], [Alejandro Russo]. In Proceedings of OSDI, Los Angeles, USA, October 2010. Paper: _\[[PDF](papers/hails-osdi2012.pdf)\]_ Talk: _\[CRASH Talk (PDF)\](papers/hails-crash2012.pdf)_
+1. __Hails__: Protecting Data Privacy in Untrusted Web Applications. With [Daniel Giffin], [Deian Stefan], [David Terei], [David Mazières], [John Mitchell], [Alejandro Russo]. In Proceedings of OSDI, Los Angeles, USA, October 2010. Paper: _\[[PDF](papers/hails-osdi2012.pdf)\]_ Talk: _\[[CRASH Talk (PDF)](papers/hails-crash2012.pdf)\]_
 
 2. Addressing Covert Termination and Timing Channels in Concurrent Information Flow Systems. With [Deian Stefan], [Alejandro Russo], [Pablo Buiras], [John Mitchell], [David Mazières]. In In Proceedings of ICFP, Copenhagen, Denmark . 2012. Paper: _\[[PDF](papers/lio-icfp2012.pdf)\]_
 
