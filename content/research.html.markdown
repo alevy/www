@@ -14,9 +14,9 @@ During summer 2010, I worked with Joseph L. Hellerstein at Google. We targeted a
 
 ### Publications
 
-1. Eliminating Cache-based Timing Attacks with Instruction-based Scheduling. With [Deian Stefan], [Pablo Buiras], [Edward Z. Yang], [David Terei], [Alejandro Russo], [David Mazieres]. In The 18th European Symposium on Research in Computer Security (ESORICS) 2013. Paper _\[[PDF](papers/eliminating-esorics2013.pdf)\]_
+1. Eliminating Cache-based Timing Attacks with Instruction-based Scheduling. With [Deian Stefan], [Pablo Buiras], [Edward Yang], [David Terei], [Alejandro Russo], [David Mazières]. In The 18th European Symposium on Research in Computer Security (ESORICS) 2013. Paper _\[[PDF](papers/eliminating-esorics2013.pdf)\]_
 
-2. A Library for Removing Cache-based Attacks in Concurrent Information Flow Systems. With [Pablo Buiras], [Deian Stefan], [Alejandro Russo], [David Mazieres]. In the 8th International Symposium on Trustworthy Global Computing (TGC) 2013. Paper: _\[[PDF](papers/resLIO-tgc2013.pdf)]\_
+2. A Library for Removing Cache-based Attacks in Concurrent Information Flow Systems. With [Pablo Buiras], [Deian Stefan], [Alejandro Russo], [David Mazières]. In the 8th International Symposium on Trustworthy Global Computing (TGC) 2013. Paper: _\[[PDF](papers/resLIO-tgc2013.pdf)\]_
 
 1. __Hails__: Protecting Data Privacy in Untrusted Web Applications. With [Daniel Giffin], [Deian Stefan], [David Terei], [David Mazières], [John Mitchell], [Alejandro Russo]. In Proceedings of OSDI, Los Angeles, USA, October 2010. Paper: _\[[PDF](papers/hails-osdi2012.pdf)\]_ Talk: _\[[CRASH Talk (PDF)](papers/hails-crash2012.pdf)\]_
 

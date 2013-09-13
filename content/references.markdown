@@ -27,6 +27,7 @@
 [David Terei]:          http://davidterei.com/
 [Alejandro Russo]:      http://www.cse.chalmers.se/~russo/
 [Pablo Buiras]:         http://www.chalmers.se/cse/EN/people/pablo-buiras
+[Edward Yang]:          http://ezyang.com
 
 [Courtlandt Stanton]: http://www.courtlandtstanton.com
 [Justine Sherry]:     http://www.cs.berkeley.edu/~justine/
