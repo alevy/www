@@ -1,21 +1,31 @@
 ## Projects
 
-### Wai-Lite (working title)
-_Source: [GitStar](http://gitstar.com/alevy/wai-lite)_
-_Package: [Hackage](http://hackage.haskell.org/package/wai-lite)_
+### Postgresql-ORM
+_Source: [GitStar](http://gitstar.com/dm/postgresql-orm)_
+_Package: [Hackage](http://hackage.haskell.org/package/postgresql-orm)_
 
-My second attempt at a Haskell web-framework, this time based on the WAI web server interface. Wai-lite takes a more deliberate approach, specifically everything is implemented in terms of a basic `Routeable` type-class, making all components (various kinds of routes and controllers) composable and nestable. Even a native WAI `Application` is an instance of `Routeable` and can be embedded at any stage. It features a Monadic `Route` type that enables readable route specifications, Sinatra-inspired shorthands, a REST-Controller Monad for simplifying resource routing and a controller Monad that simplifies such tasks as cookie and form parsing.
+---
+
+### Simple
+_Source: [GitStar](http://gitstar.com/alevy/simple)_
+_Package: [Hackage](http://hackage.haskell.org/package/simple)_
+
+---
 
 ### MemJS
 _Source: [GitHub](http://github.com/alevy/memjs)_
 
 MemJS is a pure Node.js client library for accessing the MemCachier service and other memcache servers. It uses the binary protocol and support SASL authentication.
 
+---
+
 ### iterio-server
 _Source: [GitHub](http://github.com/alevy/iterio-server)_
 _Package: [Hackage](http://hackage.haskell.org/package/iterio-server)_
 
 A web-server framework for Haskell based on [David Mazières][]'s iteratee libarary, [IterIO](http://hackage.haskell.org/package/iterIO).
+
+---
 
 ### Coypond
 _Source: [GitHub](http://github.com/alevy/coypond)_
@@ -25,12 +35,16 @@ Coypond is a semantic grep-like tool for Ruby. You can use coypond to search thr
 
 Coypond uses ripper (a built in library as of Ruby 1.9) to generate parse trees from Ruby source files. These parse trees are then use to create an inverted index of the code, annotated with semantic information like whether the definition is a class, module or method.
 
+---
+
 ### Jsss - JavaScript Secret Sharing
 _Source: [GitHub](http://github.com/alevy/jsss)_
 
 A [Shamir Secret Sharing](http://en.wikipedia.org/wiki/Shamir's_Secret_Sharing) library in JavaScript. Shamir Secret Sharing splits data into `n` shares, such that only `k (<=n)` are needed to reconstruct the original data. Possession of any fewer than `k` shares discloses nothing about the original data. The algorithm generates shares by evaluating a `k-1` polynomial, based on the data, at `n` arbitrary points. We get the data back by performing polynomial interpolation over `k` of the shares.
 
 Javascript uses variable length numbers natively but breaks arbitrarily when computing large numbers. To mitigate this, the library uses [Matthew Crumley](http://silentmatt.com/)'s [BigInteger](http://github.com/silentmatt/javascript-biginteger) library and a rational number class that uses fractions under the hood to compute arbitrarily complex numbers accurately. This reduces the speed of generating and recombining shares, but it computation is not feasible and pretty low values of `k` otherwise.
+
+---
 
 ### VoteLight
 
@@ -39,6 +53,8 @@ _Check it out! [VoteLight.com](http://votelight.com)_
 VoteLight was a project I hacked together with [Aaron][Aaron Block] when I visited him in LA. The company where Aaron previously worked, GridPoint, used MS Outlook & Exchange for e-mail, which has built in mini-surveys that can be attached to e-mails and update _in-message_ when respondents vote. GridPoint used this feature to plan after-work happy hours etc, which is awesome! His new company, [SkylineInnovations](http://www.skylineinnovations.com), is getting with the cloudy goodness by using Google Apps for hosted e-mail, which is also awesome! However, Google has no similar feature, which is not awesome :(...
 
 VoteLight does just this. It's super simple, and runs on AppEngine. It uses a Google Charts for the graphs, and just embeds a dynamic image in e-mail messages sent, which update to the latest state of the survey every time the message is viewed.
+
+---
 
 ### Breadcrumbs - a travel blog CMS
 
