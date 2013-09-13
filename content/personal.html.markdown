@@ -1,9 +1,5 @@
 ## Personal
 
-_**UPDATE**: I moved to the bay area in September, so this page is pretty out of date (particularly the part about any of the people listed below being my friends). I plan on adding more current details as soon as I develop a personality._
-
-When I'm not hacking on software, I might be playing guitar or piano, planning my next escape (see travel below), or enjoying the wonderful [coffee](http://www.herkimercoffee.com/), [food](http://www.yelp.com/biz/kingfish-cafe-seattle) and [beer](http://www.yelp.com/biz/brouwers-cafe-seattle) that Seattle has to offers. I like any and all water sports (including floating) and also try to hike or ski as much as possible. I used to [row](http://www.gohuskies.com/sports/c-crew/mtt/levy_amit00.html), but now I mostly use faster methods of transportation.
-
 GPG Key: [A211 AA8C B817 13AF 6352  F8B5 838F A1C7 17F6 0F73](gpg.public.key)
 
 ### Some Friends' Websites:
@@ -20,6 +16,9 @@ GPG Key: [A211 AA8C B817 13AF 6352  F8B5 838F A1C7 17F6 0F73](gpg.public.key)
 - [Silvio Lattanzi][]{:rel=friend}
 - [Sascha Trifunivic][]{:rel=friend}
 - [Aaron Block][]{:rel=friend}
+- [David Terei][]{:rel="friend coworker"}
+- [Deian Stefan][]{:rel="friend coworker"}
+- [Diego Ongaro][]{:rel="friend coworker"}
 
 ### And Family...
 - [Eyal Levy][]{:rel=parent}
@@ -45,7 +44,7 @@ Special Category: The Room
 
 ### Places I've Traveled
 
-I try to travel as much as possible - usually alone, but sometimes with friends. Sometimes I relate my experiences in my [travel blog](http://travel.amitlevy.com), but not often. Alphabetically by region, then country, I've been to:
+I try to travel as much as possible - usually alone, but sometimes with friends. I don't normally take pictures or keep a journal or anything, so this is mostly for me to remember where I've been. Alphabetically by region, then country, I've been to:
 
 - Americas:
   - Canada: Vancouver, Victoria, Montreal, Jasper, Lake Louise
@@ -57,14 +56,17 @@ I try to travel as much as possible - usually alone, but sometimes with friends.
   - Costa Rica: San Jose, Alajuale, Monteverde, Tamarindo, Samara
 - Europe:
   - Belgium: Bruges
+  - Denmark: Copenhagen
   - France: Paris, La Plagne, Chamonix
-  - Germany: Frankfurt
+  - Germany: Frankfurt, Berlin
+  - Hungary: Budapest
   - Italy: Rome, Florence, Bologna, Milan, Venice, Padua, Treviso, Trieste, Ischia
   - Spain: Barcelona, Granada, Seville
   - Switzerland: Geneva, Zurich, Gimmelwald
   - Netherlands: Amsterdam
+  - Sweden: Gothenburg
   - UK: London, Edinburgh
 - Middle East:
   - Jordan: Petra
+  - Palestine: Bethlehem
 
-<strike>I'll be traveling in Central and South America from January until whenever the next saga of my life begins (hopefully in the Fall). I'll try to update my [travel blog](http://travel.amitlevy.com/) as much as possible.</strike>

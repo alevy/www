@@ -21,8 +21,9 @@
 [Ed Lazowska]:          http://lazowska.cs.washington.edu/
 [David Mazières]:       http://www.scs.stanford.edu/~dm/
 [Deian Stefan]:         http://deian.net
+[Diego Ongaro]:         http://ongardie.net
 [Daniel Giffin]:        http://www.scs.stanford.edu/~dbg/
-[John Mitchell]:         http://theory.stanford.edu/people/jcm/
+[John Mitchell]:        http://theory.stanford.edu/people/jcm/
 [David Terei]:          http://davidterei.com/
 [Alejandro Russo]:      http://www.cse.chalmers.se/~russo/
 [Pablo Buiras]:         http://www.chalmers.se/cse/EN/people/pablo-buiras
