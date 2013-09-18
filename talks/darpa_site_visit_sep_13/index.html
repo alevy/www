@@ -64,6 +64,7 @@
         <li>Smaller TCB code</li>
       </ul>
     </li>
+    <li>Descriptive error reporting in LIO</li>
     <li>More apps (learnbyhacking.org)</li>
   </ul>
 </section>
@@ -71,22 +72,225 @@
 <section class="slide">
   <h2>Three research questions</h2>
   <ol>
-    <li><h3>Closing covert channels (Alejandro's talk)</h3></li>
+    <li><h3><span style="text-decoration: line-through">Closing covert channels</span> (Alejandro's talk)</h3></li>
     <li><h3>Hails apps for the lay person</h3></li>
     <li><h3>Deploying Hails at scale</h3></li>
   </ol>
 </section>
 
 <section class="slide">
-	<h1>Hails apps for the lay person</h1>
+  <h1>Hails apps for the lay person</h1>
 </section>
 
 <section class="slide">
-  <h2>Results: Lincoln Labs User Study</h2>
+  <h2>Lincoln Labs User Study</h2>
+  <h3>Background</h3>
+  <ul>
+    <li>Six interns (college students from Boston area) with functional
+    programming experience</li>
+    <li>Three day tutorial on Haskell, LIO and Hails</li>
+    <li>Hails team directed toy apps during tutorial</li>
+    <li>Interns implemented a number guessing game and Battleship</li>
+  </ul>
 </section>
 
 <section class="slide">
-  <h2>Results: CURIS Students</h2>
+  <h2>Lincoln Labs User Study</h2>
+  <h3>Results</h3>
+  <ul>
+    <li><strong>Pros</strong>
+      <ul>
+        <li>Haskell well suited
+          <ol>
+            <li>Type signatures good for identifying pure functions</li>
+            <li>"Monads make everything awesome forever"</li>
+            <li>Cheat mode - ability to drop into unsafe mode for debugging</li>
+          </ol></li>
+        <li>Explicit label/unlabel -- can manipulate pure data disregarding policy</li>
+        <li>Less code clutter than Breeze thanks to current label</li>
+      </ul>
+    </li>
+    <li><strong>Cons</strong>
+      <ol>
+        <li>"Labyrinth of Monads"</li>
+        <li>Label errors can be difficult to understand</li>
+        <li>Dynamic enforcement makes incorrect programs easier to write.</li>
+      </ol></li>
+  </ul>
+</section>
+
+<section class="slide">
+  <h2>CURIS Students</h2>
+  <h3>Background</h3>
+  <ul>
+    <li>Five Stanford undergraduate students over the summer - none with
+    functional programming experience</li>
+    <li>Two week tutorial on Haskell, DIFC, LIO and Hails</li>
+    <li>Students chose, designed and implemented an end-to-end Hails app over
+    the summer</li>
+  </ul>
+</section>
+
+<section class="slide">
+  <h2>CURIS Students</h2>
+  <h3>Results</h3>
+  <ul>
+    <li>Built a complete task management app with rich policies:
+      <ul>
+        <li>Users and groups</li>
+        <li>Tasks can be edited by one or more users</li>
+        <li>Tasks have TODOs which have separate policies</li>
+        <li>Separation between viewers and editors</li>
+      </ul>
+    </li>
+    <li>Difficult to write policies after the fact
+      <ul><li>Much of the app had to be re-written once policy was included</li></ul>
+    </li>
+    <li>Lots of data is really relational - tricky to express with our current
+    data model</li>
+  </ul>
+</section>
+
+<section class="slide">
+  <h2>Hails apps for the lay person</h2>
+  <h3>Labyrinth of Monads</h3>
+  <ul>
+    <li>This is an interface problem so we're building</li>
+    <li>Iterating on existing interfaces (e.g. liftLIO)</li>
+    <li>Simpler higher-level libraries for Hails (simple, postgresql-orm)</li>
+  </ul>
+  <h3>Difficult to write policies after the fact</h3>
+  <ol>
+    <li>MP vs. VC roles not perfect yet</li>
+    <li>Adapt model to fit development process more (e.g. give VCs <em>some</em> privileges)</li>
+    <li>Build tutorials and other documentation with MP-VC model in mind.</li>
+  </ol>
+  <h3>Supporting more data models</h3>
+  <ul>
+    <li>Working on a database layer for PostgreSQL</li>
+    <li>Generalizing the policy layer -- same interface for writing policies</li>
+    <li>Probably write policies in terms of Haskell types (as opposed to
+    database types)</li>
+  </ul>
+</section>
+
+<section class="slide">
+  <h1>Deploying Hails at Scale</h1>
+</section>
+
+<section class="slide">
+  <h2>Simple - a Haskell/Hails web framework</h2>
+  <ul>
+    <li>Existing projects not great - either restrictive or rely on unsafe features</li>
+    <li>A single Monad for many flavors of web controllers</li>
+    <li>Very simple implementation (no template Haskell, etc)</li>
+    <li>All Safe Haskell with port for both Hails and WAI</li>
+    <li>Published to Hackage (GPL) and in use in production</li>
+  </ul>
+</section>
+
+<section class="slide">
+  <h2>Simple - raw DSL</h2>
+  <pre>
+  do
+    routeTop $ do
+      ... handle home page ...
+    routeName "posts" $ do
+      routeMethod GET $
+        ... get all posts ...
+      routeMethod POST $
+        ... create new post ...
+  </pre>
+</section>
+
+<section class="slide">
+  <h2>Simple - Sinatra style (like current Hails)</h2>
+  <pre>
+  get "/" $ do
+    req <- request
+    return $ okHtml $ fromString $
+      "Welcome Home " ++ (show $ serverName req)
+  get "/user/:id" $ do
+    userId <- queryParam' "id"
+    return $ ok "text/json" $ fromString $
+      "{\"myid\": " ++ (show userId) ++ "}"
+  put "/user/:id" $ do
+    ...
+  </pre>
+</section>
+
+<section class="slide">
+  <h2>Simple - REST style (similar to Rails)</h2>
+  <pre>
+  do
+    index $ do
+      req <- request
+      return $ okHtml $ fromString $
+        "Welcome Home " ++ (show $ serverName req)
+
+    show $ do
+      userId <- queryParam' "id"
+      return $ ok "text/json" $ fromString $
+        "{\"myid\": " ++ (show userId) ++ "}"
+
+    update $ do
+      ...
+  </pre>
+</section>
+
+<section class="slide">
+  <h2>PostgreSQL-ORM - PostgreSQL Object Relational Mapping for Haskell</h2>
+  <ul>
+    <li>Existing projects (i.e. Yesod) rely on unsafe features and complicated</li>
+    <li>Supports nearly all the same operations as Active Record (most popular Ruby library)
+      <ul>
+        <li>Associations between models (has many, belongs to, join tables)</li>
+        <li>Schema migrations</li>
+        <li>Validations</li>
+      </ul>
+    </li>
+    <li>No unsafe language features</li>
+    <li>Easy to reason about</li>
+    <li>Simple to program in</li>
+  </ul>
+</section>
+
+<section class="slide">
+  <h2>PostgreSQL-ORM</h2>
+  <pre>
+  data MyType = MyType { myKey :: !DBKey
+                       , myName :: !S.ByteString
+                       , myCamelCase :: !Int
+                       , ...
+                       } deriving (Show, Generic)
+  instance Model MyType
+  </pre>
+</section>
+
+<section class="slide">
+  <h2>PostgreSQL-ORM</h2>
+  <pre>
+  data ModelInfo a = ModelInfo {
+      modelTable :: !S.ByteString
+    , modelColumns :: ![S.ByteString]
+    , modelPrimaryColumn :: !Int
+    , modelGetPrimaryKey :: !(a -> DBKey)
+    }
+  </pre>
+</section>
+
+<section class="slide">
+  <h2>PostgreSQL-ORM</h2>
+  <pre>
+  do
+    posts <- findAll conn
+    respond $ okJson $ encodePosts posts
+  </pre>
+
+  <pre>
+  let post = Post { postTitle = "FooBar", postBody = "Lorem Ipsum"}
+  save conn post
+  </pre>
 </section>
 <!-- End slides. -->
 
