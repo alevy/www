@@ -3,8 +3,10 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>amit levy</title>
-	<link rel="openid2.provider" href="https://www.startssl.com/id.ssl" />
-	<link rel="openid2.local_id" href="https://aalevy.startssl.com/" />
+        <link rel="openid.server" href="http://openid.mappend.net/" />
+        <link rel="openid2.provider" href="http://openid.mappend.net/" />
+        <link rel="openid2.delegate" href="http://amitlevy.com/" />
+        <link rel="openid2.local_id" href="http://amitlevy.com/" />
 	<link rel="shortcut icon" href="favicon.png" />
 	<script src="scripts/jquery-1.4.2.js" type="text/javascript" charset="utf-8"></script>
 	<script src="scripts/jquery.history.js" type="text/javascript" charset="utf-8"></script>
@@ -47,236 +49,241 @@
 </div>
 <div id="content">
   <div id="about">
-    <h2 id='about'>About</h2>
+    
+<h2 id="about">About</h2>
 
-<p><img alt='In the spotlight!' src='images/profile.jpg' /></p>
+<p><img src="images/profile.jpg" alt="In the spotlight!" title="Profile" /></p>
 
-<p>In September 2011 I joined the Computer Science PhD program at Stanford University. Currently I work with <a href='http://www.scs.stanford.edu/~dm/'>David Mazières</a> in the <a href='http://www.scs.stanford.edu'>Secure Computer Systems</a> group on a new framework for building secure web platforms called <a href='http://hails.scs.stanford.edu'>Hails</a>. I&#8217;m generally interested in distributed systems security, privacy, distributed storage and good will towards people.</p>
+<p>In September 2011 I joined the Computer Science PhD program at Stanford University. Currently I work with <a href="http://www.scs.stanford.edu/~dm/">David Mazières</a> in the <a href="http://www.scs.stanford.edu">Secure Computer Systems</a> group on a new framework for building secure web platforms called <a href="http://hails.scs.stanford.edu">Hails</a>. I’m generally interested in distributed systems security, privacy, distributed storage and good will towards people.</p>
 
-<p>I am also currently working on <a href='http://www.memcachier.com'>MemCachier</a> - memcache-as-a-service for applications hosted on platforms like <a href='http://www.heroku.com'>Heroku</a>, <a href='http://www.cloudcontrol.com'>cloudControl</a> or directly on <a href='http://aws.amazon.com'>EC2</a>.</p>
+<p>I am also currently working on <a href="http://www.memcachier.com">MemCachier</a> - memcache-as-a-service for applications hosted on platforms like <a href="http://www.heroku.com">Heroku</a>, <a href="http://www.cloudcontrol.com">cloudControl</a> or directly on <a href="http://aws.amazon.com">EC2</a>.</p>
 
-<p>In December 2010 I graduated from the University of Washington with an MSc in Computer Science and a BSc in Computer Science and Economics (double major). I worked with <a href='http://www.cs.washington.edu/homes/levy/'>Hank Levy</a>, <a href='http://www.cs.washington.edu/homes/yoshi/'>Tadayoshi Kohno</a>, <a href='http://www.cs.washington.edu/homes/arvind'>Arvind Krishnamurthy</a>, and <a href='http://www.cs.washington.edu/homes/roxana/'>Roxana Geambasu</a> on web privacy and distributed systems. I&#8217;ve interned at Google, once developing distributed testing tools and again building tools to help developers schedule their cluster jobs. Before that I worked at the <a href='http://www.grameenfoundation.org/'>Grameen Foundation</a> as an intern on the <a href='http://www.mifos.org/'>MIFOS</a> (<b>M</b>icros <b>F</b>inance <b>O</b>pen <b>S</b>ource) project.</p>
+<p>In December 2010 I graduated from the University of Washington with an MSc in Computer Science and a BSc in Computer Science and Economics (double major). I worked with <a href="http://www.cs.washington.edu/homes/levy/">Hank Levy</a>, <a href="http://www.cs.washington.edu/homes/yoshi/">Tadayoshi Kohno</a>, <a href="http://www.cs.washington.edu/homes/arvind">Arvind Krishnamurthy</a>, and <a href="http://www.cs.washington.edu/homes/roxana/">Roxana Geambasu</a> on web privacy and distributed systems. I’ve interned at Google, once developing distributed testing tools and again building tools to help developers schedule their cluster jobs. Before that I worked at the <a href="http://www.grameenfoundation.org/">Grameen Foundation</a> as an intern on the <a href="http://www.mifos.org/">MIFOS</a> (<b>M</b>icros <b>F</b>inance <b>O</b>pen <b>S</b>ource) project.</p>
 
-<p>Between UW and Stanford I sat at <a href='http://www.startpad.org'>StartPad</a>, a co-working space in Seattle, where I hacked on projects with my friend <a href='http://www.courtlandtstanton.com' rel='friend co-worker'>Courtlandt Stanton</a> for <a href='http://github.com/alevy'>fun</a> and profit.</p>
+<p>Between UW and Stanford I sat at <a href="http://www.startpad.org">StartPad</a>, a co-working space in Seattle, where I hacked on projects with my friend <a href="http://www.courtlandtstanton.com" rel="friend co-worker">Courtlandt Stanton</a> for <a href="http://github.com/alevy">fun</a> and profit.</p>
+
   </div>
 
   <div id="research">
-    <h2 id='research'>Research</h2>
+    
+<h2 id="research">Research</h2>
 
-<h3 id='hails'>Hails</h3>
+<h3 id="hails">Hails</h3>
 
-<p>Hails is a web platform framework that obivates the traditional tradeoff in extensible web applications between privacy/confidentiality and extensibility. Hails leverages language-level information flow control in Haskell to enable feature rich applications to share data while ensuring that security policies are carried over and enforced along with the data. Traditionally, web applications allow extensibility by exposing an API. &#8220;Blessed&#8221; third-party apps that granted access to the API (or a subset of the API) are entrusted with (often senstive) user data to do what they please. This is problematic not only because third-party app developers may be malicious, but more practically because it reduces the trustworthiness of a platform to the least trustworthy third-party developers (who is often incetivized to prioritize features over security). Hails addresses this problem by tying security policies to data using information-flow-control labels. In Hails, a common, trusted, platform ensures that apps that have seen sensitive data may communicate with users, files, database etc, that are not privileged to see that data. Moreover, as opposed to traditional platforms where there is a host application that has more access to data than third-party apps, in Hails all apps have the same access to data. This enables developers to build complete alternatives to applications without requiring users to migrate their data or give up network effects.</p>
+<p>Hails is a web platform framework that obivates the traditional tradeoff in extensible web applications between privacy/confidentiality and extensibility. Hails leverages language-level information flow control in Haskell to enable feature rich applications to share data while ensuring that security policies are carried over and enforced along with the data. Traditionally, web applications allow extensibility by exposing an API. “Blessed” third-party apps that granted access to the API (or a subset of the API) are entrusted with (often senstive) user data to do what they please. This is problematic not only because third-party app developers may be malicious, but more practically because it reduces the trustworthiness of a platform to the least trustworthy third-party developers (who is often incetivized to prioritize features over security). Hails addresses this problem by tying security policies to data using information-flow-control labels. In Hails, a common, trusted, platform ensures that apps that have seen sensitive data may communicate with users, files, database etc, that are not privileged to see that data. Moreover, as opposed to traditional platforms where there is a host application that has more access to data than third-party apps, in Hails all apps have the same access to data. This enables developers to build complete alternatives to applications without requiring users to migrate their data or give up network effects.</p>
 
-<h4 id='comet'>Comet</h4>
+<h4 id="comet">Comet</h4>
 
-<p>Comet extended the distributed key-value storage abstraction to facilitate the sharing of a single storage system by applications with diverse needs, allowing them to reap the consolidation benefits inherent in today&#8217;s massive clouds. Distributed key-value storage systems are widely used in corporations and across the Internet. We wanted to greatly expand the application space for these systems through application-specific customization. We designed and implemented Comet, an extensible, distributed key-value store. Each Comet node stores a collection of active storage objects (ASOs) that consist of a key, a value, and a set of handlers. Comet handlers run as a result of timers or storage operations, such as get or put, allowing an ASO to take dynamic, application-specific actions to customize its behavior. Handlers are written in a simple sandboxed extension language, providing safety and isolation properties. We implemented a Comet prototype for the Vuze distributed hash table, deployed Comet nodes on Vuze from PlanetLab, and built and evaluated over a dozen Comet applications.</p>
+<p>Comet extended the distributed key-value storage abstraction to facilitate the sharing of a single storage system by applications with diverse needs, allowing them to reap the consolidation benefits inherent in today’s massive clouds. Distributed key-value storage systems are widely used in corporations and across the Internet. We wanted to greatly expand the application space for these systems through application-specific customization. We designed and implemented Comet, an extensible, distributed key-value store. Each Comet node stores a collection of active storage objects (ASOs) that consist of a key, a value, and a set of handlers. Comet handlers run as a result of timers or storage operations, such as get or put, allowing an ASO to take dynamic, application-specific actions to customize its behavior. Handlers are written in a simple sandboxed extension language, providing safety and isolation properties. We implemented a Comet prototype for the Vuze distributed hash table, deployed Comet nodes on Vuze from PlanetLab, and built and evaluated over a dozen Comet applications.</p>
 
-<h4 id='vanish'>Vanish</h4>
+<h4 id="vanish">Vanish</h4>
 
-<p>Today&#8217;s technical and legal landscape presents formidable challenges to personal data privacy. First, our increasing reliance on Web services causes personal data to be cached, copied, and archived by third parties, often without our knowledge or control. Second, the disclosure of private data has become commonplace due to carelessness, theft, or legal actions. In Vanish our goal was to protect the privacy of past, archived data - such as copies of e-mails maintained by an email provider - against accidental, malicious, and legal attacks. Specifically, we wanted to ensure that all copies of data become unreadable after a user-specified time, without any specific action on the part of a user, and even if an attacker obtains both a cached copy of that data and the user’s cryptographic keys and passwords. Vanish achieved this by integrating cryptographic techniques with global-scale, peer-to-peer, distributed hash tables.</p>
+<p>Today’s technical and legal landscape presents formidable challenges to personal data privacy. First, our increasing reliance on Web services causes personal data to be cached, copied, and archived by third parties, often without our knowledge or control. Second, the disclosure of private data has become commonplace due to carelessness, theft, or legal actions. In Vanish our goal was to protect the privacy of past, archived data - such as copies of e-mails maintained by an email provider - against accidental, malicious, and legal attacks. Specifically, we wanted to ensure that all copies of data become unreadable after a user-specified time, without any specific action on the part of a user, and even if an attacker obtains both a cached copy of that data and the user’s cryptographic keys and passwords. Vanish achieved this by integrating cryptographic techniques with global-scale, peer-to-peer, distributed hash tables.</p>
 
-<h4 id='workload_characterization'>Workload Characterization</h4>
+<h4 id="workload_characterization">Workload Characterization</h4>
 
 <p>During summer 2010, I worked with Joseph L. Hellerstein at Google. We targeted a set of key questions that developers scheduling jobs on a cluster care about, but are hard or impossible to answer with existing tools: Will a job schedule? What changes to a job would make it more likely to schedule? Which resources can a job consume more of without impacting the ability to schedule it? Our challenge was to define metrics that accurately and predictively describe a job given the cluster it was scheduled on, and to compute those metrics efficiently enough to allow for interactive exploration of job configuration. We chose to estimate the number of scheduling slots available to a job over the past two weeks. However, computing the actual count is too expensive to do interactively. Our approach was to perform continuous statistical characterization of machine loads, and to compute an estimate of the number of slots based on that characterization. As a result we were able to build tools that give developers a meaningful way to compare different job configurations.</p>
 
-<h3 id='publications'>Publications</h3>
+<h3 id="publications">Publications</h3>
 
 <ol>
 <li>
-<p>Eliminating Cache-based Timing Attacks with Instruction-based Scheduling. With <a href='http://deian.net'>Deian Stefan</a>, <a href='http://www.chalmers.se/cse/EN/people/pablo-buiras'>Pablo Buiras</a>, <a href='http://ezyang.com'>Edward Yang</a>, <a href='http://davidterei.com/'>David Terei</a>, <a href='http://www.cse.chalmers.se/~russo/'>Alejandro Russo</a>, <a href='http://www.scs.stanford.edu/~dm/'>David Mazières</a>. In The 18th European Symposium on Research in Computer Security (ESORICS) 2013. Paper <em>[<a href='papers/eliminating-esorics2013.pdf'>PDF</a>]</em></p>
+<p>Eliminating Cache-based Timing Attacks with Instruction-based Scheduling. With <a href="http://deian.net">Deian Stefan</a>, <a href="http://www.chalmers.se/cse/EN/people/pablo-buiras">Pablo Buiras</a>, <a href="http://ezyang.com">Edward Yang</a>, <a href="http://davidterei.com/">David Terei</a>, <a href="http://www.cse.chalmers.se/~russo/">Alejandro Russo</a>, <a href="http://www.scs.stanford.edu/~dm/">David Mazières</a>. In The 18th European Symposium on Research in Computer Security (ESORICS) 2013. Paper <em>[<a href="papers/eliminating-esorics2013.pdf">PDF</a>]</em></p>
 </li>
 
 <li>
-<p>A Library for Removing Cache-based Attacks in Concurrent Information Flow Systems. With <a href='http://www.chalmers.se/cse/EN/people/pablo-buiras'>Pablo Buiras</a>, <a href='http://deian.net'>Deian Stefan</a>, <a href='http://www.cse.chalmers.se/~russo/'>Alejandro Russo</a>, <a href='http://www.scs.stanford.edu/~dm/'>David Mazières</a>. In the 8th International Symposium on Trustworthy Global Computing (TGC) 2013. Paper: <em>[<a href='papers/resLIO-tgc2013.pdf'>PDF</a>]</em></p>
+<p>A Library for Removing Cache-based Attacks in Concurrent Information Flow Systems. With <a href="http://www.chalmers.se/cse/EN/people/pablo-buiras">Pablo Buiras</a>, <a href="http://deian.net">Deian Stefan</a>, <a href="http://www.cse.chalmers.se/~russo/">Alejandro Russo</a>, <a href="http://www.scs.stanford.edu/~dm/">David Mazières</a>. In the 8th International Symposium on Trustworthy Global Computing (TGC) 2013. Paper: <em>[<a href="papers/resLIO-tgc2013.pdf">PDF</a>]</em></p>
 </li>
 
 <li>
-<p><strong>Hails</strong>: Protecting Data Privacy in Untrusted Web Applications. With <a href='http://www.scs.stanford.edu/~dbg/'>Daniel Giffin</a>, <a href='http://deian.net'>Deian Stefan</a>, <a href='http://davidterei.com/'>David Terei</a>, <a href='http://www.scs.stanford.edu/~dm/'>David Mazières</a>, <a href='http://theory.stanford.edu/people/jcm/'>John Mitchell</a>, <a href='http://www.cse.chalmers.se/~russo/'>Alejandro Russo</a>. In Proceedings of OSDI, Los Angeles, USA, October 2010. Paper: <em>[<a href='papers/hails-osdi2012.pdf'>PDF</a>]</em> Talk: <em>[<a href='papers/hails-crash2012.pdf'>CRASH Talk (PDF)</a>]</em></p>
+<p><strong>Hails</strong>: Protecting Data Privacy in Untrusted Web Applications. With <a href="http://www.scs.stanford.edu/~dbg/">Daniel Giffin</a>, <a href="http://deian.net">Deian Stefan</a>, <a href="http://davidterei.com/">David Terei</a>, <a href="http://www.scs.stanford.edu/~dm/">David Mazières</a>, <a href="http://theory.stanford.edu/people/jcm/">John Mitchell</a>, <a href="http://www.cse.chalmers.se/~russo/">Alejandro Russo</a>. In Proceedings of OSDI, Los Angeles, USA, October 2010. Paper: <em>[<a href="papers/hails-osdi2012.pdf">PDF</a>]</em> Talk: <em>[<a href="papers/hails-crash2012.pdf">CRASH Talk (PDF)</a>]</em></p>
 </li>
 
 <li>
-<p>Addressing Covert Termination and Timing Channels in Concurrent Information Flow Systems. With <a href='http://deian.net'>Deian Stefan</a>, <a href='http://www.cse.chalmers.se/~russo/'>Alejandro Russo</a>, <a href='http://www.chalmers.se/cse/EN/people/pablo-buiras'>Pablo Buiras</a>, <a href='http://theory.stanford.edu/people/jcm/'>John Mitchell</a>, <a href='http://www.scs.stanford.edu/~dm/'>David Mazières</a>. In In Proceedings of ICFP, Copenhagen, Denmark . 2012. Paper: <em>[<a href='papers/lio-icfp2012.pdf'>PDF</a>]</em></p>
+<p>Addressing Covert Termination and Timing Channels in Concurrent Information Flow Systems. With <a href="http://deian.net">Deian Stefan</a>, <a href="http://www.cse.chalmers.se/~russo/">Alejandro Russo</a>, <a href="http://www.chalmers.se/cse/EN/people/pablo-buiras">Pablo Buiras</a>, <a href="http://theory.stanford.edu/people/jcm/">John Mitchell</a>, <a href="http://www.scs.stanford.edu/~dm/">David Mazières</a>. In In Proceedings of ICFP, Copenhagen, Denmark . 2012. Paper: <em>[<a href="papers/lio-icfp2012.pdf">PDF</a>]</em></p>
 </li>
 
 <li>
-<p><strong>Comet</strong>: An active distributed key-value store. With <a href='http://www.cs.washington.edu/homes/roxana/'>Roxana Geambasu</a>, <a href='http://www.cs.washington.edu/homes/yoshi/'>Tadayoshi Kohno</a>, <a href='http://www.cs.washington.edu/homes/arvind'>Arvind Krishnamurthy</a> and <a href='http://www.cs.washington.edu/homes/levy/'>Hank Levy</a>. In Proceedings of OSDI, Vancouver, Canada, October 2010. Paper: <em>[<a href='papers/comet-osdi2010.pdf'>PDF</a>]</em> Poster: <em>[<a href='papers/comet-poster.pdf'>PDF</a>]</em></p>
+<p><strong>Comet</strong>: An active distributed key-value store. With <a href="http://www.cs.washington.edu/homes/roxana/">Roxana Geambasu</a>, <a href="http://www.cs.washington.edu/homes/yoshi/">Tadayoshi Kohno</a>, <a href="http://www.cs.washington.edu/homes/arvind">Arvind Krishnamurthy</a> and <a href="http://www.cs.washington.edu/homes/levy/">Hank Levy</a>. In Proceedings of OSDI, Vancouver, Canada, October 2010. Paper: <em>[<a href="papers/comet-osdi2010.pdf">PDF</a>]</em> Poster: <em>[<a href="papers/comet-poster.pdf">PDF</a>]</em></p>
 </li>
 
 <li>
-<p>New directions for self-destructing data systems. With <a href='http://www.cs.washington.edu/homes/roxana/'>Roxana Geambasu</a>, <a href='http://www.cs.washington.edu/homes/yoshi/'>Tadayoshi Kohno</a>, <a href='http://www.cs.washington.edu/homes/arvind'>Arvind Krishnamurthy</a>, <a href='http://www.cs.washington.edu/homes/levy/'>Hank Levy</a>, Paul Gardner, Vino Moscaritolo. University of Washington, Tech. Rep 2013. Paper: <em>[<a href='papers/wpid-uwtech2010'>PDF</a>]</em></p>
+<p>New directions for self-destructing data systems. With <a href="http://www.cs.washington.edu/homes/roxana/">Roxana Geambasu</a>, <a href="http://www.cs.washington.edu/homes/yoshi/">Tadayoshi Kohno</a>, <a href="http://www.cs.washington.edu/homes/arvind">Arvind Krishnamurthy</a>, <a href="http://www.cs.washington.edu/homes/levy/">Hank Levy</a>, Paul Gardner, Vino Moscaritolo. University of Washington, Tech. Rep 2013. Paper: <em>[<a href="papers/wpid-uwtech2010">PDF</a>]</em></p>
 </li>
 
 <li>
-<p><strong>Vanish</strong>: Increasing Data Privacy with DHTs that forget. With <a href='http://www.cs.washington.edu/homes/roxana/'>Roxana Geambasu</a>, <a href='http://www.cs.washington.edu/homes/yoshi/'>Tadayoshi Kohno</a>, and <a href='http://www.cs.washington.edu/homes/levy/'>Hank Levy</a>. In Proceedings of the USENIX Security Symposium, Montreal, Canada, August 2009. Won the Outstanding Student Paper Award. Paper: <em>[<a href='papers/vanish-usenixsec09.pdf'>PDF</a>]</em></p>
+<p><strong>Vanish</strong>: Increasing Data Privacy with DHTs that forget. With <a href="http://www.cs.washington.edu/homes/roxana/">Roxana Geambasu</a>, <a href="http://www.cs.washington.edu/homes/yoshi/">Tadayoshi Kohno</a>, and <a href="http://www.cs.washington.edu/homes/levy/">Hank Levy</a>. In Proceedings of the USENIX Security Symposium, Montreal, Canada, August 2009. Won the Outstanding Student Paper Award. Paper: <em>[<a href="papers/vanish-usenixsec09.pdf">PDF</a>]</em></p>
 </li>
 </ol>
+
   </div>
 
   <div id="academic">
-    <h2 id='graduate_coursework'>Graduate Coursework</h2>
+    
+<h2 id="graduate_coursework">Graduate Coursework</h2>
 
-<h3 id='stanford'>Stanford</h3>
+<h3 id="stanford">Stanford</h3>
 
-<p>Functional Systems in Haskell (<a href='http://www.scs.stanford.edu/11au-cs240h/'>CS 240H</a>): Autumn 2011, instructor <a href='http://www.scs.stanford.edu/~dm/'>David Mazières</a> <em>Project: FriendStar: Extensible Web Applications with Information Flow Control. Paper [<a href='papers/friendstar.pdf'>PDF</a>], Code [<a href='http://github.com/alevy/friendstar'>GitHub</a>]</em></p>
+<p>Functional Systems in Haskell (<a href="http://www.scs.stanford.edu/11au-cs240h/">CS 240H</a>): Autumn 2011, instructor <a href="http://www.scs.stanford.edu/~dm/">David Mazières</a> <em>Project: FriendStar: Extensible Web Applications with Information Flow Control. Paper [<a href="papers/friendstar.pdf">PDF</a>], Code [<a href="http://github.com/alevy/friendstar">GitHub</a>]</em></p>
 
-<h3 id='university_of_washington'>University of Washington</h3>
+<h3 id="university_of_washington">University of Washington</h3>
 
-<p>Implementation of Programming Languages (<a href='http://www.cs.washington.edu/education/courses/cse501/10au/'>CSE 501</a>): Autumn 2010, instructor <a href='http://www.cs.washington.edu/homes/mernst/'>Michael Ernst</a><br /><em>Project: Faster Real-Time Classification Using Compilation. Materials forthcoming.</em></p>
+<p>Implementation of Programming Languages (<a href="http://www.cs.washington.edu/education/courses/cse501/10au/">CSE 501</a>): Autumn 2010, instructor <a href="http://www.cs.washington.edu/homes/mernst/">Michael Ernst</a><br /><em>Project: Faster Real-Time Classification Using Compilation. Materials forthcoming.</em></p>
 
-<p>Molecular Programming (<a href='http://www.cs.washington.edu/education/courses/cse599x/10sp/'>CSE 505</a>): Spring 2010, instructor <a href='http://www.cs.washington.edu/homes/seelig/'>Georg Seeling</a></p>
+<p>Molecular Programming (<a href="http://www.cs.washington.edu/education/courses/cse599x/10sp/">CSE 505</a>): Spring 2010, instructor <a href="http://www.cs.washington.edu/homes/seelig/">Georg Seeling</a></p>
 
-<p>Human Computer Interaction (<a href='http://www.cs.washington.edu/education/courses/cse510/10sp/'>CSE 510</a>): Spring 2010, instructor <a href='http://www.cs.washington.edu/homes/jfogarty/'>James Fogarty</a><br /><em>Project: Community detection in Social Networks. Presentation [<a href='papers/community_pres.pptx'>PPTX</a>, <a href='papers/community_pres.pdf'>PDF</a>], Paper [<a href='papers/community.pdf'>PDF</a>]</em></p>
+<p>Human Computer Interaction (<a href="http://www.cs.washington.edu/education/courses/cse510/10sp/">CSE 510</a>): Spring 2010, instructor <a href="http://www.cs.washington.edu/homes/jfogarty/">James Fogarty</a><br /><em>Project: Community detection in Social Networks. Presentation [<a href="papers/community_pres.pptx">PPTX</a>, <a href="papers/community_pres.pdf">PDF</a>], Paper [<a href="papers/community.pdf">PDF</a>]</em></p>
 
-<p>Operating Systems and the Web (<a href='http://www.cs.washington.edu/education/courses/599w/10wi/'>CSE 599W</a>): Winter 2010, instructor <a href='http://www.cs.washington.edu/homes/gribble/'>Steve Gribble</a></p>
+<p>Operating Systems and the Web (<a href="http://www.cs.washington.edu/education/courses/599w/10wi/">CSE 599W</a>): Winter 2010, instructor <a href="http://www.cs.washington.edu/homes/gribble/">Steve Gribble</a></p>
 
-<p>Design and Analysis of Algorithms (<a href='http://www.cs.washington.edu/education/courses/521/10wi/'>CSE 521</a>): Winter 2010, instructor <a href='http://www.cs.washington.edu/homes/beame/'>Paul Beame</a></p>
+<p>Design and Analysis of Algorithms (<a href="http://www.cs.washington.edu/education/courses/521/10wi/">CSE 521</a>): Winter 2010, instructor <a href="http://www.cs.washington.edu/homes/beame/">Paul Beame</a></p>
 
-<p>Computer Systems Research (<a href='http://www.cs.washington.edu/education/courses/cse551/09au/'>CSE 551</a>): Autumn 2009, instructor <a href='http://www.cs.washington.edu/homes/tom/'>Tom Anderson</a>.<br /><em>Project: Distribued Queue. Presentation [<a href='papers/blizzard_pres.pdf'>PDF</a>], Paper [<a href='papers/blizzard.pdf'>PDF</a>]</em></p>
+<p>Computer Systems Research (<a href="http://www.cs.washington.edu/education/courses/cse551/09au/">CSE 551</a>): Autumn 2009, instructor <a href="http://www.cs.washington.edu/homes/tom/">Tom Anderson</a>.<br /><em>Project: Distribued Queue. Presentation [<a href="papers/blizzard_pres.pdf">PDF</a>], Paper [<a href="papers/blizzard.pdf">PDF</a>]</em></p>
 
-<h2 id='selected_undergraduate_coursework'>Selected Undergraduate Coursework</h2>
+<h2 id="selected_undergraduate_coursework">Selected Undergraduate Coursework</h2>
 
-<p>Design &#38; Implementation of Large Scale Clusters (<a href='http://www.cs.washington.edu/education/courses/cse490h/09wi/'>CSE 490H</a>):<br />Autumn 2009, instructor <a href='http://lazowska.cs.washington.edu/'>Ed Lazowska</a>.<br /><em>Project: Distributed Hash Table. <a href='http://alevy.github.com/donut/'>Website</a> (contains paper and presentation links)</em></p>
+<p>Design &amp; Implementation of Large Scale Clusters (<a href="http://www.cs.washington.edu/education/courses/cse490h/09wi/">CSE 490H</a>):<br />Autumn 2009, instructor <a href="http://lazowska.cs.washington.edu/">Ed Lazowska</a>.<br /><em>Project: Distributed Hash Table. <a href="http://alevy.github.com/donut/">Website</a> (contains paper and presentation links)</em></p>
+
   </div>
 
   <div id="teaching">
-    <h2 id='teaching'>Teaching</h2>
+    
+<h2 id="teaching">Teaching</h2>
 
 <p>I have been a teaching assistant for three courses over seven quarters</p>
 
 <ul>
-<li>
-<p><a href='http://www.cs.washington.edu/education/courses/143/'>CSE 143</a> (Intro II) - Spring, Summer, Fall 07, Winter 08</p>
-</li>
+<li><a href="http://www.cs.washington.edu/education/courses/143/">CSE 143</a> (Intro II) - Spring, Summer, Fall 07, Winter 08</li>
 
-<li>
-<p><a href='http://www.cs.washington.edu/education/courses/190m/08sp/'>CSE 190M</a> (Web Programming) - Spring 08</p>
-</li>
+<li><a href="http://www.cs.washington.edu/education/courses/190m/08sp/">CSE 190M</a> (Web Programming) - Spring 08</li>
 
-<li>
-<p><a href='http://www.cs.washington.edu/education/courses/341/'>CSE 341</a> (Programming Languages) - Fall 08, Winter 09</p>
-</li>
+<li><a href="http://www.cs.washington.edu/education/courses/341/">CSE 341</a> (Programming Languages) - Fall 08, Winter 09</li>
 </ul>
+
   </div>
   
   <div id="hacking">
-    <h2 id='projects'>Projects</h2>
+    
+<h2 id="projects">Projects</h2>
 
-<h3 id='postgresqlorm'>Postgresql-ORM</h3>
+<h3 id="postgresqlorm">Postgresql-ORM</h3>
 
-<p><em>Source: <a href='http://gitstar.com/dm/postgresql-orm'>GitStar</a></em> <em>Package: <a href='http://hackage.haskell.org/package/postgresql-orm'>Hackage</a></em></p>
+<p><em>Source: <a href="http://gitstar.com/dm/postgresql-orm">GitStar</a></em> <em>Package: <a href="http://hackage.haskell.org/package/postgresql-orm">Hackage</a></em></p>
 <hr />
-<h3 id='simple'>Simple</h3>
+<h3 id="simple">Simple</h3>
 
-<p><em>Source: <a href='http://gitstar.com/alevy/simple'>GitStar</a></em> <em>Package: <a href='http://hackage.haskell.org/package/simple'>Hackage</a></em></p>
+<p><em>Source: <a href="http://gitstar.com/alevy/simple">GitStar</a></em> <em>Package: <a href="http://hackage.haskell.org/package/simple">Hackage</a></em></p>
 <hr />
-<h3 id='memjs'>MemJS</h3>
+<h3 id="memjs">MemJS</h3>
 
-<p><em>Source: <a href='http://github.com/alevy/memjs'>GitHub</a></em></p>
+<p><em>Source: <a href="http://github.com/alevy/memjs">GitHub</a></em></p>
 
 <p>MemJS is a pure Node.js client library for accessing the MemCachier service and other memcache servers. It uses the binary protocol and support SASL authentication.</p>
 <hr />
-<h3 id='iterioserver'>iterio-server</h3>
+<h3 id="iterioserver">iterio-server</h3>
 
-<p><em>Source: <a href='http://github.com/alevy/iterio-server'>GitHub</a></em> <em>Package: <a href='http://hackage.haskell.org/package/iterio-server'>Hackage</a></em></p>
+<p><em>Source: <a href="http://github.com/alevy/iterio-server">GitHub</a></em> <em>Package: <a href="http://hackage.haskell.org/package/iterio-server">Hackage</a></em></p>
 
-<p>A web-server framework for Haskell based on <a href='http://www.scs.stanford.edu/~dm/'>David Mazières</a>&#8217;s iteratee libarary, <a href='http://hackage.haskell.org/package/iterIO'>IterIO</a>.</p>
+<p>A web-server framework for Haskell based on <a href="http://www.scs.stanford.edu/~dm/">David Mazières</a>’s iteratee libarary, <a href="http://hackage.haskell.org/package/iterIO">IterIO</a>.</p>
 <hr />
-<h3 id='coypond'>Coypond</h3>
+<h3 id="coypond">Coypond</h3>
 
-<p><em>Source: <a href='http://github.com/alevy/coypond'>GitHub</a></em> <em>Gem: <a href='https://rubygems.org/gems/coypond'>RubyGems</a></em></p>
+<p><em>Source: <a href="http://github.com/alevy/coypond">GitHub</a></em> <em>Gem: <a href="https://rubygems.org/gems/coypond">RubyGems</a></em></p>
 
 <p>Coypond is a semantic grep-like tool for Ruby. You can use coypond to search through ruby code for class, module, or method definitions. It indexes the class, module and method names in a Ruby code base, noting the files they were found in and the locations within those files. It can search through specific files, source code directory trees, or through locally installed gems.</p>
 
 <p>Coypond uses ripper (a built in library as of Ruby 1.9) to generate parse trees from Ruby source files. These parse trees are then use to create an inverted index of the code, annotated with semantic information like whether the definition is a class, module or method.</p>
 <hr />
-<h3 id='jsss__javascript_secret_sharing'>Jsss - JavaScript Secret Sharing</h3>
+<h3 id="jsss__javascript_secret_sharing">Jsss - JavaScript Secret Sharing</h3>
 
-<p><em>Source: <a href='http://github.com/alevy/jsss'>GitHub</a></em></p>
+<p><em>Source: <a href="http://github.com/alevy/jsss">GitHub</a></em></p>
 
-<p>A <a href='http://en.wikipedia.org/wiki/Shamir&apos;s_Secret_Sharing'>Shamir Secret Sharing</a> library in JavaScript. Shamir Secret Sharing splits data into <code>n</code> shares, such that only <code>k (&lt;=n)</code> are needed to reconstruct the original data. Possession of any fewer than <code>k</code> shares discloses nothing about the original data. The algorithm generates shares by evaluating a <code>k-1</code> polynomial, based on the data, at <code>n</code> arbitrary points. We get the data back by performing polynomial interpolation over <code>k</code> of the shares.</p>
+<p>A <a href="http://en.wikipedia.org/wiki/Shamir's_Secret_Sharing">Shamir Secret Sharing</a> library in JavaScript. Shamir Secret Sharing splits data into <code>n</code> shares, such that only <code>k (&lt;=n)</code> are needed to reconstruct the original data. Possession of any fewer than <code>k</code> shares discloses nothing about the original data. The algorithm generates shares by evaluating a <code>k-1</code> polynomial, based on the data, at <code>n</code> arbitrary points. We get the data back by performing polynomial interpolation over <code>k</code> of the shares.</p>
 
-<p>Javascript uses variable length numbers natively but breaks arbitrarily when computing large numbers. To mitigate this, the library uses <a href='http://silentmatt.com/'>Matthew Crumley</a>&#8217;s <a href='http://github.com/silentmatt/javascript-biginteger'>BigInteger</a> library and a rational number class that uses fractions under the hood to compute arbitrarily complex numbers accurately. This reduces the speed of generating and recombining shares, but it computation is not feasible and pretty low values of <code>k</code> otherwise.</p>
+<p>Javascript uses variable length numbers natively but breaks arbitrarily when computing large numbers. To mitigate this, the library uses <a href="http://silentmatt.com/">Matthew Crumley</a>’s <a href="http://github.com/silentmatt/javascript-biginteger">BigInteger</a> library and a rational number class that uses fractions under the hood to compute arbitrarily complex numbers accurately. This reduces the speed of generating and recombining shares, but it computation is not feasible and pretty low values of <code>k</code> otherwise.</p>
 <hr />
-<h3 id='votelight'>VoteLight</h3>
+<h3 id="votelight">VoteLight</h3>
 
-<p><em>Check it out! <a href='http://votelight.com'>VoteLight.com</a></em></p>
+<p><em>Check it out! <a href="http://votelight.com">VoteLight.com</a></em></p>
 
-<p>VoteLight was a project I hacked together with <a href='https://plus.google.com/111656247334398575735/about'>Aaron</a> when I visited him in LA. The company where Aaron previously worked, GridPoint, used MS Outlook &amp; Exchange for e-mail, which has built in mini-surveys that can be attached to e-mails and update <em>in-message</em> when respondents vote. GridPoint used this feature to plan after-work happy hours etc, which is awesome! His new company, <a href='http://www.skylineinnovations.com'>SkylineInnovations</a>, is getting with the cloudy goodness by using Google Apps for hosted e-mail, which is also awesome! However, Google has no similar feature, which is not awesome :(&#8230;</p>
+<p>VoteLight was a project I hacked together with <a href="https://plus.google.com/111656247334398575735/about">Aaron</a> when I visited him in LA. The company where Aaron previously worked, GridPoint, used MS Outlook &amp; Exchange for e-mail, which has built in mini-surveys that can be attached to e-mails and update <em>in-message</em> when respondents vote. GridPoint used this feature to plan after-work happy hours etc, which is awesome! His new company, <a href="http://www.skylineinnovations.com">SkylineInnovations</a>, is getting with the cloudy goodness by using Google Apps for hosted e-mail, which is also awesome! However, Google has no similar feature, which is not awesome :(</p>
 
-<p>VoteLight does just this. It&#8217;s super simple, and runs on AppEngine. It uses a Google Charts for the graphs, and just embeds a dynamic image in e-mail messages sent, which update to the latest state of the survey every time the message is viewed.</p>
+<p>VoteLight does just this. It’s super simple, and runs on AppEngine. It uses a Google Charts for the graphs, and just embeds a dynamic image in e-mail messages sent, which update to the latest state of the survey every time the message is viewed.</p>
 <hr />
-<h3 id='breadcrumbs__a_travel_blog_cms'>Breadcrumbs - a travel blog CMS</h3>
+<h3 id="breadcrumbs__a_travel_blog_cms">Breadcrumbs - a travel blog CMS</h3>
 
-<p><em>Source: <a href='http://github.com/alevy/breadcrumbs'>GitHub</a></em> <em>See it in action! <a href='http://travel.amitlevy.com' rel='me'>My Travel Blog</a></em></p>
+<p><em>Source: <a href="http://github.com/alevy/breadcrumbs">GitHub</a></em> <em>See it in action! <a href="http://travel.amitlevy.com" rel="me">My Travel Blog</a></em></p>
 
-<p>I built the first version of this when I was in Central America in Winter 2011, used it to put up a bunch of content for that trip and my visits to grad schools - it was great. Later, I rebuilt it to use Rails 3.1, lost all of my data and started using the new version for my trip to Berlin with <a href='http://www.courtlandtstanton.com'>Courty</a>.</p>
+<p>I built the first version of this when I was in Central America in Winter 2011, used it to put up a bunch of content for that trip and my visits to grad schools - it was great. Later, I rebuilt it to use Rails 3.1, lost all of my data and started using the new version for my trip to Berlin with <a href="http://www.courtlandtstanton.com">Courty</a>.</p>
 
-<p>The only real benefit over any other CMS is that checking into a location (like a city somewhere in Nicaragua) is a built in feature and pretty easy. It means that I can update my blog without writing anything, and have to checkin with my family a little less often. Checkins are strung together into trips, and posts can be tied to those trips, or even specific checkins. This means that getting an overview of where/how someone has traveled and what they did along the way is easy. Unfortunately, it is highly feature incomplete&#8230;</p>
+<p>The only real benefit over any other CMS is that checking into a location (like a city somewhere in Nicaragua) is a built in feature and pretty easy. It means that I can update my blog without writing anything, and have to checkin with my family a little less often. Checkins are strung together into trips, and posts can be tied to those trips, or even specific checkins. This means that getting an overview of where/how someone has traveled and what they did along the way is easy. Unfortunately, it is highly feature incomplete</p>
+
   </div>
   
   <div id="personal">
-    <h2 id='personal'>Personal</h2>
+    
+<h2 id="personal">Personal</h2>
 
-<p>GPG Key: <a href='gpg.public.key'>A211 AA8C B817 13AF 6352 F8B5 838F A1C7 17F6 0F73</a></p>
+<p>GPG Key: <a href="gpg.public.key">A211 AA8C B817 13AF 6352 F8B5 838F A1C7 17F6 0F73</a></p>
 
-<h3 id='some_friends_websites'>Some Friends&#8217; Websites:</h3>
-
-<ul>
-<li><a href='http://www.myspace.com/vindikait' rel='friend sweetheart'>Kaitlin Morrison</a></li>
-
-<li><a href='http://www.courtlandtstanton.com' rel='friend'>Courtlandt Stanton</a></li>
-
-<li><a href='http://www.cs.berkeley.edu/~justine/' rel='friend'>Justine Sherry</a></li>
-
-<li><a href='http://www.cs.washington.edu/homes/gilbo/' rel='friend'>Gilbert Bertstein</a></li>
-
-<li><a href='http://midthoughtblog.com/' rel='friend'>Shiri Raphaely</a></li>
-
-<li><a href='http://alexlod.com/' rel='friend'>Alex Loddengaard</a></li>
-
-<li><a href='http://luciebaker.weebly.com/' rel='friend'>Lucie Baker</a></li>
-
-<li><a href='http://www.myspace.com/myscript' rel='friend'>Goni Eshed</a></li>
-
-<li><a href='https://www.facebook.com/danieldor12' rel='friend'>Daniel Dor</a></li>
-
-<li><a href='http://www.myspace.com/ronenshmueli' rel='friend'>Ronen Shmueli</a></li>
-
-<li><a href='http://sites.google.com/site/silviolattanzi/' rel='friend'>Silvio Lattanzi</a></li>
-
-<li><a href='http://www.csg.ethz.ch/people/sachat' rel='friend'>Sascha Trifunivic</a></li>
-
-<li><a href='https://plus.google.com/111656247334398575735/about' rel='friend'>Aaron Block</a></li>
-
-<li><a href='http://davidterei.com/' rel='friend coworker'>David Terei</a></li>
-
-<li><a href='http://deian.net' rel='friend coworker'>Deian Stefan</a></li>
-
-<li><a href='http://ongardie.net' rel='friend coworker'>Diego Ongaro</a></li>
-</ul>
-
-<h3 id='and_family'>And Family&#8230;</h3>
+<h3 id="some_friends_websites">Some Friends’ Websites:</h3>
 
 <ul>
-<li><a href='http://www.wa-israel.biz/' rel='parent'>Eyal Levy</a></li>
+<li><a href="http://www.myspace.com/vindikait" rel="friend sweetheart">Kaitlin Morrison</a></li>
 
-<li><a href='http://myprofile.cos.com/zclevy' rel='parent'>Zehava Chen-Levy</a></li>
+<li><a href="http://www.courtlandtstanton.com" rel="friend">Courtlandt Stanton</a></li>
 
-<li><a href='http://www.oda-architecture.com/' rel='sibling'>Eran Chen</a></li>
+<li><a href="http://www.cs.berkeley.edu/~justine/" rel="friend">Justine Sherry</a></li>
 
-<li><a href='http://olts.co.il/' rel='sibling'>Omer Levy</a></li>
+<li><a href="http://www.cs.washington.edu/homes/gilbo/" rel="friend">Gilbert Bertstein</a></li>
 
-<li><a href='http://hackensack.nj.k12us.com/a.madden' rel='sibling'>Adi Madden</a></li>
+<li><a href="http://midthoughtblog.com/" rel="friend">Shiri Raphaely</a></li>
+
+<li><a href="http://alexlod.com/" rel="friend">Alex Loddengaard</a></li>
+
+<li><a href="http://luciebaker.weebly.com/" rel="friend">Lucie Baker</a></li>
+
+<li><a href="http://www.myspace.com/myscript" rel="friend">Goni Eshed</a></li>
+
+<li><a href="https://www.facebook.com/danieldor12" rel="friend">Daniel Dor</a></li>
+
+<li><a href="http://www.myspace.com/ronenshmueli" rel="friend">Ronen Shmueli</a></li>
+
+<li><a href="http://sites.google.com/site/silviolattanzi/" rel="friend">Silvio Lattanzi</a></li>
+
+<li><a href="http://www.csg.ethz.ch/people/sachat" rel="friend">Sascha Trifunivic</a></li>
+
+<li><a href="https://plus.google.com/111656247334398575735/about" rel="friend">Aaron Block</a></li>
+
+<li><a href="http://davidterei.com/" rel="friend coworker">David Terei</a></li>
+
+<li><a href="http://deian.net" rel="friend coworker">Deian Stefan</a></li>
+
+<li><a href="http://ongardie.net" rel="friend coworker">Diego Ongaro</a></li>
 </ul>
 
-<h3 id='a_partial_list_of_awesome_movies'>A Partial List of Awesome Movies&#8230;</h3>
+<h3 id="and_family">And Family</h3>
+
+<ul>
+<li><a href="http://www.wa-israel.biz/" rel="parent">Eyal Levy</a></li>
+
+<li><a href="http://myprofile.cos.com/zclevy" rel="parent">Zehava Chen-Levy</a></li>
+
+<li><a href="http://www.oda-architecture.com/" rel="sibling">Eran Chen</a></li>
+
+<li><a href="http://olts.co.il/" rel="sibling">Omer Levy</a></li>
+
+<li><a href="http://hackensack.nj.k12us.com/a.madden" rel="sibling">Adi Madden</a></li>
+</ul>
+
+<h3 id="a_partial_list_of_awesome_movies">A Partial List of Awesome Movies</h3>
 
 <ul>
 <li>Pulp Fiction</li>
 
 <li>Y tu mamá también</li>
 
-<li>The Diving Bell &#38; The Butterfly</li>
+<li>The Diving Bell &amp; The Butterfly</li>
 
 <li>Eternal Sunshine of the Spotless Mind</li>
 
@@ -288,7 +295,7 @@
 
 <li>I Heart Huckabees</li>
 
-<li>The Life Aquatic, The Royal Tenenbaums, Fantastic Mr. Fox, and everything else Wes Anderson&#8230;</li>
+<li>The Life Aquatic, The Royal Tenenbaums, Fantastic Mr. Fox, and everything else Wes Anderson</li>
 
 <li>The Bubble</li>
 
@@ -297,14 +304,12 @@
 
 <p>Special Category: The Room</p>
 
-<h3 id='places_ive_traveled'>Places I&#8217;ve Traveled</h3>
+<h3 id="places_ive_traveled">Places I’ve Traveled</h3>
 
-<p>I try to travel as much as possible - usually alone, but sometimes with friends. I don&#8217;t normally take pictures or keep a journal or anything, so this is mostly for me to remember where I&#8217;ve been. Alphabetically by region, then country, I&#8217;ve been to:</p>
+<p>I try to travel as much as possible - usually alone, but sometimes with friends. I don’t normally take pictures or keep a journal or anything, so this is mostly for me to remember where I’ve been. Alphabetically by region, then country, I’ve been to:</p>
 
 <ul>
-<li>
-<p>Americas:</p>
-
+<li>Americas:
 <ul>
 <li>Canada: Vancouver, Victoria, Montreal, Jasper, Lake Louise</li>
 
@@ -322,9 +327,7 @@
 </ul>
 </li>
 
-<li>
-<p>Europe:</p>
-
+<li>Europe:
 <ul>
 <li>Belgium: Bruges</li>
 
@@ -350,9 +353,7 @@
 </ul>
 </li>
 
-<li>
-<p>Middle East:</p>
-
+<li>Middle East:
 <ul>
 <li>Jordan: Petra</li>
 
@@ -360,15 +361,17 @@
 </ul>
 </li>
 </ul>
+
   </div>
   
   <div id="resume">
-    <p>My resume is available in PDF format <a href='resume.pdf'>here</a>. If you need a more up to date version please e-mail me.</p>
+    
+<p>My resume is available in PDF format <a href='resume.pdf'>here</a>. If you need a more up to date version please e-mail me.</p>
 <iframe height='780' src='https://docs.google.com/viewer?url=http%3A%2F%2Fwww.amitlevy.com%2Fresume.pdf&amp;embedded=true' style='border: none;' width='900'>Your browser does not support iFrames</iframe>
   </div>
 </div>
 <div id="footer">
-  <p id="updated">Updated: 09-13-2013 12:52PM</p>
+  <p id="updated">Updated: 12-13-2013 11:34PM</p>
   <p id="copyleft">
     <a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/3.0/80x15.png" /></a> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.
   </p>
