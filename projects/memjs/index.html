@@ -364,7 +364,7 @@ if the key is already present. The callback signature is:</p>
 present. The <em>expires</em> argument (passed
 in last, after the callback) overrides the default expiration (see
 <code>Client.create</code>). The callback signature is:</p>
-<pre><code>callback(err, success)</code></pre>
+<pre><code>callback(err, success, value)</code></pre>
 
             </div>
             
@@ -381,15 +381,18 @@ in last, after the callback) overrides the default expiration (see
     }
     <span class="keyword">switch</span> (response.header.status) {
     <span class="keyword">case</span> <span class="number">0</span>:
-      callback &amp;&amp; callback(<span class="literal">null</span>, <span class="literal">true</span>)
-      <span class="keyword">break</span>;
-    <span class="keyword">default</span>:
-      <span class="keyword">var</span> errorMessage = <span class="string">'MemJS INCREMENT: '</span> + errors[response.header.status];
-      logger.log(errorMessage);
-      callback &amp;&amp; callback(<span class="keyword">new</span> Error(errorMessage), <span class="literal">null</span>);
+      <span class="keyword">var</span> bufInt = (response.val.readUInt32BE(<span class="number">0</span>) &lt;<span class="xml"><span class="tag">&lt; <span class="attribute">8</span>) + <span class="attribute">response.val.readUInt32BE</span>(<span class="attribute">4</span>);
+      <span class="attribute">callback</span> &amp;&amp; <span class="attribute">callback</span>(<span class="attribute">null</span>, <span class="attribute">true</span>, <span class="attribute">bufInt</span>)
+      <span class="attribute">break</span>;
+    <span class="attribute">default:</span>
+      <span class="attribute">var</span> <span class="attribute">errorMessage</span> = '<span class="attribute">MemJS</span> <span class="attribute">INCREMENT:</span> ' + <span class="attribute">errors</span>[<span class="attribute">response.header.status</span>];
+      <span class="attribute">logger.log</span>(<span class="attribute">errorMessage</span>);
+      <span class="attribute">callback</span> &amp;&amp; <span class="attribute">callback</span>(<span class="attribute">new</span> <span class="attribute">Error</span>(<span class="attribute">errorMessage</span>), <span class="attribute">null</span>);
     }
   });
-}</pre></div></div>
+}
+
+</span></pre></div></div>
             
         </li>
         
@@ -548,6 +551,7 @@ callback</p>
             
             <div class="content"><div class='highlight'><pre>Client.prototype.perform = <span class="keyword">function</span>(key, request, callback, retries) {
   <span class="keyword">var</span> _<span class="keyword">this</span> = <span class="keyword">this</span>;
+  <span class="keyword">var</span> seq = <span class="keyword">this</span>.seq;
   <span class="keyword">var</span> serv = <span class="keyword">this</span>.server(key);
   <span class="keyword">if</span> (!serv) {
     callback &amp;&amp; callback(<span class="keyword">new</span> Error(<span class="string">"No servers available"</span>), <span class="literal">null</span>);
@@ -566,8 +570,8 @@ callback</p>
 
   <span class="keyword">var</span> errorHandler = <span class="keyword">function</span>(error) {
     <span class="keyword">if</span> (--retries &gt; <span class="number">0</span>) {
-      serv.onResponse(<span class="keyword">this</span>.seq, responseHandler);
-      serv.onError(<span class="keyword">this</span>.seq, errorHandler);
+      serv.onResponse(seq, responseHandler);
+      serv.onError(seq, errorHandler);
       serv.write(request);
     } <span class="keyword">else</span> {
       logger.log(<span class="string">"MemJS: Server &lt;"</span> + serv.host + <span class="string">":"</span> + serv.port +
@@ -582,8 +586,8 @@ callback</p>
     }
   };
 
-  serv.onResponse(<span class="keyword">this</span>.seq, responseHandler);
-  serv.onError(<span class="keyword">this</span>.seq, errorHandler);
+  serv.onResponse(seq, responseHandler);
+  serv.onError(seq, errorHandler);
   serv.write(request);
 }</pre></div></div>
             
