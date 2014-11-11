@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="amit levy (@aalevy)" />
+  <title>Simple</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; }
+code > span.dt { color: #902000; }
+code > span.dv { color: #40a070; }
+code > span.bn { color: #40a070; }
+code > span.fl { color: #40a070; }
+code > span.ch { color: #4070a0; }
+code > span.st { color: #4070a0; }
+code > span.co { color: #60a0b0; font-style: italic; }
+code > span.ot { color: #007020; }
+code > span.al { color: #ff0000; font-weight: bold; }
+code > span.fu { color: #06287e; }
+code > span.er { color: #ff0000; font-weight: bold; }
+  </style>
+  <link rel="stylesheet" type="text/css" media="screen, projection, print"
+    href="http://www.w3.org/Talks/Tools/Slidy2/styles/slidy.css" />
+  <link rel="stylesheet" type="text/css" media="screen, projection, print"
+   href="style.css" />
+  <script src="http://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
+    charset="utf-8" type="text/javascript"></script>
+</head>
+<body>
+<div class="slide titlepage">
+  <h1 class="title">Simple</h1>
+  <h1 class="subtitle">a functional web framework in haskell</h1>
+  <p class="author">
+amit levy (<span class="citation">@aalevy</span>)
+  </p>
+  <p class="date">April 11, 2014 @ Heroku</p>
+</div>
+<div id="whoami" class="slide section level1">
+<h1><code>$ whoami</code></h1>
+<p><img src="scs.png" alt="Grad student at Stanford" /> <img src="memcachier.png" alt="Work on MemCachier" /></p>
+<ul>
+<li>Graduate student in the Secure Computer Systems lab at Stanford</li>
+<li>Work on MemCachier</li>
+</ul>
+</div>
+<div id="a-typical-rails-learning-curve" class="slide section level1">
+<h1>A Typical Rails Learning Curve</h1>
+<div class="figure">
+<img src="learning-curve.svg" title="not to scale" />
+</div>
+</div>
+<div id="what-we-really-want..." class="slide section level1">
+<h1>What we really want...</h1>
+<div class="figure">
+<img src="what-we-want.svg" title="not to scale" />
+</div>
+</div>
+<div id="what-we-really-want...-1" class="slide section level1">
+<h1>What we really want...</h1>
+<ul>
+<li>Intuitive API
+<ul>
+<li>easy to get started</li>
+<li>readable application code</li>
+</ul></li>
+<li>Easy to understand internals
+<ul>
+<li>hackable</li>
+<li>coherence between what I write and what gets executed</li>
+</ul></li>
+<li>Expose functionality to users
+<ul>
+<li>let app developer leverage core functionality</li>
+</ul></li>
+</ul>
+</div>
+<div id="simple---a-framework-less-web-framework" class="slide section level1">
+<h1><em>Simple</em> - a &quot;framework-less&quot; web framework</h1>
+<ul>
+<li>No prescribed app structure enforced
+<ul>
+<li>but sane default conventions</li>
+</ul></li>
+<li>Small core
+<ul>
+<li>&lt;400 lines of code</li>
+<li>can understand most of it in one source file</li>
+</ul></li>
+<li>Non-core broken up into composable components
+<ul>
+<li>no special access to core primitives</li>
+<li>anyone can build alternative/additional components</li>
+</ul></li>
+<li>Fully-loaded:
+<ul>
+<li>Request routing</li>
+<li>View templates</li>
+<li>Cookie-based sessions</li>
+<li>ORM for PostgreSQL</li>
+</ul></li>
+</ul>
+</div>
+<div id="agenda" class="slide section level1">
+<h1>Agenda</h1>
+<ul>
+<li>Why write web applications in Haskell?</li>
+<li>A brief introduction to Haskell</li>
+<li>A look under the hood of Simple</li>
+<li>Walkthrough building a Simple app</li>
+</ul>
+</div>
+<div id="why-write-web-apps-in-haskell" class="slide section level1">
+<h1>Why write web apps in Haskell?</h1>
+<ul>
+<li>Expressiveness
+<ul>
+<li>Small language core provides a lot of flexibility</li>
+<li>Code can be very concise</li>
+</ul></li>
+<li>Correctness / safety / security / productivity
+<ul>
+<li>Types let you reason about <strong>what</strong> code is doing<br /> even complicated code.</li>
+<li>Eliminates a whole class of bugs (anecdotally, &gt;90% of exceptions thrown in YouTube are type errors).</li>
+</ul></li>
+<li>Perfomance</li>
+</ul>
+</div>
+<div id="throughput-reqsec-compared-to-ruby-node.js" class="slide section level1">
+<h1>Throughput (req/sec) compared to Ruby, node.js</h1>
+<div class="figure">
+<img src="performance.svg" />
+</div>
+<p><em>This was done informally on my laptop, but more robust benchmarks have similar results</em></p>
+</div>
+<div id="a-brief-introduction-to-haskell" class="slide section level1">
+<h1>A Brief Introduction to Haskell</h1>
+<ul>
+<li>Purely-functional
+<ul>
+<li>Expressions vs. Statements</li>
+<li>First-class functions</li>
+<li>Partial application</li>
+</ul></li>
+<li>Strict type-system
+<ul>
+<li>Types known at compile time</li>
+<li>Side effects are explicit</li>
+</ul></li>
+<li>Advanced tools
+<ul>
+<li>Concurrency + M/N parallelism built in</li>
+<li>Testing frameworks</li>
+<li><code>cabal</code> package manager</li>
+<li>...</li>
+</ul></li>
+</ul>
+</div>
+<div id="hello-world" class="slide section level1">
+<h1>Hello World</h1>
+<pre class="sourceCode haskell"><code class="sourceCode haskell">main <span class="fu">=</span> putStrLn <span class="st">&quot;hello world&quot;</span></code></pre>
+</div>
+<div id="hello-world-1" class="slide section level1">
+<h1>Hello World</h1>
+<pre class="sourceCode haskell"><code class="sourceCode haskell">main <span class="fu">=</span> putStrLn <span class="st">&quot;hello world&quot;</span></code></pre>
+<p>Let's get a bit fancier:</p>
+<pre class="sourceCode haskell"><code class="sourceCode haskell">main <span class="fu">=</span> <span class="kw">do</span>
+  putStr <span class="st">&quot;What&#39;s your name? &quot;</span>
+  name <span class="ot">&lt;-</span> getLine
+  putStrLn <span class="fu">$</span> <span class="st">&quot;Hello &quot;</span> <span class="fu">++</span> name <span class="fu">++</span> <span class="st">&quot;!&quot;</span></code></pre>
+<ul class="incremental">
+<li>Each statement in the <code>do</code> block returns a value (consumed with <code>&lt;-</code>) and can perform a side effect (e.g. print to the screen).</li>
+</ul>
+<ul class="incremental">
+<li>The <code>do</code> block let's us write statements that have side effects.</li>
+</ul>
+<ul class="incremental">
+<li><code>main</code> is the root of all side effects in a program</li>
+</ul>
+<ul class="incremental">
+<li>The do block lets us program what side effects can happen
+<ul class="incremental">
+<li>hide state</li>
+<li>restrict actions by a security policy</li>
+<li>provide transactional memory</li>
+</ul></li>
+</ul>
+</div>
+<div id="a-brief-introduction-to-haskell---primitive-types" class="slide section level1">
+<h1>A Brief Introduction to Haskell - Primitive Types</h1>
+<ul>
+<li><p><code>Bool</code>, <code>Char</code>, <code>Int</code>, <code>Double</code>...</p>
+<pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">let</span> amMutable <span class="fu">=</span> <span class="dt">False</span></code></pre></li>
+<li><p><em>type1</em> <code>-&gt;</code> <em>type2</em> - a function from <em>type1</em> to <em>type2</em>. For example:</p>
+<pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">add ::</span> <span class="dt">Int</span> <span class="ot">-&gt;</span> <span class="dt">Int</span> <span class="ot">-&gt;</span> <span class="dt">Int</span>
+map<span class="ot"> ::</span> (a <span class="ot">-&gt;</span> b) <span class="ot">-&gt;</span> [a] <span class="ot">-&gt;</span> [b]</code></pre></li>
+<li><code>(</code><em>type1</em><code>,</code> <em>type2</em><code>,</code> ...<code>,</code> <em>typeN</em><code>)</code> - a tuple</li>
+<li><code>()</code> - a zero-tuple, pronounced <em>unit</em>
+<ul>
+<li>kind of like <code>void</code> in C</li>
+<li>there is only one value of this type, also written <code>()</code></li>
+</ul></li>
+</ul>
+</div>
+<div id="a-brief-introduction-to-haskell---user-defined-types" class="slide section level1">
+<h1>A Brief Introduction to Haskell - User-defined types</h1>
+<ul>
+<li><code>data</code> or <code>newtype</code></li>
+</ul>
+<pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">data</span> <span class="dt">HTMLString</span> <span class="fu">=</span> <span class="dt">UnescapedHTML</span> <span class="dt">String</span> <span class="fu">|</span> <span class="dt">EscapedHTML</span> <span class="dt">String</span>
+
+<span class="kw">data</span> <span class="dt">Maybe</span> a <span class="fu">=</span> <span class="dt">Just</span> a <span class="fu">|</span> <span class="dt">Nothing</span>
+
+<span class="kw">data</span> <span class="dt">Either</span> a b <span class="fu">=</span> <span class="dt">Left</span> a <span class="fu">|</span> <span class="dt">Right</span> b
+
+<span class="kw">data</span> <span class="dt">BlogPost</span> <span class="fu">=</span> <span class="dt">BlogPost</span> {<span class="ot"> postTitle ::</span> <span class="dt">String</span>,<span class="ot"> postBody ::</span> <span class="dt">String</span> }
+
+<span class="kw">newtype</span> <span class="dt">Password</span> <span class="fu">=</span> <span class="dt">Password</span> {<span class="ot"> passwordDigest ::</span> <span class="dt">String</span> }</code></pre>
+<ul>
+<li><code>type</code> aliases</li>
+</ul>
+<pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">type</span> <span class="dt">Point</span> <span class="fu">=</span> (<span class="dt">Double</span>, <span class="dt">Double</span>)</code></pre>
+</div>
+<div id="controller-code-for-a-blog" class="slide section level1">
+<h1>Controller code for a Blog</h1>
+<pre class="sourceCode haskell"><code class="sourceCode haskell">main <span class="fu">=</span> run <span class="dv">3000</span> <span class="fu">$</span> <span class="kw">do</span>
+  settings <span class="ot">&lt;-</span> newAppSettings
+  controllerApp settings <span class="fu">$</span> <span class="kw">do</span>
+    get <span class="st">&quot;/&quot;</span> <span class="fu">$</span> render <span class="st">&quot;welcome.html&quot;</span> ()
+
+    routeName <span class="st">&quot;/posts&quot;</span> <span class="fu">$</span> <span class="kw">do</span>
+      get <span class="st">&quot;/&quot;</span> <span class="fu">$</span> <span class="kw">do</span>
+        posts <span class="ot">&lt;-</span> findAllPosts
+        render <span class="st">&quot;posts/index.html&quot;</span> posts
+
+      get <span class="st">&quot;/:post_id&quot;</span> <span class="fu">$</span> <span class="kw">do</span>
+        postId <span class="ot">&lt;-</span> readQueryParam&#39; <span class="st">&quot;post_id&quot;</span>
+        routePost postId <span class="fu">$</span> \post <span class="ot">-&gt;</span>
+            render <span class="st">&quot;posts/show.html&quot;</span> post
+
+      get <span class="st">&quot;/:tag&quot;</span> <span class="fu">$</span> <span class="kw">do</span>
+        tag <span class="ot">&lt;-</span> queryParam&#39; <span class="st">&quot;tag&quot;</span>
+        posts <span class="ot">&lt;-</span> findPostsByTag tag
+        render <span class="st">&quot;posts/index.html&quot;</span> posts
+
+<span class="ot">routePost ::</span> <span class="dt">DBRef</span> <span class="dt">Post</span> <span class="ot">-&gt;</span> (<span class="dt">Post</span> <span class="ot">-&gt;</span> <span class="dt">Controller</span> <span class="dt">BlogSettings</span> ())
+         <span class="ot">-&gt;</span> <span class="dt">Controller</span> <span class="dt">BlogSettings</span> ()
+routePost postId act <span class="fu">=</span> withConnection <span class="fu">$</span> \conn <span class="ot">-&gt;</span> <span class="kw">do</span>
+  mpost <span class="ot">&lt;-</span> liftIO <span class="fu">$</span> findRow conn postId
+  maybe (return ()) act mpost</code></pre>
+</div>
+<div id="a-web-framework-in-four-lines" class="slide section level1">
+<h1>A Web Framework in Four Lines</h1>
+<pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">type</span> <span class="dt">ControllerState</span> s <span class="fu">=</span> (<span class="dt">Request</span>, s)
+
+<span class="kw">newtype</span> <span class="dt">Controller</span> s a <span class="fu">=</span> <span class="dt">Controller</span> {
+<span class="ot">  runController ::</span> <span class="dt">ControllerState</span> s
+                <span class="ot">-&gt;</span> <span class="dt">IO</span> (<span class="dt">Either</span> <span class="dt">Response</span> a, <span class="dt">ControllerState</span> s)
+}</code></pre>
+<ul class="incremental">
+<li>A function that takes a <code>Request</code> and an app specific state</li>
+<li>Might generated a response, otherwise returns a value</li>
+<li>The <code>Request</code> or app state might be modified</li>
+<li><code>IO</code> in the return type means we can perform <code>IO</code> side-effects</li>
+</ul>
+</div>
+<div id="some-building-blocks-to-make-life-easier" class="slide section level1">
+<h1>Some building blocks to make life easier</h1>
+<p>Given a <code>Response</code>, construct a <code>Controller</code> action that responds with it:</p>
+<pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">respond ::</span> <span class="dt">Response</span> <span class="ot">-&gt;</span> <span class="dt">Controller</span> s ()
+respond resp <span class="fu">=</span> <span class="dt">Controller</span> <span class="fu">$</span> \s <span class="ot">-&gt;</span> return (<span class="dt">Left</span> resp, s)</code></pre>
+<p>Given a value (of arbitrary type <code>a</code>), return it rather than responding:</p>
+<pre class="sourceCode haskell"><code class="sourceCode haskell">return<span class="ot"> ::</span> a <span class="ot">-&gt;</span> <span class="dt">Controller</span> s a
+return val <span class="fu">=</span> <span class="dt">Controller</span> <span class="fu">$</span> \s <span class="ot">-&gt;</span> return (<span class="dt">Right</span> val, s)</code></pre>
+<p>Get the <code>Request</code> value:</p>
+<pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">request ::</span> <span class="dt">Controller</span> s <span class="dt">Request</span>
+request <span class="fu">=</span> <span class="dt">Controller</span> <span class="fu">$</span> \s <span class="ot">-&gt;</span> return (<span class="dt">Right</span> <span class="fu">$</span> fst s, s)</code></pre>
+<p>These are provided by <em>Simple</em> but don't do anything special. Just used everywhere.</p>
+</div>
+<div id="lets-write-a-routing-combinator" class="slide section level1">
+<h1>Let's write a routing combinator</h1>
+<p>Remember <code>routeName</code> from the example?</p>
+<pre><code>...
+routeName &quot;posts&quot; $ do
+  ...
+...</code></pre>
+<p>If the first thing in the <code>Request</code> path <code>==</code> the name, match this route, otherwise try the next action:</p>
+<pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">routeName ::</span> <span class="dt">Text</span> <span class="ot">-&gt;</span> <span class="dt">Controller</span> s () <span class="ot">-&gt;</span> <span class="dt">Controller</span> s ()
+routeName name (<span class="dt">Controller</span> next) <span class="fu">=</span> <span class="kw">do</span>
+  req <span class="ot">&lt;-</span> request
+  <span class="kw">if</span> (length <span class="fu">$</span> pathInfo req) <span class="fu">&gt;</span> <span class="dv">0</span> <span class="fu">&amp;&amp;</span> name <span class="fu">==</span> (head <span class="fu">$</span> pathInfo req)
+    <span class="kw">then</span> <span class="dt">Controller</span> <span class="fu">$</span> \(req, s) <span class="ot">-&gt;</span> next (popHdr req, s)
+    <span class="kw">else</span> return ()
+  <span class="kw">where</span> popHdr req <span class="fu">=</span> req { pathInfo <span class="fu">=</span> (tail <span class="fu">.</span> pathInfo <span class="fu">$</span> req) }</code></pre>
+<ul class="incremental">
+<li>Easy to see how to you would write <code>routeHost</code>, <code>routeMethod</code>, <code>routeAccept</code>...</li>
+</ul>
+<ul class="incremental">
+<li>All these are provided but you can write your own (e.g. <code>routePost</code>).</li>
+</ul>
+</div>
+<div id="ok-enough-chatter" class="slide section level1">
+<h1>OK, enough chatter</h1>
+<p>Let's write a blog...</p>
+</div>
+<div id="thanks" class="slide section level1">
+<h1>Thanks!</h1>
+<pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">cabal</span> install simple
+$ <span class="kw">smpl</span> create test_app
+$ <span class="kw">cd</span> test_app
+$ <span class="kw">cabal</span> install --only-dependencies
+$ <span class="kw">cabal</span> run</code></pre>
+<ul>
+<li><a href="http://simple.cx">http://simple.cx</a></li>
+<li><a href="https://github.com/alevy/simple">https://github.com/alevy/simple</a></li>
+<li><a href="http://hackage.haskell.org/package/simple">http://hackage.haskell.org/package/simple</a></li>
+</ul>
+</div>
+</body>
+</html>
