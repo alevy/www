@@ -6,11 +6,10 @@ GPG Key: [A211 AA8C B817 13AF 6352  F8B5 838F A1C7 17F6 0F73](gpg.public.key)
 - [Kaitlin Morrison][]{:rel="friend sweetheart"}
 - [Courtlandt Stanton][]{:rel=friend}
 - [Justine Sherry][]{:rel=friend}
-- [Gilbert Bertstein][]{:rel=friend}
+- [Gilbert Bernstein][]{:rel=friend}
 - [Shiri Raphaely][]{:rel=friend}
 - [Alex Loddengaard][]{:rel=friend}
 - [Lucie Baker][]{:rel=friend}
-- [Goni Eshed][]{:rel=friend}
 - [Daniel Dor][]{:rel=friend}
 - [Ronen Shmueli][]{:rel=friend}
 - [Silvio Lattanzi][]{:rel=friend}
@@ -19,13 +18,6 @@ GPG Key: [A211 AA8C B817 13AF 6352  F8B5 838F A1C7 17F6 0F73](gpg.public.key)
 - [David Terei][]{:rel="friend coworker"}
 - [Deian Stefan][]{:rel="friend coworker"}
 - [Diego Ongaro][]{:rel="friend coworker"}
-
-### And Family...
-- [Eyal Levy][]{:rel=parent}
-- [Zehava Chen-Levy][]{:rel=parent}
-- [Eran Chen][]{:rel=sibling}
-- [Omer Levy][]{:rel=sibling}
-- [Adi Madden][]{:rel=sibling}
 
 ### A Partial List of Awesome Movies...
 - Pulp Fiction
