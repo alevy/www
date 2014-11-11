@@ -33,7 +33,6 @@
 [Gilbert Bernstein]:  http://www.gilbertbernstein.com/
 [Alex Loddengaard]:   http://alexlod.com/
 [Lucie Baker]:        http://luciebaker.weebly.com/
-[Shiri Raphaely]:     http://midthoughtblog.com/
 [Daniel Dor]:         https://www.facebook.com/danieldor12
 [Ronen Shmueli]:      http://www.myspace.com/ronenshmueli
 [Kaitlin Morrison]:   http://vindika.it
