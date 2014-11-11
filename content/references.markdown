@@ -8,7 +8,7 @@
 
 [CS 240H]:  http://www.scs.stanford.edu/11au-cs240h/
 
-[Roxana Geambasu]:      http://www.cs.washington.edu/homes/roxana/
+[Roxana Geambasu]:      http://www.cs.columbia.edu/~roxana/
 [Tadayoshi Kohno]:      http://www.cs.washington.edu/homes/yoshi/
 [Arvind Krishnamurthy]: http://www.cs.washington.edu/homes/arvind
 [Hank Levy]:            http://www.cs.washington.edu/homes/levy/
@@ -31,23 +31,16 @@
 
 [Courtlandt Stanton]: http://www.courtlandtstanton.com
 [Justine Sherry]:     http://www.cs.berkeley.edu/~justine/
-[Gilbert Bertstein]:  http://www.cs.washington.edu/homes/gilbo/
+[Gilbert Bernstein]:  http://www.gilbertbernstein.com/
 [Alex Loddengaard]:   http://alexlod.com/
 [Lucie Baker]:        http://luciebaker.weebly.com/
 [Shiri Raphaely]:     http://midthoughtblog.com/
-[Goni Eshed]:         http://www.myspace.com/myscript
 [Daniel Dor]:         https://www.facebook.com/danieldor12
 [Ronen Shmueli]:      http://www.myspace.com/ronenshmueli
 [Kaitlin Morrison]:   http://vindika.it
 [Silvio Lattanzi]:    http://sites.google.com/site/silviolattanzi/
 [Sascha Trifunivic]:  http://www.csg.ethz.ch/people/sachat
 [Aaron Block]:        https://plus.google.com/111656247334398575735/about
-
-[Eyal Levy]:          http://www.wa-israel.biz/
-[Zehava Chen-Levy]:   http://myprofile.cos.com/zclevy
-[Eran Chen]:          http://www.oda-architecture.com/
-[Omer Levy]:          http://olts.co.il/
-[Adi Madden]:         http://hackensack.nj.k12us.com/a.madden
 
 [Secure Computer Systems]:  http://www.scs.stanford.edu
 [Grameen Foundation]:       http://www.grameenfoundation.org/
