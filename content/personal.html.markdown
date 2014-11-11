@@ -4,7 +4,6 @@ GPG Key: [A211 AA8C B817 13AF 6352  F8B5 838F A1C7 17F6 0F73](gpg.public.key)
 
 ### Some Friends' Websites:
 - [Kaitlin Morrison][]{:rel="friend sweetheart"}
-- [Courtlandt Stanton][]{:rel=friend}
 - [Justine Sherry][]{:rel=friend}
 - [Gilbert Bernstein][]{:rel=friend}
 - [Shiri Raphaely][]{:rel=friend}

@@ -59,8 +59,7 @@ VoteLight does just this. It's super simple, and runs on AppEngine. It uses a Go
 ### Breadcrumbs - a travel blog CMS
 
 _Source: [GitHub](http://github.com/alevy/breadcrumbs)_
-_See it in action! [My Travel Blog](http://travel.amitlevy.com){:rel=me}_
 
-I built the first version of this when I was in Central America in Winter 2011, used it to put up a bunch of content for that trip and my visits to grad schools - it was great. Later, I rebuilt it to use Rails 3.1, lost all of my data and started using the new version for my trip to Berlin with [Courty][Courtlandt Stanton].
+I built the first version of this when I was in Central America in Winter 2011, used it to put up a bunch of content for that trip and my visits to grad schools - it was great. Later, I rebuilt it to use Rails 3.1, lost all of my data and started using the new version for my trip to Berlin with Courty.
 
 The only real benefit over any other CMS is that checking into a location (like a city somewhere in Nicaragua) is a built in feature and pretty easy. It means that I can update my blog without writing anything, and have to checkin with my family a little less often. Checkins are strung together into trips, and posts can be tied to those trips, or even specific checkins. This means that getting an overview of where/how someone has traveled and what they did along the way is easy. Unfortunately, it is highly feature incomplete...

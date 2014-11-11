@@ -29,7 +29,6 @@
 [Pablo Buiras]:         http://www.chalmers.se/cse/EN/people/pablo-buiras
 [Edward Yang]:          http://ezyang.com
 
-[Courtlandt Stanton]: http://www.courtlandtstanton.com
 [Justine Sherry]:     http://www.cs.berkeley.edu/~justine/
 [Gilbert Bernstein]:  http://www.gilbertbernstein.com/
 [Alex Loddengaard]:   http://alexlod.com/
