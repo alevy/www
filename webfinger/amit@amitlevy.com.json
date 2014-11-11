@@ -1,0 +1,8 @@
+{
+  "subject":"acct:amit@amitlevy.com",
+  "aliases":["http://amitlevy.com/"],
+  "links": [
+    {"rel": "http://specs.openid.net/auth/2.0/provider", "href":"http://amitlevy.com/"},
+    {"rel": "http://webfinger.net/rel/avatar", "href":"https://secure.gravatar.com/avatar/7a7a3fceeb3ae308639bb17c8b7fbc6f"}
+  ]
+}
