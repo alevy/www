@@ -44,6 +44,8 @@ I try to travel as much as possible - usually alone, but sometimes with friends.
   - Honduras: San Pedro Sula, Utila
   - Nicaragua: Leon, San Juan Del Sur
   - Costa Rica: San Jose, Alajuale, Monteverde, Tamarindo, Samara
+- Asia:
+  - Thailand: Chiang Mai, Ko Tao
 - Europe:
   - Belgium: Bruges
   - Denmark: Copenhagen
