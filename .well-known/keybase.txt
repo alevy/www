@@ -1,0 +1,65 @@
+==================================================================
+https://keybase.io/amit
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://amitlevy.com
+  * I am amit (https://keybase.io/amit) on keybase.
+  * I have a public key with fingerprint 720B 97A3 E367 ACC3 45FC  A0FB 68CA AE74 BF7C 250A
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "720b97a3e367acc345fca0fb68caae74bf7c250a",
+            "host": "keybase.io",
+            "key_id": "68caae74bf7c250a",
+            "uid": "a5500e55f89f3acb5ae64b209ea23a00",
+            "username": "amit"
+        },
+        "service": {
+            "hostname": "amitlevy.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1397192186,
+    "expire_in": 157680000,
+    "prev": "e6c9268d0652c4e8a07d1b92e4ff262e64b5a1240e35216a709fd36d8fb901df",
+    "seqno": 13,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v0.1.5
+Comment: https://keybase.io/crypto
+
+yMHnAnicbVFtSBRpHJ/VTXM5rywK6Sx0tFJYbN5edlbJFyoR/NRV2wdle2bmGR1y
+Z9bZ2d3WRTg5jrtCFKQMw0IRIk2jCyJMiEU2otLosgURiSs2CNczKtLIPH1GCvrQ
+8+Xh+b0+f/7x7HTMYbtUULTzzy4hx/Y4thjEfq0Jfo7ioi5HcHcUPw03LkXVGqHh
+N1TNxN04TxGiwAMa0hwPJIlmWEUChCJyLgkAyDOiwksUSwDciTfpAcuBYkQQgKWq
+jjD08KoyQn+gD24QgGUJArKs4hIUGkgiCyDHiBQhQEDRgCAsYQAaGvBBS+1TTbzN
+iSMkpEoIiW7Ufsc2w1CkVNJ9yOc3dFOX9GbENJmm320ZzYjfUoah6P2a4RVVTUYz
+I0MIGgFV13A3iZSSqVqhJC3wpECRLs6JwzN+1YBe1VKwPOci0LFqYAhFQk4SKM4l
+ExxLSQx0AYKXSVGgIKMoFEdZU7GApBgC0ixFcoAnBEWmOdmliAJBygrqD8AWTbcq
+0T9BI8oMqI0aMIMGxNsmYvV2zObAMjalWWvDHFlbvy1ziNmMdUTjnu3F53qPjPxd
+9XK52973mqmstu3oezB5v4v+C7tY1Fu1evufnxZrI8datZmTWZ2Tb+Ktu5fam6eG
+ljt72MHDS9erM/OnG7KTY/tWPGsrF4RrWY5+Wzz2oeDg1QZf3fuhxK7ZJyMpzXbo
+t6eDC2WfVv8dPT9mT+b1hZ9XtmB+T273UuJEwVh7MpW4l6xYOPsLVZf2qqcGlOhv
+B2euXPYeT38Rrv/ZPnVr+ll5bYk4PO9Jwxcyb5Rz+/ek1o5G95aN3hl41J4/Os8v
+B/4/ULst9bB7eHblv7W5wpwtRkUst7/ipvPdRF4i+/fxuVN32YEerpDIGJ+VP3Z8
++SNcnLsOF0QUfg==
+=cKia
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/amit
+
+==================================================================
