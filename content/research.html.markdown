@@ -3,21 +3,37 @@
 
 ### Beetle
 
-### Tock
+Bluetooth Low Energy is an ultra-low power link layer designed
+for personal area networks and ubiquitous computing. This efficiency
+comes at the cost of flexibility: each ultra-low power peripheral can
+communicate with at most one controller (phone) and only one
+application on that phone can interact with it.  These and other
+restrictions preclude many interesting applications. Beetle is a
+new communication architecture which removes
+many of Bluetooth Low Energy's restrictions. Using Beetle, peripherals that share
+a coordinator can directly communicate with one another, many
+applications can use a peripheral simultaneously, and peripherals can
+share phone services such as its sensors as well as data from the
+Internet.
+
+
+### Next-Gen Mote Platforms
+
+Forthcoming...
 
 ### Hails
 
-Hails is a web platform framework that obivates the traditional tradeoff in
+Hails is a web platform framework that obviates the traditional trade-off in
 extensible web applications between privacy/confidentiality and extensibility.
 Hails leverages language-level information flow control in Haskell to enable
 feature rich applications to share data while ensuring that security policies
 are carried over and enforced along with the data.  Traditionally, web
 applications allow extensibility by exposing an API.  "Blessed" third-party apps
 that granted access to the API (or a subset of the API) are entrusted with
-(often senstive) user data to do what they please. This is problematic not only
+(often sensitive) user data to do what they please. This is problematic not only
 because third-party app developers may be malicious, but more practically
 because it reduces the trustworthiness of a platform to the least trustworthy
-third-party developers (who is often incetivized to prioritize features over
+third-party developers (who is often incentivized to prioritize features over
 security). Hails addresses this problem by tying security policies to data using
 information-flow-control labels. In Hails, a common, trusted, platform ensures
 that apps that have seen sensitive data may communicate with users, files,

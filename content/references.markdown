@@ -45,5 +45,6 @@
 [Aaron Block]:        https://plus.google.com/111656247334398575735/about
 
 [Secure Computer Systems]:  http://www.scs.stanford.edu
+[Stanford Information Networks Group]:  http://sing.stanford.edu
 [Grameen Foundation]:       http://www.grameenfoundation.org/
 [MIFOS]:                    http://www.mifos.org/
