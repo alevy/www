@@ -28,6 +28,10 @@
 [Alejandro Russo]:      http://www.cse.chalmers.se/~russo/
 [Pablo Buiras]:         http://www.chalmers.se/cse/EN/people/pablo-buiras
 [Edward Yang]:          http://ezyang.com
+[Phil Levis]:           http://csl.stanford.edu/~pal
+[David Culler]:         http://www.cs.berkeley.edu/~culler
+[Brad Campbell]:        http://www.bradcampbell.com/
+[Pat Pannuto]:          http://www.patpannuto.com/
 
 [Justine Sherry]:     http://www.cs.berkeley.edu/~justine/
 [Gilbert Bernstein]:  http://www.gilbertbernstein.com/

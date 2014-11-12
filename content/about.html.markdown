@@ -1,7 +1,3 @@
-## About
-
-![In the spotlight!](images/profile.jpg "Profile")
-
 In September 2011 I joined the Computer Science PhD program at Stanford University. Currently I work with [David Mazières][] in the [Secure Computer Systems][] group on a new framework for building secure web platforms called [Hails](http://hails.scs.stanford.edu). I'm generally interested in distributed systems security, privacy, distributed storage and good will towards people.
 
 I am also currently working on [MemCachier](http://www.memcachier.com) - memcache-as-a-service for applications hosted on platforms like [Heroku](http://www.heroku.com), [cloudControl](http://www.cloudcontrol.com) or directly on [EC2](http://aws.amazon.com).

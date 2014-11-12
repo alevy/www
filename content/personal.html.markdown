@@ -1,4 +1,3 @@
-## Personal
 
 GPG Key: [A211 AA8C B817 13AF 6352  F8B5 838F A1C7 17F6 0F73](gpg.public.key)
 

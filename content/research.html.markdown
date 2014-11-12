@@ -1,32 +1,82 @@
-## Research
+
+## Current Projects
+
+### Beetle
+
+### Tock
 
 ### Hails
-Hails is a web platform framework that obivates the traditional tradeoff in extensible web applications between privacy/confidentiality and extensibility. Hails leverages language-level information flow control in Haskell to enable feature rich applications to share data while ensuring that security policies are carried over and enforced along with the data. Traditionally, web applications allow extensibility by exposing an API. "Blessed" third-party apps that granted access to the API (or a subset of the API) are entrusted with (often senstive) user data to do what they please. This is problematic not only because third-party app developers may be malicious, but more practically because it reduces the trustworthiness of a platform to the least trustworthy third-party developers (who is often incetivized to prioritize features over security). Hails addresses this problem by tying security policies to data using information-flow-control labels. In Hails, a common, trusted, platform ensures that apps that have seen sensitive data may communicate with users, files, database etc, that are not privileged to see that data. Moreover, as opposed to traditional platforms where there is a host application that has more access to data than third-party apps, in Hails all apps have the same access to data. This enables developers to build complete alternatives to applications without requiring users to migrate their data or give up network effects.
 
-#### Comet
-Comet extended the distributed key-value storage abstraction to facilitate the sharing of a single storage system by applications with diverse needs, allowing them to reap the consolidation benefits inherent in today's massive clouds. Distributed key-value storage systems are widely used in corporations and across the Internet. We wanted to greatly expand the application space for these systems through application-specific customization. We designed and implemented Comet, an extensible, distributed key-value store. Each Comet node stores a collection of active storage objects (ASOs) that consist of a key, a value, and a set of handlers. Comet handlers run as a result of timers or storage operations, such as get or put, allowing an ASO to take dynamic, application-specific actions to customize its behavior. Handlers are written in a simple sandboxed extension language, providing safety and isolation properties. We implemented a Comet prototype for the Vuze distributed hash table, deployed Comet nodes on Vuze from PlanetLab, and built and evaluated over a dozen Comet applications.
+Hails is a web platform framework that obivates the traditional tradeoff in
+extensible web applications between privacy/confidentiality and extensibility.
+Hails leverages language-level information flow control in Haskell to enable
+feature rich applications to share data while ensuring that security policies
+are carried over and enforced along with the data.  Traditionally, web
+applications allow extensibility by exposing an API.  "Blessed" third-party apps
+that granted access to the API (or a subset of the API) are entrusted with
+(often senstive) user data to do what they please. This is problematic not only
+because third-party app developers may be malicious, but more practically
+because it reduces the trustworthiness of a platform to the least trustworthy
+third-party developers (who is often incetivized to prioritize features over
+security). Hails addresses this problem by tying security policies to data using
+information-flow-control labels. In Hails, a common, trusted, platform ensures
+that apps that have seen sensitive data may communicate with users, files,
+database etc, that are not privileged to see that data. Moreover, as opposed to
+traditional platforms where there is a host application that has more access to
+data than third-party apps, in Hails all apps have the same access to data. This
+enables developers to build complete alternatives to applications without
+requiring users to migrate their data or give up network effects.
 
-#### Vanish
-Today's technical and legal landscape presents formidable challenges to personal data privacy. First, our increasing reliance on Web services causes personal data to be cached, copied, and archived by third parties, often without our knowledge or control. Second, the disclosure of private data has become commonplace due to carelessness, theft, or legal actions. In Vanish our goal was to protect the privacy of past, archived data - such as copies of e-mails maintained by an email provider - against accidental, malicious, and legal attacks. Specifically, we wanted to ensure that all copies of data become unreadable after a user-specified time, without any specific action on the part of a user, and even if an attacker obtains both a cached copy of that data and the user’s cryptographic keys and passwords. Vanish achieved this by integrating cryptographic techniques with global-scale, peer-to-peer, distributed hash tables.
+## Previous Projects
 
-#### Workload Characterization
-During summer 2010, I worked with Joseph L. Hellerstein at Google. We targeted a set of key questions that developers scheduling jobs on a cluster care about, but are hard or impossible to answer with existing tools: Will a job schedule? What changes to a job would make it more likely to schedule? Which resources can a job consume more of without impacting the ability to schedule it? Our challenge was to define metrics that accurately and predictively describe a job given the cluster it was scheduled on, and to compute those metrics efficiently enough to allow for interactive exploration of job configuration. We chose to estimate the number of scheduling slots available to a job over the past two weeks. However, computing the actual count is too expensive to do interactively. Our approach was to perform continuous statistical characterization of machine loads, and to compute an estimate of the number of slots based on that characterization. As a result we were able to build tools that give developers a meaningful way to compare different job configurations.
+### Comet
 
-### Publications
+Comet extended the distributed key-value storage abstraction to facilitate the
+sharing of a single storage system by applications with diverse needs, allowing
+them to reap the consolidation benefits inherent in today's massive clouds.
+Distributed key-value storage systems are widely used in corporations and across
+the Internet. We wanted to greatly expand the application space for these
+systems through application-specific customization.  We designed and implemented
+Comet, an extensible, distributed key-value store.  Each Comet node stores a
+collection of active storage objects (ASOs) that consist of a key, a value, and
+a set of handlers. Comet handlers run as a result of timers or storage
+operations, such as get or put, allowing an ASO to take dynamic,
+application-specific actions to customize its behavior. Handlers are written in
+a simple sandboxed extension language, providing safety and isolation
+properties. We implemented a Comet prototype for the Vuze distributed hash
+table, deployed Comet nodes on Vuze from PlanetLab, and built and evaluated over
+a dozen Comet applications.
 
-1. Eliminating Cache-based Timing Attacks with Instruction-based Scheduling. With [Deian Stefan], [Pablo Buiras], [Edward Yang], [David Terei], [Alejandro Russo], [David Mazières]. In The 18th European Symposium on Research in Computer Security (ESORICS) 2013. Paper _\[[PDF](papers/eliminating-esorics2013.pdf)\]_
+### Vanish
 
-2. A Library for Removing Cache-based Attacks in Concurrent Information Flow Systems. With [Pablo Buiras], [Deian Stefan], [Alejandro Russo], [David Mazières]. In the 8th International Symposium on Trustworthy Global Computing (TGC) 2013. Paper: _\[[PDF](papers/resLIO-tgc2013.pdf)\]_
+Today's technical and legal landscape presents formidable challenges to personal
+data privacy. First, our increasing reliance on Web services causes personal
+data to be cached, copied, and archived by third parties, often without our
+knowledge or control. Second, the disclosure of private data has become
+commonplace due to carelessness, theft, or legal actions. In Vanish our goal was
+to protect the privacy of past, archived data - such as copies of e-mails
+maintained by an email provider - against accidental, malicious, and legal
+attacks. Specifically, we wanted to ensure that all copies of data become
+unreadable after a user-specified time, without any specific action on the part
+of a user, and even if an attacker obtains both a cached copy of that data and
+the user’s cryptographic keys and passwords. Vanish achieved this by integrating
+cryptographic techniques with global-scale, peer-to-peer, distributed hash
+tables.
 
-1. __Hails__: Protecting Data Privacy in Untrusted Web Applications. With [Daniel Giffin], [Deian Stefan], [David Terei], [David Mazières], [John Mitchell], [Alejandro Russo]. In Proceedings of OSDI, Los Angeles, USA, October 2010. Paper: _\[[PDF](papers/hails-osdi2012.pdf)\]_ Talk: _\[[CRASH Talk (PDF)](papers/hails-crash2012.pdf)\]_
+### Workload Characterization
 
-2. Addressing Covert Termination and Timing Channels in Concurrent Information Flow Systems. With [Deian Stefan], [Alejandro Russo], [Pablo Buiras], [John Mitchell], [David Mazières]. In In Proceedings of ICFP, Copenhagen, Denmark . 2012. Paper: _\[[PDF](papers/lio-icfp2012.pdf)\]_
+During summer 2010, I worked with Joseph L. Hellerstein at Google. We targeted a
+set of key questions that developers scheduling jobs on a cluster care about,
+but are hard or impossible to answer with existing tools: Will a job schedule?
+What changes to a job would make it more likely to schedule? Which resources can
+a job consume more of without impacting the ability to schedule it? Our
+challenge was to define metrics that accurately and predictively describe a job
+given the cluster it was scheduled on, and to compute those metrics efficiently
+enough to allow for interactive exploration of job configuration. We chose to
+estimate the number of scheduling slots available to a job over the past two
+weeks. However, computing the actual count is too expensive to do interactively.
+Our approach was to perform continuous statistical characterization of machine
+loads, and to compute an estimate of the number of slots based on that
+characterization. As a result we were able to build tools that give developers a
+meaningful way to compare different job configurations.
 
-3. __Comet__: An active distributed key-value store. With [Roxana Geambasu], [Tadayoshi Kohno][], [Arvind Krishnamurthy][] and [Hank Levy][]. In Proceedings of OSDI, Vancouver, Canada, October 2010. 
-Paper: _\[[PDF](papers/comet-osdi2010.pdf)\]_ Poster: _\[[PDF](papers/comet-poster.pdf)\]_
-
-4. New directions for self-destructing data systems. With [Roxana Geambasu], [Tadayoshi Kohno], [Arvind Krishnamurthy], [Hank Levy], Paul Gardner, Vino Moscaritolo. University of Washington, Tech. Rep 2013. Paper: _\[[PDF](papers/wpid-uwtech2010)\]_
-
-4. __Vanish__: Increasing Data Privacy with DHTs that forget. With [Roxana Geambasu][], [Tadayoshi Kohno][], and [Hank Levy][]. In Proceedings of the USENIX Security Symposium, Montreal, Canada, August 2009.
-Won the Outstanding Student Paper Award.
-Paper: _\[[PDF](papers/vanish-usenixsec09.pdf)\]_
