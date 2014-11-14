@@ -9,7 +9,6 @@ function handleHistory(hash) {
   
   $("a").removeClass("disabled");
   $("a[href='#" + hash + "']").addClass("disabled");
-  document.title = baseTitle + " :: " + hash
 }
 
 $(document).ready(function() {
