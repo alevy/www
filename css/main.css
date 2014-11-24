@@ -53,7 +53,20 @@ a img {
   color: #333;
 }
 
+#short_info p {
+  float: left;
+  width: 294px;
+  margin-right: 0px;
+  margin-left: 0px;
+  padding: 0px;
+}
+
+#short_info small {
+  font-size: 7pt;
+}
+
 #menu {
+  clear: both;
   font-size: 1.2em;
 }
 
