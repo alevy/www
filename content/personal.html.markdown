@@ -1,5 +1,5 @@
 
-GPG Key: [A211 AA8C B817 13AF 6352  F8B5 838F A1C7 17F6 0F73](gpg.public.key)
+![At a coffee shop in Chiang Mai, Thailand](images/me.jpg)
 
 ### Some Friends' Websites:
 - [Kaitlin Morrison][]{:rel="friend sweetheart"}
@@ -16,8 +16,29 @@ GPG Key: [A211 AA8C B817 13AF 6352  F8B5 838F A1C7 17F6 0F73](gpg.public.key)
 - [Deian Stefan][]{:rel="friend coworker"}
 - [Diego Ongaro][]{:rel="friend coworker"}
 
+### Books That Have Stayed with Me
+
+#### Fiction
+
+- The Giver
+- 1984
+- The Jungle
+- Kindred
+- The Bell Jar
+- Jesus' Son
+
+#### Non-fiction
+
+- A Brief History of Time (Stephen Hawking)
+- Feminism is for everyone (bell hooks)
+- Normal Life (Dean Spade)
+- Fermat's Last Theorm (Amir Azcel)
+- No Logo (Naomi Klein)
+- In the Garden of Beasts (Erik Larson)
+- On Writing Well (William Zinser)
+
 ### A Partial List of Awesome Movies...
-- Pulp Fiction
+- Do the right thing
 - Y tu mamá también
 - The Diving Bell &amp; The Butterfly
 - Eternal Sunshine of the Spotless Mind
@@ -49,7 +70,7 @@ I try to travel as much as possible - usually alone, but sometimes with friends.
   - Belgium: Bruges
   - Denmark: Copenhagen
   - France: Paris, La Plagne, Chamonix
-  - Germany: Frankfurt, Berlin
+  - Germany: Frankfurt, Berlin, Lübeck, Cologn
   - Hungary: Budapest
   - Italy: Rome, Florence, Bologna, Milan, Venice, Padua, Treviso, Trieste, Ischia
   - Spain: Barcelona, Granada, Seville

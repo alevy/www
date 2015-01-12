@@ -95,6 +95,11 @@ ul.horizontal li {
  margin-right: 20px;
 }
 
+#personal img {
+  float: right;
+
+}
+
 #footer {
   width: 800px;
   margin: 0 auto;
