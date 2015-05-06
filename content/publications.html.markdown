@@ -15,6 +15,13 @@ Paper: _\[[PDF](papers/comet-osdi2010.pdf)\]_ Poster: _\[[PDF](papers/comet-post
 Won the Outstanding Student Paper Award.
 Paper: _\[[PDF](papers/vanish-usenixsec09.pdf)\]_
 
+## Workshops
+
+* _Stickler_: Defending Against Malicious CDNs in an Unmodified Browser. With
+  [Henry Corrigan-Gibbs][] and [Dan Boneh][]. In Web 2.0 Security & Privacy
+  (W2SP), San Jose, California, 2015.
+  Paper: _\[[PDF](papers/stickler-w2sp15.pdf)]\_
+
 ## Demos
 
 * A networked embedded system platform for the post-mote era. With [Pat Pannuto], Michael Andersen, Thomas Bauer, [Brad Campbell], [David Culler] and [Phil Levis]. In Proceedings of SenSys, Memphis, USA, November 2014.
