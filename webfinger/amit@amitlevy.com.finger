@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'>
+<XRD xmlns='http://docs.oasis-open.org/ns/xri/xrd-1.0'>
+
+  <Alias>http://amitlevy.com/</Alias>
+
+  <Link rel='http://microformats.org/profile/hcard'
+        href='http://amitlevy.com/' />
+  <Link rel='http://specs.openid.net/auth/2.0/provider'
+        href='http://amitlevy.com/' />
+  <Link rel='http://webfinger.net/rel/avatar'
+        href='https://secure.gravatar.com/avatar/7a7a3fceeb3ae308639bb17c8b7fbc6f' />
+</XRD>
