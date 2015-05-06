@@ -18,9 +18,8 @@ Paper: _\[[PDF](papers/vanish-usenixsec09.pdf)\]_
 ## Workshops
 
 * _Stickler_: Defending Against Malicious CDNs in an Unmodified Browser. With
-  [Henry Corrigan-Gibbs][] and [Dan Boneh][]. In Web 2.0 Security & Privacy
-  (W2SP), San Jose, California, 2015.
-  Paper: _\[[PDF](papers/stickler-w2sp15.pdf)]\_
+  [Henry Corrigan-Gibbs][] and [Dan Boneh][]. In Web 2.0 Security & Privacy (W2SP), San Jose, California, 2015.
+  Paper: _\[[PDF](papers/stickler-w2sp15.pdf)\]_
 
 ## Demos
 

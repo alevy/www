@@ -32,6 +32,8 @@
 [David Culler]:         http://www.cs.berkeley.edu/~culler
 [Brad Campbell]:        http://www.bradcampbell.com/
 [Pat Pannuto]:          http://www.patpannuto.com/
+[Henry Corrigan-Gibbs]: http://www.henrycg.com/
+[Dan Boneh]:            https://crypto.stanford.edu/~dabo/
 
 [Justine Sherry]:     http://www.cs.berkeley.edu/~justine/
 [Gilbert Bernstein]:  http://www.gilbertbernstein.com/
