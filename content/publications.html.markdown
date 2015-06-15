@@ -29,7 +29,12 @@ Paper: _\[[PDF](papers/vanish-usenixsec09.pdf)\]_
 
 * Building secure systems with LIO. With [Deian Stefan], [Alejandro Russo] and [David Mazières]. In Proceedings of Haskell Symposium, Chalmers, Sweden, September 2014.
 
-## Technical Reports
+## Non-Refereed
+
+* Security and the average programmer. With [Daniel B. Giffin], [Stefan Heule],
+  [David Mazières], [John Mitchell], [Alejandro Russo], [Amy Shen], [Deian
+  Stefan], [David Terei] and [Edward Z. Yang]. In Proceedings of Conference on
+  Principles of Security and Trust (POST). April, 2014.
 
 * New directions for self-destructing data systems. With [Roxana Geambasu], [Tadayoshi Kohno], [Arvind Krishnamurthy], [Hank Levy], Paul Gardner, Vino Moscaritolo. University of Washington, Tech. Rep 2013. Paper: _\[[PDF](papers/wpid-uwtech2010)\]_
 
