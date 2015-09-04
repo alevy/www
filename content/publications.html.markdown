@@ -17,7 +17,12 @@ Paper: _\[[PDF](papers/vanish-usenixsec09.pdf)\]_
 
 ## Workshops
 
-* _Stickler_: Defending Against Malicious CDNs in an Unmodified Browser. With
+* Ownership is Theft: Experiences Building an Embedded OS in Rust. With Michael
+  Andersen, [Brad Campbell][], [David Culler][], [Prabal Dutta][], [Branden
+  Ghena][], [Phil Levis][] and [Pat Pannuto][]. To appear in Programming
+  Languages and Operating Systems (PLOS), Monterey, California, 2015.
+
+* __Stickler__: Defending Against Malicious CDNs in an Unmodified Browser. With
   [Henry Corrigan-Gibbs][] and [Dan Boneh][]. In Web 2.0 Security & Privacy (W2SP), San Jose, California, 2015.
   Paper: _\[[PDF](papers/stickler-w2sp15.pdf)\]_
 
@@ -29,12 +34,18 @@ Paper: _\[[PDF](papers/vanish-usenixsec09.pdf)\]_
 
 * Building secure systems with LIO. With [Deian Stefan], [Alejandro Russo] and [David Mazières]. In Proceedings of Haskell Symposium, Chalmers, Sweden, September 2014.
 
+## Invited
+
+* Security and the average programmer. With [Daniel Giffin], Stefan Heule,
+  [David Mazières], [John Mitchell], [Alejandro Russo], Amy Shen, [Deian
+  Stefan], [David Terei] and [Edward Yang]. In Proceedings of Conference on
+  Principles of Security and Trust (POST). April, 2014.
+
 ## Non-Refereed
 
-* Security and the average programmer. With [Daniel B. Giffin], [Stefan Heule],
-  [David Mazières], [John Mitchell], [Alejandro Russo], [Amy Shen], [Deian
-  Stefan], [David Terei] and [Edward Z. Yang]. In Proceedings of Conference on
-  Principles of Security and Trust (POST). April, 2014.
+* __Blade__: A Data Center Garbage Collector. With [David Terei]. Compute
+  Research Repository (CoRR), 2015.
+  _\[[PDF](http://arxiv.org/pdf/1504.02578v1)\]_
 
 * New directions for self-destructing data systems. With [Roxana Geambasu], [Tadayoshi Kohno], [Arvind Krishnamurthy], [Hank Levy], Paul Gardner, Vino Moscaritolo. University of Washington, Tech. Rep 2013. Paper: _\[[PDF](papers/wpid-uwtech2010)\]_
 

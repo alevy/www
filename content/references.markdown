@@ -34,6 +34,8 @@
 [Pat Pannuto]:          http://www.patpannuto.com/
 [Henry Corrigan-Gibbs]: http://www.henrycg.com/
 [Dan Boneh]:            https://crypto.stanford.edu/~dabo/
+[Prabal Dutta]:         http://web.eecs.umich.edu/~prabal/
+[Branden Ghena]:        http://web.eecs.umich.edu/~brghena/
 
 [Justine Sherry]:     http://www.cs.berkeley.edu/~justine/
 [Gilbert Bernstein]:  http://www.gilbertbernstein.com/
