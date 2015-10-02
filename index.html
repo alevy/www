@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>amit levy</title>
+        <link rel="openid.server" href="https://openid.mappend.net/" />
+        <link rel="openid2.provider" href="https://openid.mappend.net/" />
+        <link rel="openid.delegate" href="http://amitlevy.com/" />
+        <link rel="openid2.local_id" href="http://amitlevy.com/" />
+	<link rel="shortcut icon" href="favicon.png" />
+	<script src="scripts/jquery-1.4.2.js" type="text/javascript" charset="utf-8"></script>
+	<script src="scripts/jquery.history.js" type="text/javascript" charset="utf-8"></script>
+	<script src="scripts/menu.js" type="text/javascript" charset="utf-8"></script>
+	<link rel="stylesheet" href="css/main.css" type="text/css" media="screen" title="no title" />
+	<meta name="author" content="Amit Levy">
+        <meta name="description" content="A fourth year Computer Science PhD student in the Secure Computer Systems group at Stanford. Research, publications, projects and contact information.">
+</head>
+<body>
+<div id="container">
+<div id="navbar">
+  <h1><a href="#">Amit Levy</a></h1>
+  <div id="short_info">
+    <p>
+      <strong>PhD Student</strong><br/>
+      <a href="http://www.cs.stanford.edu" title="Stanford CS">
+        Computer Science
+      </a>
+      <br/>
+      <a href="http://www.stanford.edu" title="Stanford">Stanford</a><br/>
+    </p>
+
+    <p>
+      353 Serra Mall, Room 288<br/>
+      Stanford, CA 94305
+    </p>
+    <p>
+      E-mail/Jabber: <img src="images/email.png" style="height: 1.5em; vertical-align: bottom"/><br/>
+      <small>
+        GPG
+        <a href="gpg.public.key">
+          A211 AA8C B817 13AF 6352  F8B5 838F A1C7 17F6 0F73
+        </a>
+      </small>
+    </p>
+
+  </div>
+  <ul id="menu" class="horizontal">
+    <li><a href="#about">About</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#publications">Publications</a></li>
+    <li><a href="#talks">Talks</a></li>
+    <li><a href="#code">Code</a></li>
+    <li><a href="#personal">Personal</a></li>
+    <!--li><a href="https://mappend.net">Blog</a></li-->
+  </ul>
+</div>
+<div id="content">
+  <div id="about">
+    
+<p>I am a fourth year Computer Science PhD student at Stanford University. I work with <a href="http://www.scs.stanford.edu/~dm/">David Mazières</a> in the <a href="http://www.scs.stanford.edu">Secure Computer Systems</a> group and <a href="http://csl.stanford.edu/~pal">Phil Levis</a> in the <a href="http://sing.stanford.edu">Stanford Information Networks Group</a>. I work on a new framework for building secure web platforms called <a href="http://hails.scs.stanford.edu">Hails</a> and a network architecture for Bluetooth Low Energy called Beetle. I am also collaborating with folks at Stanford, Berkeley and Michigan on a new operating system for embedded devices. I’m generally interested in distributed systems, embedded systems, security, privacy, programming languages and good will towards people.</p>
+
+<p>I am also currently working on <a href="http://www.memcachier.com">MemCachier</a> - memcache-as-a-service for web applications hosted on platforms like <a href="http://www.heroku.com">Heroku</a>, <a href="http://www.cloudcontrol.com">cloudControl</a> or directly on <a href="http://aws.amazon.com">EC2</a>. I do not generally recommended starting a business while in grad school, but if you have to – and sometimes you have to – I highly recommend doing it with someone pleasant, like my co-conspirator <a href="http://davidterei.com/">David Terei</a>.</p>
+
+<h2 id="background">Background</h2>
+
+<p>In December 2010 I graduated from the University of Washington with an MSc in Computer Science and a BSc in Computer Science and Economics. On the computer science side of things, I worked with <a href="http://www.cs.columbia.edu/~roxana/">Roxana Geambasu</a>, <a href="http://www.cs.washington.edu/homes/levy/">Hank Levy</a>, <a href="http://www.cs.washington.edu/homes/yoshi/">Tadayoshi Kohno</a> and <a href="http://www.cs.washington.edu/homes/arvind">Arvind Krishnamurthy</a> on web privacy and distributed systems. On the economics side of things I worked on writing exams with as little preparation as possible. In hind sight I should have taken classes in something useful, like history, instead.</p>
+
+<p>Between UW and Stanford I sat at <a href="http://www.startpad.org">StartPad</a>, a co-working space in Seattle, where I worked on projects with my friend Courty Stanton for <a href="#code">fun</a> and profit.</p>
+
+<p>I’ve interned at Google (a popular surveillance system and search engine), once developing distributed testing tools and again building tools to help developers schedule their cluster jobs. Before that I worked at the <a href="http://www.grameenfoundation.org/">Grameen Foundation</a> as an intern on the <a href="http://www.mifos.org/">MIFOS</a> (<strong>M</strong>icros <strong>F</strong>inance <strong>O</strong>pen <strong>S</strong>ource) project. Before that, I spent my summers as a day-camp counselor at a performing arts camp.</p>
+
+  </div>
+
+  <div id="research">
+    
+<h2 id="current_projects">Current Projects</h2>
+
+<h3 id="beetle">Beetle</h3>
+
+<p>Bluetooth Low Energy is an ultra-low power link layer designed for personal area networks and ubiquitous computing. This efficiency comes at the cost of flexibility: each ultra-low power peripheral can communicate with at most one controller (phone) and only one application on that phone can interact with it. These and other restrictions preclude many interesting applications. Beetle is a new communication architecture which removes many of Bluetooth Low Energy’s restrictions. Using Beetle, peripherals that share a coordinator can directly communicate with one another, many applications can use a peripheral simultaneously, and peripherals can share phone services such as its sensors as well as data from the Internet.</p>
+
+<h3 id="tock_os">Tock OS</h3>
+
+<p>Microcontroller operating systems and frameworks typically assume that a single, monolithic application will run on an embedded system. Traditionally, the need to optimize for power and to squeeze applications into minimal code and memory allocations have constrained microcontroller applications to be single-function. The absence of hardware primitives capable of providing protection has eliminated security and isolation as considerations. Newer hardware, however, has changed this paradigm. The microcontroller is growing up and can now support a secure, trusted kernel and multiple, isolated, concurrent, and dynamically-loaded applications, all while operating on the power budgets that originally made this device class feasible. While the hardware support is now present, the software ecosystem to leverage these advances is lagging behind. To remedy this, we propose Tock, a new embedded operating system that builds on established operating system principles adapted to the embedded system environment. Tock exploits memory protection units, advancements in modern systems programming languages, and the event driven nature of embedded applications to allow a core kernel, device specific drivers, and untrusted applications to coexist on a single microcontroller. This new operating system will allow embedded devices to mature beyond program-once, deploy-once systems into re-usable, ubiquitous, and reliable computing platforms.</p>
+
+<h3 id="hails">Hails</h3>
+
+<p>Hails is a web platform framework that obviates the traditional trade-off in extensible web applications between privacy/confidentiality and extensibility. Hails leverages language-level information flow control in Haskell to enable feature rich applications to share data while ensuring that security policies are carried over and enforced along with the data. Traditionally, web applications allow extensibility by exposing an API. “Blessed” third-party apps that granted access to the API (or a subset of the API) are entrusted with (often sensitive) user data to do what they please. This is problematic not only because third-party app developers may be malicious, but more practically because it reduces the trustworthiness of a platform to the least trustworthy third-party developers (who is often incentivized to prioritize features over security). Hails addresses this problem by tying security policies to data using information-flow-control labels. In Hails, a common, trusted, platform ensures that apps that have seen sensitive data may communicate with users, files, database etc, that are not privileged to see that data. Moreover, as opposed to traditional platforms where there is a host application that has more access to data than third-party apps, in Hails all apps have the same access to data. This enables developers to build complete alternatives to applications without requiring users to migrate their data or give up network effects.</p>
+
+<h2 id="previous_projects">Previous Projects</h2>
+
+<h3 id="comet">Comet</h3>
+
+<p>Comet extended the distributed key-value storage abstraction to facilitate the sharing of a single storage system by applications with diverse needs, allowing them to reap the consolidation benefits inherent in today’s massive clouds. Distributed key-value storage systems are widely used in corporations and across the Internet. We wanted to greatly expand the application space for these systems through application-specific customization. We designed and implemented Comet, an extensible, distributed key-value store. Each Comet node stores a collection of active storage objects (ASOs) that consist of a key, a value, and a set of handlers. Comet handlers run as a result of timers or storage operations, such as get or put, allowing an ASO to take dynamic, application-specific actions to customize its behavior. Handlers are written in a simple sandboxed extension language, providing safety and isolation properties. We implemented a Comet prototype for the Vuze distributed hash table, deployed Comet nodes on Vuze from PlanetLab, and built and evaluated over a dozen Comet applications.</p>
+
+<h3 id="vanish">Vanish</h3>
+
+<p>Today’s technical and legal landscape presents formidable challenges to personal data privacy. First, our increasing reliance on Web services causes personal data to be cached, copied, and archived by third parties, often without our knowledge or control. Second, the disclosure of private data has become commonplace due to carelessness, theft, or legal actions. In Vanish our goal was to protect the privacy of past, archived data - such as copies of e-mails maintained by an email provider - against accidental, malicious, and legal attacks. Specifically, we wanted to ensure that all copies of data become unreadable after a user-specified time, without any specific action on the part of a user, and even if an attacker obtains both a cached copy of that data and the user’s cryptographic keys and passwords. Vanish achieved this by integrating cryptographic techniques with global-scale, peer-to-peer, distributed hash tables.</p>
+
+<h3 id="workload_characterization">Workload Characterization</h3>
+
+<p>During summer 2010, I worked with Joseph L. Hellerstein at Google. We targeted a set of key questions that developers scheduling jobs on a cluster care about, but are hard or impossible to answer with existing tools: Will a job schedule? What changes to a job would make it more likely to schedule? Which resources can a job consume more of without impacting the ability to schedule it? Our challenge was to define metrics that accurately and predictively describe a job given the cluster it was scheduled on, and to compute those metrics efficiently enough to allow for interactive exploration of job configuration. We chose to estimate the number of scheduling slots available to a job over the past two weeks. However, computing the actual count is too expensive to do interactively. Our approach was to perform continuous statistical characterization of machine loads, and to compute an estimate of the number of slots based on that characterization. As a result we were able to build tools that give developers a meaningful way to compare different job configurations.</p>
+
+  </div>
+
+  <div id="publications">
+    
+<h2 id="conferences">Conferences</h2>
+
+<ul>
+<li>
+<p>Eliminating Cache-based Timing Attacks with Instruction-based Scheduling. With <a href="http://deian.net">Deian Stefan</a>, <a href="http://www.chalmers.se/cse/EN/people/pablo-buiras">Pablo Buiras</a>, <a href="http://ezyang.com">Edward Yang</a>, <a href="http://davidterei.com/">David Terei</a>, <a href="http://www.cse.chalmers.se/~russo/">Alejandro Russo</a>, <a href="http://www.scs.stanford.edu/~dm/">David Mazières</a>. In The 18th European Symposium on Research in Computer Security (ESORICS) 2013. Paper <em>[<a href="papers/eliminating-esorics2013.pdf">PDF</a>]</em></p>
+</li>
+
+<li>
+<p>A Library for Removing Cache-based Attacks in Concurrent Information Flow Systems. With <a href="http://www.chalmers.se/cse/EN/people/pablo-buiras">Pablo Buiras</a>, <a href="http://deian.net">Deian Stefan</a>, <a href="http://www.cse.chalmers.se/~russo/">Alejandro Russo</a>, <a href="http://www.scs.stanford.edu/~dm/">David Mazières</a>. In the 8th International Symposium on Trustworthy Global Computing (TGC) 2013. Paper: <em>[<a href="papers/resLIO-tgc2013.pdf">PDF</a>]</em></p>
+</li>
+
+<li>
+<p><strong>Hails</strong>: Protecting Data Privacy in Untrusted Web Applications. With <a href="http://www.scs.stanford.edu/~dbg/">Daniel Giffin</a>, <a href="http://deian.net">Deian Stefan</a>, <a href="http://davidterei.com/">David Terei</a>, <a href="http://www.scs.stanford.edu/~dm/">David Mazières</a>, <a href="http://theory.stanford.edu/people/jcm/">John Mitchell</a>, <a href="http://www.cse.chalmers.se/~russo/">Alejandro Russo</a>. In Proceedings of OSDI, Los Angeles, USA, October 2010. Paper: <em>[<a href="papers/hails-osdi2012.pdf">PDF</a>]</em> Talk: <em>[<a href="papers/hails-crash2012.pdf">CRASH Talk (PDF)</a>]</em></p>
+</li>
+
+<li>
+<p>Addressing Covert Termination and Timing Channels in Concurrent Information Flow Systems. With <a href="http://deian.net">Deian Stefan</a>, <a href="http://www.cse.chalmers.se/~russo/">Alejandro Russo</a>, <a href="http://www.chalmers.se/cse/EN/people/pablo-buiras">Pablo Buiras</a>, <a href="http://theory.stanford.edu/people/jcm/">John Mitchell</a>, <a href="http://www.scs.stanford.edu/~dm/">David Mazières</a>. In In Proceedings of ICFP, Copenhagen, Denmark . 2012. Paper: <em>[<a href="papers/lio-icfp2012.pdf">PDF</a>]</em></p>
+</li>
+
+<li>
+<p><strong>Comet</strong>: An active distributed key-value store. With <a href="http://www.cs.columbia.edu/~roxana/">Roxana Geambasu</a>, <a href="http://www.cs.washington.edu/homes/yoshi/">Tadayoshi Kohno</a>, <a href="http://www.cs.washington.edu/homes/arvind">Arvind Krishnamurthy</a> and <a href="http://www.cs.washington.edu/homes/levy/">Hank Levy</a>. In Proceedings of OSDI, Vancouver, Canada, October 2010. Paper: <em>[<a href="papers/comet-osdi2010.pdf">PDF</a>]</em> Poster: <em>[<a href="papers/comet-poster.pdf">PDF</a>]</em></p>
+</li>
+
+<li>
+<p><strong>Vanish</strong>: Increasing Data Privacy with DHTs that forget. With <a href="http://www.cs.columbia.edu/~roxana/">Roxana Geambasu</a>, <a href="http://www.cs.washington.edu/homes/yoshi/">Tadayoshi Kohno</a>, and <a href="http://www.cs.washington.edu/homes/levy/">Hank Levy</a>. In Proceedings of the USENIX Security Symposium, Montreal, Canada, August 2009. Won the Outstanding Student Paper Award. Paper: <em>[<a href="papers/vanish-usenixsec09.pdf">PDF</a>]</em></p>
+</li>
+</ul>
+
+<h2 id="workshops">Workshops</h2>
+
+<ul>
+<li>
+<p>Ownership is Theft: Experiences Building an Embedded OS in Rust. With Michael Andersen, <a href="http://www.bradcampbell.com/">Brad Campbell</a>, <a href="http://www.cs.berkeley.edu/~culler">David Culler</a>, <a href="http://web.eecs.umich.edu/~prabal/">Prabal Dutta</a>, <a href="http://web.eecs.umich.edu/~brghena/">Branden Ghena</a>, <a href="http://csl.stanford.edu/~pal">Phil Levis</a> and <a href="http://www.patpannuto.com/">Pat Pannuto</a>. To appear in Programming Languages and Operating Systems (PLOS), Monterey, California, 2015.</p>
+</li>
+
+<li>
+<p><strong>Stickler</strong>: Defending Against Malicious CDNs in an Unmodified Browser. With <a href="http://www.henrycg.com/">Henry Corrigan-Gibbs</a> and <a href="https://crypto.stanford.edu/~dabo/">Dan Boneh</a>. In Web 2.0 Security &amp; Privacy (W2SP), San Jose, California, 2015. Paper: <em>[<a href="papers/stickler-w2sp15.pdf">PDF</a>]</em></p>
+</li>
+</ul>
+
+<h2 id="demos">Demos</h2>
+
+<ul>
+<li>
+<p>A networked embedded system platform for the post-mote era. With <a href="http://www.patpannuto.com/">Pat Pannuto</a>, Michael Andersen, Thomas Bauer, <a href="http://www.bradcampbell.com/">Brad Campbell</a>, <a href="http://www.cs.berkeley.edu/~culler">David Culler</a> and <a href="http://csl.stanford.edu/~pal">Phil Levis</a>. In Proceedings of SenSys, Memphis, USA, November 2014.</p>
+</li>
+
+<li>
+<p>Making Web Applications -XSafe. With <a href="http://davidterei.com/">David Terei</a>, <a href="http://deian.net">Deian Stefan</a> and <a href="http://www.scs.stanford.edu/~dm/">David Mazières</a>. In Proceedings of Haskell Symposium, Chalmers, Sweden, September 2014.</p>
+</li>
+
+<li>
+<p>Building secure systems with LIO. With <a href="http://deian.net">Deian Stefan</a>, <a href="http://www.cse.chalmers.se/~russo/">Alejandro Russo</a> and <a href="http://www.scs.stanford.edu/~dm/">David Mazières</a>. In Proceedings of Haskell Symposium, Chalmers, Sweden, September 2014.</p>
+</li>
+</ul>
+
+<h2 id="invited">Invited</h2>
+
+<ul>
+<li>Security and the average programmer. With <a href="http://www.scs.stanford.edu/~dbg/">Daniel Giffin</a>, Stefan Heule, <a href="http://www.scs.stanford.edu/~dm/">David Mazières</a>, <a href="http://theory.stanford.edu/people/jcm/">John Mitchell</a>, <a href="http://www.cse.chalmers.se/~russo/">Alejandro Russo</a>, Amy Shen, <a href="http://deian.net">Deian Stefan</a>, <a href="http://davidterei.com/">David Terei</a> and <a href="http://ezyang.com">Edward Yang</a>. In Proceedings of Conference on Principles of Security and Trust (POST). April, 2014.</li>
+</ul>
+
+<h2 id="nonrefereed">Non-Refereed</h2>
+
+<ul>
+<li>
+<p><strong>Blade</strong>: A Data Center Garbage Collector. With <a href="http://davidterei.com/">David Terei</a>. Compute Research Repository (CoRR), 2015. <em>[<a href="http://arxiv.org/pdf/1504.02578v1">PDF</a>]</em></p>
+</li>
+
+<li>
+<p>New directions for self-destructing data systems. With <a href="http://www.cs.columbia.edu/~roxana/">Roxana Geambasu</a>, <a href="http://www.cs.washington.edu/homes/yoshi/">Tadayoshi Kohno</a>, <a href="http://www.cs.washington.edu/homes/arvind">Arvind Krishnamurthy</a>, <a href="http://www.cs.washington.edu/homes/levy/">Hank Levy</a>, Paul Gardner, Vino Moscaritolo. University of Washington, Tech. Rep 2013. Paper: <em>[<a href="papers/wpid-uwtech2010">PDF</a>]</em></p>
+</li>
+</ul>
+
+  </div>
+
+  <div id="academic">
+    
+<h2 id="graduate_coursework">Graduate Coursework</h2>
+
+<h3 id="stanford">Stanford</h3>
+
+<p>Functional Systems in Haskell (<a href="http://www.scs.stanford.edu/11au-cs240h/">CS 240H</a>): Autumn 2011, instructor <a href="http://www.scs.stanford.edu/~dm/">David Mazières</a> <em>Project: FriendStar: Extensible Web Applications with Information Flow Control. Paper [<a href="papers/friendstar.pdf">PDF</a>], Code [<a href="http://github.com/alevy/friendstar">GitHub</a>]</em></p>
+
+<h3 id="university_of_washington">University of Washington</h3>
+
+<p>Implementation of Programming Languages (<a href="http://www.cs.washington.edu/education/courses/cse501/10au/">CSE 501</a>): Autumn 2010, instructor <a href="http://www.cs.washington.edu/homes/mernst/">Michael Ernst</a><br /><em>Project: Faster Real-Time Classification Using Compilation. Materials forthcoming.</em></p>
+
+<p>Molecular Programming (<a href="http://www.cs.washington.edu/education/courses/cse599x/10sp/">CSE 505</a>): Spring 2010, instructor <a href="http://www.cs.washington.edu/homes/seelig/">Georg Seeling</a></p>
+
+<p>Human Computer Interaction (<a href="http://www.cs.washington.edu/education/courses/cse510/10sp/">CSE 510</a>): Spring 2010, instructor <a href="http://www.cs.washington.edu/homes/jfogarty/">James Fogarty</a><br /><em>Project: Community detection in Social Networks. Presentation [<a href="papers/community_pres.pptx">PPTX</a>, <a href="papers/community_pres.pdf">PDF</a>], Paper [<a href="papers/community.pdf">PDF</a>]</em></p>
+
+<p>Operating Systems and the Web (<a href="http://www.cs.washington.edu/education/courses/599w/10wi/">CSE 599W</a>): Winter 2010, instructor <a href="http://www.cs.washington.edu/homes/gribble/">Steve Gribble</a></p>
+
+<p>Design and Analysis of Algorithms (<a href="http://www.cs.washington.edu/education/courses/521/10wi/">CSE 521</a>): Winter 2010, instructor <a href="http://www.cs.washington.edu/homes/beame/">Paul Beame</a></p>
+
+<p>Computer Systems Research (<a href="http://www.cs.washington.edu/education/courses/cse551/09au/">CSE 551</a>): Autumn 2009, instructor <a href="http://www.cs.washington.edu/homes/tom/">Tom Anderson</a>.<br /><em>Project: Distribued Queue. Presentation [<a href="papers/blizzard_pres.pdf">PDF</a>], Paper [<a href="papers/blizzard.pdf">PDF</a>]</em></p>
+
+<h2 id="selected_undergraduate_coursework">Selected Undergraduate Coursework</h2>
+
+<p>Design &amp; Implementation of Large Scale Clusters (<a href="http://www.cs.washington.edu/education/courses/cse490h/09wi/">CSE 490H</a>):<br />Autumn 2009, instructor <a href="http://lazowska.cs.washington.edu/">Ed Lazowska</a>.<br /><em>Project: Distributed Hash Table. <a href="http://alevy.github.com/donut/">Website</a> (contains paper and presentation links)</em></p>
+
+  </div>
+
+  <div id="teaching">
+    
+<h2 id="teaching">Teaching</h2>
+
+<p>I have been a teaching assistant for three courses over seven quarters</p>
+
+<ul>
+<li><a href="http://www.cs.washington.edu/education/courses/143/">CSE 143</a> (Intro II) - Spring, Summer, Fall 07, Winter 08</li>
+
+<li><a href="http://www.cs.washington.edu/education/courses/190m/08sp/">CSE 190M</a> (Web Programming) - Spring 08</li>
+
+<li><a href="http://www.cs.washington.edu/education/courses/341/">CSE 341</a> (Programming Languages) - Fall 08, Winter 09</li>
+</ul>
+
+  </div>
+
+  <div id="talks">
+    
+<h2 id="talks">Talks</h2>
+
+<h3 id="2015">2015</h3>
+
+<ul>
+<li>
+<p><em>Microcontrollers Deserve Protection Too</em>. Stanford Security Forum.<br />Slides: <em>[<a href="talks/security-forum-2015.pdf">PDF</a>]</em></p>
+</li>
+
+<li>
+<p><em>Are Security and Low Energy Incompatible?</em> Stanford Security Lunch.<br />Slides: <em>[<a href="talks/sec-lunch-wi15.pdf">PDF</a>]</em></p>
+</li>
+
+<li>
+<p><em>Beetle: Many-to-Many Bluetooth Communication</em>. Stanford Secure Internet of Things Project Seminar.<br />Slides: <em>[<a href="talks/sitp-w15.pdf">PDF</a>]</em> Video: <em>[<a href="http://youtu.be/UMZutGVwsBM">YouTube</a>]</em></p>
+</li>
+</ul>
+
+<h3 id="2014">2014</h3>
+
+<ul>
+<li>
+<p><em>Making Web Applications -XSafe</em>. Haskell Symposium.<br />Video: <em>[<a href="https://youtu.be/Q2dadz7Ae6M">YouTube</a>]</em></p>
+</li>
+
+<li>
+<p><em>CDNs Considered Harmful</em>. Stanford Security Lunch.<br />Slides: <em>[<a href="talks/sec-lunch-fall14.pdf">PDF</a>]</em></p>
+</li>
+</ul>
+
+<h3 id="2013">2013</h3>
+
+<ul>
+<li>
+<p><em>Bridging the Security Gap with Decentralized Information Flow Control</em>. UW CSE Systems Seminar.<br />Slides: <em>[<a href="talks/uw-sys-seminar-2013.pdf">PDF</a>]</em></p>
+</li>
+
+<li>
+<p><em>Reigning in the Memory Manager</em>. San Francisco Go Meetup.<br />Slides: <em>[<a href="talks/go_meetup_jan_13/index.html">HTML</a>]</em></p>
+</li>
+
+<li>
+<p><em>Simple. A functional web framework in Haskell</em>. Heroku.<br />Slides: <em>[<a href="talks/heroku_april_14/index.html">HTML</a>]</em></p>
+</li>
+</ul>
+
+<h3 id="2012">2012</h3>
+
+<ul>
+<li>
+<p><em>Bridging the Security Gap with Decentralized Information Flow Control</em>. CRASH PI Meeting.<br />Slides: <em>[<a href="talks/crash-2012.pdf">PDF</a>]</em></p>
+</li>
+
+<li>
+<p><em>Hails: Protecting Data Privacy in Untrusted Web Apps</em>. Stanford Security Forum.<br />Slides: <em>[<a href="talks/security-forum-2012.pdf">PDF</a>]</em></p>
+</li>
+
+<li>
+<p><em>Scaling Web Applications with MemCachier</em>. PivotalLabs.<br />Video: <em>[<a href="https://vimeo.com/56704797">Vimeo</a>]</em></p>
+</li>
+</ul>
+
+<h3 id="2011">2011</h3>
+
+<ul>
+<li><em>Experiences Leveraging DHTs for a Security Applications</em>. Stanford Security Lunch.<br />Slides: <em>[<a href="talks/sec-lunch-fall11.pdf">PDF</a>]</em></li>
+</ul>
+
+  </div>
+
+  <div id="code">
+    
+<h3 id="simple">Simple</h3>
+
+<p><em>Source: <a href="https://github.com/alevy/simple">GitHub</a></em> <em>Package: <a href="http://hackage.haskell.org/package/simple">Hackage</a></em> <em>Website: <a href="http://simple.cx">http://simple.cx</a></em></p>
+
+<p>Simple is “framework-less” web framework for Haskell web applications. Unlike many other frameworks, Simple does not enforce a particular structure or paradigm for web applications. Rather, Simple provides enough infrastructure to help you create your own patterns (or re-create existing ones). Simple is minimalist, providing a lightweight base. Everything else (e.g. sessions, controllers, persistence, caching) is provided in composable units, so you can include only the ones you need in your app, and easily replace with your own components.</p>
+<hr />
+<h3 id="postgresqlorm">Postgresql-ORM</h3>
+
+<p><em>Source: <a href="http://github.com/alevy/postgresql-orm">GitHub</a></em> <em>Package: <a href="http://hackage.haskell.org/package/postgresql-orm">Hackage</a></em></p>
+
+<p>An ORM (Object Relational Mapping) and migrations DSL for PostgreSQL. See Database.PostgreSQL.ORM for documentation.</p>
+<hr />
+<h3 id="memjs">MemJS</h3>
+
+<p><em>Source: <a href="http://github.com/alevy/memjs">GitHub</a></em> <em>Packge: <a href="http://npmjs.org/package/memjs">npm</a></em> <em>Documentation: <a href="http://amitevy.com/projects/memjs">WWW</a></em></p>
+
+<p>MemJS is a pure Node.js client library for accessing the MemCachier service and other memcache servers. It uses the binary protocol and support SASL authentication. It is currently my most popular project, with nearly 2000 downloads a day from <a href="http://www.npmjs.org/package/memjs">npm</a> (it is used extensively by Heroku app-developers, and Heroku recompiles app dependencies once a day, so this probably accounts for most of the downloads).</p>
+<hr />
+<h3 id="dp">dp</h3>
+
+<p><em>Source: <a href="https://github.com/alevy/dp">GitHub</a></em></p>
+
+<p>A simple tool that uses the great powers of <a href="http://cr.yp.to/daemontools.html">daemon tools</a> to give a simple way to manage a long-lived process on a remote server. Think of it like a cheap and cheerful Heroku interface to your server for running and deploying simple applications.</p>
+
+<h3 id="coypond">Coypond</h3>
+
+<p><em>Source: <a href="http://github.com/alevy/coypond">GitHub</a></em> <em>Gem: <a href="https://rubygems.org/gems/coypond">RubyGems</a></em></p>
+
+<p>Coypond is a semantic grep-like tool for Ruby. You can use coypond to search through ruby code for class, module, or method definitions. It indexes the class, module and method names in a Ruby code base, noting the files they were found in and the locations within those files. It can search through specific files, source code directory trees, or through locally installed gems.</p>
+
+<p>Coypond uses ripper (a built in library as of Ruby 1.9) to generate parse trees from Ruby source files. These parse trees are then use to create an inverted index of the code, annotated with semantic information like whether the definition is a class, module or method.</p>
+<hr />
+<h3 id="jsss__javascript_secret_sharing">Jsss - JavaScript Secret Sharing</h3>
+
+<p><em>Source: <a href="http://github.com/alevy/jsss">GitHub</a></em></p>
+
+<p>A <a href="http://en.wikipedia.org/wiki/Shamir's_Secret_Sharing">Shamir Secret Sharing</a> library in JavaScript. Shamir Secret Sharing splits data into <code>n</code> shares, such that only <code>k (&lt;=n)</code> are needed to reconstruct the original data. Possession of any fewer than <code>k</code> shares discloses nothing about the original data. The algorithm generates shares by evaluating a <code>k-1</code> polynomial, based on the data, at <code>n</code> arbitrary points. We get the data back by performing polynomial interpolation over <code>k</code> of the shares.</p>
+
+<p>Javascript uses variable length numbers natively but breaks arbitrarily when computing large numbers. To mitigate this, the library uses <a href="http://silentmatt.com/">Matthew Crumley</a>’s <a href="http://github.com/silentmatt/javascript-biginteger">BigInteger</a> library and a rational number class that uses fractions under the hood to compute arbitrarily complex numbers accurately. This reduces the speed of generating and recombining shares, but it computation is not feasible and pretty low values of <code>k</code> otherwise.</p>
+<hr />
+<h3 id="breadcrumbs__a_travel_blog_cms">Breadcrumbs - a travel blog CMS</h3>
+
+<p><em>Source: <a href="http://github.com/alevy/breadcrumbs">GitHub</a></em></p>
+
+<p>I built the first version of this when I was in Central America in Winter 2011, used it to put up a bunch of content for that trip and my visits to grad schools - it was great. Later, I rebuilt it to use Rails 3.1, lost all of my data and started using the new version for my trip to Berlin with Courty.</p>
+
+<p>The only real benefit over any other CMS is that checking into a location (like a city somewhere in Nicaragua) is a built in feature and pretty easy. It means that I can update my blog without writing anything, and have to checkin with my family a little less often. Checkins are strung together into trips, and posts can be tied to those trips, or even specific checkins. This means that getting an overview of where/how someone has traveled and what they did along the way is easy. Unfortunately, it is highly feature incomplete</p>
+
+  </div>
+
+  <div id="personal">
+    
+<p><img src="images/me.jpg" alt="At a coffee shop in Chiang Mai, Thailand" /></p>
+
+<h3 id="some_friends_websites">Some Friends’ Websites:</h3>
+
+<ul>
+<li><a href="http://vindika.it" rel="friend sweetheart">Kaitlin Morrison</a></li>
+
+<li><a href="http://www.cs.berkeley.edu/~justine/" rel="friend">Justine Sherry</a></li>
+
+<li><a href="http://www.gilbertbernstein.com/" rel="friend">Gilbert Bernstein</a></li>
+
+<li><a href="http://alexlod.com/" rel="friend">Alex Loddengaard</a></li>
+
+<li><a href="http://luciebaker.weebly.com/" rel="friend">Lucie Baker</a></li>
+
+<li><a href="https://www.facebook.com/danieldor12" rel="friend">Daniel Dor</a></li>
+
+<li><a href="http://www.myspace.com/ronenshmueli" rel="friend">Ronen Shmueli</a></li>
+
+<li><a href="http://sites.google.com/site/silviolattanzi/" rel="friend">Silvio Lattanzi</a></li>
+
+<li><a href="http://www.csg.ethz.ch/people/sachat" rel="friend">Sascha Trifunivic</a></li>
+
+<li><a href="https://plus.google.com/111656247334398575735/about" rel="friend">Aaron Block</a></li>
+
+<li><a href="http://davidterei.com/" rel="friend coworker">David Terei</a></li>
+
+<li><a href="http://deian.net" rel="friend coworker">Deian Stefan</a></li>
+
+<li><a href="http://ongardie.net" rel="friend coworker">Diego Ongaro</a></li>
+</ul>
+
+<h3 id="books_that_have_stayed_with_me">Books That Have Stayed with Me</h3>
+
+<h4 id="fiction">Fiction</h4>
+
+<ul>
+<li>The Giver</li>
+
+<li>1984</li>
+
+<li>The Jungle</li>
+
+<li>Kindred</li>
+
+<li>The Bell Jar</li>
+
+<li>Jesus’ Son</li>
+</ul>
+
+<h4 id="nonfiction">Non-fiction</h4>
+
+<ul>
+<li>A Brief History of Time (Stephen Hawking)</li>
+
+<li>Feminism is for everyone (bell hooks)</li>
+
+<li>Normal Life (Dean Spade)</li>
+
+<li>Fermat’s Last Theorm (Amir Azcel)</li>
+
+<li>No Logo (Naomi Klein)</li>
+
+<li>In the Garden of Beasts (Erik Larson)</li>
+
+<li>On Writing Well (William Zinser)</li>
+</ul>
+
+<h3 id="a_partial_list_of_awesome_movies">A Partial List of Awesome Movies</h3>
+
+<ul>
+<li>Do the right thing</li>
+
+<li>Y tu mamá también</li>
+
+<li>The Diving Bell &amp; The Butterfly</li>
+
+<li>Eternal Sunshine of the Spotless Mind</li>
+
+<li>Volver</li>
+
+<li>Annie Hall</li>
+
+<li>Slackers</li>
+
+<li>I Heart Huckabees</li>
+
+<li>The Life Aquatic, The Royal Tenenbaums, Fantastic Mr. Fox, and everything else Wes Anderson</li>
+
+<li>The Bubble</li>
+
+<li>Le Placard</li>
+</ul>
+
+<p>Special Category: The Room</p>
+
+<h3 id="places_ive_traveled">Places I’ve Traveled</h3>
+
+<p>I try to travel as much as possible - usually alone, but sometimes with friends. I don’t normally take pictures or keep a journal or anything, so this is mostly for me to remember where I’ve been. Alphabetically by region, then country, I’ve been to:</p>
+
+<ul>
+<li>Americas:
+<ul>
+<li>Canada: Vancouver, Victoria, Montreal, Jasper, Lake Louise</li>
+
+<li>Mexico: Cancun, Chichen Itza, Tulum, Valladolid, Playa del Carmen, Cozumel</li>
+
+<li>Guatemala: Antigua</li>
+
+<li>El Salvador: San Salvador, Los Cobanos, Morazan</li>
+
+<li>Honduras: San Pedro Sula, Utila</li>
+
+<li>Nicaragua: Leon, San Juan Del Sur</li>
+
+<li>Costa Rica: San Jose, Alajuale, Monteverde, Tamarindo, Samara</li>
+</ul>
+</li>
+
+<li>Asia:
+<ul>
+<li>Thailand: Chiang Mai, Ko Tao</li>
+</ul>
+</li>
+
+<li>Europe:
+<ul>
+<li>Belgium: Bruges</li>
+
+<li>Denmark: Copenhagen</li>
+
+<li>France: Paris, La Plagne, Chamonix</li>
+
+<li>Germany: Frankfurt, Berlin, Lübeck, Cologn</li>
+
+<li>Hungary: Budapest</li>
+
+<li>Italy: Rome, Florence, Bologna, Milan, Venice, Padua, Treviso, Trieste, Ischia</li>
+
+<li>Spain: Barcelona, Granada, Seville</li>
+
+<li>Switzerland: Geneva, Zurich, Gimmelwald</li>
+
+<li>Netherlands: Amsterdam</li>
+
+<li>Sweden: Gothenburg</li>
+
+<li>UK: London, Edinburgh</li>
+</ul>
+</li>
+
+<li>Middle East:
+<ul>
+<li>Jordan: Petra</li>
+
+<li>Palestine: Bethlehem</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+</div>
+<div id="footer">
+  <p id="updated">Updated: 09-29-2015 03:32PM</p>
+  <p id="copyleft">
+    <a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="images/creative-commons.png" /></a> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.
+  </p>
+</div>
+</div>
+</body>
+</html>
