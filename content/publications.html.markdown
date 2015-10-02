@@ -19,8 +19,9 @@ Paper: _\[[PDF](papers/vanish-usenixsec09.pdf)\]_
 
 * Ownership is Theft: Experiences Building an Embedded OS in Rust. With Michael
   Andersen, [Brad Campbell][], [David Culler][], [Prabal Dutta][], [Branden
-  Ghena][], [Phil Levis][] and [Pat Pannuto][]. To appear in Programming
-  Languages and Operating Systems (PLOS), Monterey, California, 2015.
+  Ghena][], [Phil Levis][] and [Pat Pannuto][]. Programming Languages and
+  Operating Systems (PLOS), Monterey, California, 2015.
+  Paper: _\[[PDF](papers/tock-plos2015.pdf)\]_ Slides: Coming soon...
 
 * __Stickler__: Defending Against Malicious CDNs in an Unmodified Browser. With
   [Henry Corrigan-Gibbs][] and [Dan Boneh][]. In Web 2.0 Security & Privacy (W2SP), San Jose, California, 2015.
