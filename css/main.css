@@ -1,10 +1,11 @@
 @import url(open-sans.css);
 @import url(source-sans-pro.css);
+@import url(https://fonts.googleapis.com/css?Gochi+Hand);
 
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 11pt;
-  background-image: url('../images/background2.jpg');
+  background-image: url('../images/monterey.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -13,7 +14,7 @@ body {
 #container {
   background-color: white;
   margin: 40px auto;
-  max-width: 884px;
+  max-width: 600px;
   padding: 70px;
   border-radius: 3px;
   box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.15);
@@ -21,6 +22,11 @@ body {
 
 h1, h2, h3, h4 {
  font-family: "source-sans-pro", sans-serif;
+}
+
+#navbar h1 {
+  font-family: 'Gochi Hand', cursive;
+  font-size: 40pt;
 }
 
 h1, h2 {
@@ -95,8 +101,10 @@ ul.horizontal li {
  margin-right: 20px;
 }
 
-#personal img {
-  float: right;
+#about img {
+  float: left;
+  margin: 5px 10px 0px 0px;
+  width: 42%;
   border-radius: 5px;
 }
 

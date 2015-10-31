@@ -1,6 +1,4 @@
 
-![At a coffee shop in Chiang Mai, Thailand](images/me.jpg)
-
 ### Some Friends' Websites:
 - [Kaitlin Morrison][]{:rel="friend sweetheart"}
 - [Justine Sherry][]{:rel=friend}
