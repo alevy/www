@@ -1,6 +1,15 @@
 ## Talks
 
+### 2016
+
+  * _Tock: A Secure OS for Embedded Platforms_. Analog Devices Inc.  
+    Slides: _\[[PDF](talks/tock-adi2016.pdf)\]_
+
 ### 2015
+
+  * _Ownership is Theft: Experiences Building an Embedded OS in Rust._.  
+    Programming Languages and Operating Systems (PLOS).  
+    Slides: _\[[PDF](talks/tock-plos2015.pdf)\]_
 
   * _Microcontrollers Deserve Protection Too_. Stanford Security Forum.  
     Slides: _\[[PDF](talks/security-forum-2015.pdf)\]_
