@@ -1,7 +1,7 @@
 
 ![At a coffee shop in Chiang Mai, Thailand](images/me.jpg)
 
-I am a fourth year Computer Science PhD student at Stanford University. I work
+I am a fifth year Computer Science PhD student at Stanford University. I work
 with [David Mazières] in the [Secure Computer Systems] group and [Phil Levis] in
 the [Stanford Information Networks Group].
 
