@@ -4,7 +4,7 @@
 
 * A Library for Removing Cache-based Attacks in Concurrent Information Flow Systems. With [Pablo Buiras], [Deian Stefan], [Alejandro Russo], [David Mazières]. In the 8th International Symposium on Trustworthy Global Computing (TGC) 2013. Paper: _\[[PDF](papers/resLIO-tgc2013.pdf)\]_
 
-* __Hails__: Protecting Data Privacy in Untrusted Web Applications. With [Daniel Giffin], [Deian Stefan], [David Terei], [David Mazières], [John Mitchell], [Alejandro Russo]. In Proceedings of OSDI, Los Angeles, USA, October 2010. Paper: _\[[PDF](papers/hails-osdi2012.pdf)\]_ Talk: _\[[CRASH Talk (PDF)](papers/hails-crash2012.pdf)\]_
+* __Hails__: Protecting Data Privacy in Untrusted Web Applications. With [Daniel Giffin], [Deian Stefan], [David Terei], [David Mazières], [John Mitchell], [Alejandro Russo]. In Proceedings of OSDI, Los Angeles, USA, October 2012. Paper: _\[[PDF](papers/hails-osdi2012.pdf)\]_ Talk: _\[[CRASH Talk (PDF)](papers/hails-crash2012.pdf)\]_
 
 * Addressing Covert Termination and Timing Channels in Concurrent Information Flow Systems. With [Deian Stefan], [Alejandro Russo], [Pablo Buiras], [John Mitchell], [David Mazières]. In In Proceedings of ICFP, Copenhagen, Denmark . 2012. Paper: _\[[PDF](papers/lio-icfp2012.pdf)\]_
 
