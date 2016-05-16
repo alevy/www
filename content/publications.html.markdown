@@ -1,5 +1,10 @@
 ## Conferences
 
+* __Beetle__: Flexible Communication for Bluetooth Low Energy. With James
+  Hong, [Laurynas Riliskis], [Phil Levis], [Keith Winstein]. (to appear) In
+  The 14th International Conference on Mobile Systems, Applications and
+  Services (MobiSys) 2016. Paper _\[[PDF](papers/beetle-mobisys2016.pdf)\]_
+
 * Eliminating Cache-based Timing Attacks with Instruction-based Scheduling. With [Deian Stefan], [Pablo Buiras], [Edward Yang], [David Terei], [Alejandro Russo], [David Mazières]. In The 18th European Symposium on Research in Computer Security (ESORICS) 2013. Paper _\[[PDF](papers/eliminating-esorics2013.pdf)\]_
 
 * A Library for Removing Cache-based Attacks in Concurrent Information Flow Systems. With [Pablo Buiras], [Deian Stefan], [Alejandro Russo], [David Mazières]. In the 8th International Symposium on Trustworthy Global Computing (TGC) 2013. Paper: _\[[PDF](papers/resLIO-tgc2013.pdf)\]_
