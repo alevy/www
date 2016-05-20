@@ -17,7 +17,7 @@ microcontroller, this can be prohibitive.
 Tock is a safe, multitasking operating system for memory constrained devices.
 Tock is written in Rust, a type-safe systems language with no runtime or
 garbage collector.  Tock uses the Rust type system to enforce safety of
-components, called capsules, in a singlethreaded event-driven kernel. In
+components, called capsules, in a single-threaded event-driven kernel. In
 addition, Tock uses remaining memory to support processes written in any
 language. To support safe event-driven code that responds to requests from
 processes, Tock introduces two new abstractions: memory containers and memory
