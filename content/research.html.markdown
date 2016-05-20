@@ -1,44 +1,42 @@
 
 ## Current Projects
 
-### Beetle
-
-Bluetooth Low Energy is an ultra-low power link layer designed
-for personal area networks and ubiquitous computing. This efficiency
-comes at the cost of flexibility: each ultra-low power peripheral can
-communicate with at most one controller (phone) and only one
-application on that phone can interact with it.  These and other
-restrictions preclude many interesting applications. Beetle is a
-new communication architecture which removes
-many of Bluetooth Low Energy's restrictions. Using Beetle, peripherals that share
-a coordinator can directly communicate with one another, many
-applications can use a peripheral simultaneously, and peripherals can
-share phone services such as its sensors as well as data from the
-Internet.
-
-
 ### Tock OS
 
-Microcontroller operating systems and frameworks typically assume that a
-single, monolithic application will run on an embedded system.  Traditionally,
-the need to optimize for power and to squeeze applications into minimal code
-and memory allocations have constrained microcontroller applications to be
-single-function.  The absence of hardware primitives capable of providing
-protection has eliminated security and isolation as considerations.  Newer
-hardware, however, has changed this paradigm.  The microcontroller is growing
-up and can now support a secure, trusted kernel and multiple, isolated,
-concurrent, and dynamically-loaded applications, all while operating on the
-power budgets that originally made this device class feasible.  While the
-hardware support is now present, the software ecosystem to leverage these
-advances is lagging behind.  To remedy this, we propose Tock, a new embedded
-operating system that builds on established operating system principles adapted
-to the embedded system environment.  Tock exploits memory protection units,
-advancements in modern systems programming languages, and the event driven
-nature of embedded applications to allow a core kernel, device specific
-drivers, and untrusted applications to coexist on a single microcontroller.
-This new operating system will allow embedded devices to mature beyond
-program-once, deploy-once systems into re-usable, ubiquitous, and reliable
-computing platforms.
+Embedded operating systems have traditionally been limited to libraries that
+abstract hardware and implement common utilities. These systems provide only
+limited mechanisms, if any, to ensure the safety of drivers or isolate
+applications. Instead, developers must assume that all code is equally
+trustworthy and bug free. As embedded systems strive to provide additional
+features, developers draw on third-party source code for libraries, drivers and
+applications. Incorporating this external code safely is difficult in memory
+constrained, low power embedded microcontrollers that lack virtual memory.
+Processes, for example, require per-component stacks. On a 16-64 kB
+microcontroller, this can be prohibitive.
+
+Tock is a safe, multitasking operating system for memory constrained devices.
+Tock is written in Rust, a type-safe systems language with no runtime or
+garbage collector.  Tock uses the Rust type system to enforce safety of
+components, called capsules, in a singlethreaded event-driven kernel. In
+addition, Tock uses remaining memory to support processes written in any
+language. To support safe event-driven code that responds to requests from
+processes, Tock introduces two new abstractions: memory containers and memory
+grants.
+
+### Beetle
+
+The next generation of computing peripherals will be low-power ubiquitous
+computing devices such as door locks, smart watches, and heart rate monitors.
+Bluetooth Low Energy is a primary protocol for connecting such peripherals to
+mobile and gateway devices. Current operating system support for Bluetooth Low
+Energy forces peripherals into vertical application silos. As a result, simple,
+intuitive applications such as opening a door with a smart watch or
+simultaneously logging and viewing heart rate data are impossible. Beetle is a
+new hardware interface that virtualizes peripherals at the application layer,
+allowing safe access by multiple programs without requiring the operating
+system to understand hardware functionality, fine-grained access control to
+peripheral device resources, and transparent access to peripherals connected
+over the network.
 
 ### Hails
 
