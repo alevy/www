@@ -1,6 +1,8 @@
 ## Talks
 
 ### 2016
+  * _Tock: A Safe Multi-tasking Operating System for Microcontrollers_. Intel, Google.  
+    Slides: _\[[PDF](talks/tock-intel2016.pdf)\]_
 
   * _Tock: A Secure OS for Embedded Platforms_. Analog Devices Inc.  
     Slides: _\[[PDF](talks/tock-adi2016.pdf)\]_
