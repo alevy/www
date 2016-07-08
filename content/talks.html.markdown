@@ -1,6 +1,10 @@
 ## Talks
 
 ### 2016
+
+  * _Beetle_: Sharing, flexibility and access control for Bluetooth Low Energy. Mobisys 2016  
+    Slides: _\[[PDF](talks/beetle-mobisys2016.pdf)\]_
+
   * _Tock: A Safe Multi-tasking Operating System for Microcontrollers_. Intel, Google.  
     Slides: _\[[PDF](talks/tock-intel2016.pdf)\]_
 
