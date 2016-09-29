@@ -41,7 +41,6 @@
 - The Diving Bell &amp; The Butterfly
 - Eternal Sunshine of the Spotless Mind
 - Volver
-- Annie Hall
 - Slackers
 - I Heart Huckabees
 - The Life Aquatic, The Royal Tenenbaums, Fantastic Mr. Fox, and everything else Wes Anderson...
@@ -52,7 +51,10 @@ Special Category: The Room
 
 ### Places I've Traveled
 
-I try to travel as much as possible - usually alone, but sometimes with friends. I don't normally take pictures or keep a journal or anything, so this is mostly for me to remember where I've been. Alphabetically by region, then country, I've been to:
+I try to travel as much as possible - usually alone, but sometimes with
+friends. I don't normally take pictures or keep a journal or anything, so this
+is mostly for me to remember where I've been. Alphabetically by region, then
+country, I've been to:
 
 - Americas:
   - Canada: Vancouver, Victoria, Montreal, Jasper, Lake Louise
@@ -64,6 +66,7 @@ I try to travel as much as possible - usually alone, but sometimes with friends.
   - Costa Rica: San Jose, Alajuale, Monteverde, Tamarindo, Samara
 - Asia:
   - Thailand: Chiang Mai, Ko Tao
+  - Singapore
 - Europe:
   - Belgium: Bruges
   - Denmark: Copenhagen
