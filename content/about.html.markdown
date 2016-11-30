@@ -6,7 +6,7 @@ with [David Mazières] in the [Secure Computer Systems] group and [Phil Levis]
 in the [Stanford Information Networks Group].
 
 My partner-in-crime, [Kaitlin Morrison], is a law clerk for a judge on the
-Southern District of New York circuit (yeah... she's kind of a big deal). So,
+Southern District of New York (yeah... she's kind of a big deal). So,
 while I'm still a student at Stanford, I live in New York and spend most of my
 days at Columbia thanks to [Roxana Geambasu]'s generosity. So that's where
 you'll find me.
