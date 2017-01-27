@@ -4,57 +4,64 @@ https://keybase.io/amit
 
 I hereby claim:
 
-  * I am an admin of http://amitlevy.com
+  * I am an admin of https://amitlevy.com
   * I am amit (https://keybase.io/amit) on keybase.
-  * I have a public key with fingerprint 720B 97A3 E367 ACC3 45FC  A0FB 68CA AE74 BF7C 250A
+  * I have a public key with fingerprint 5F32 9878 D080 3479 F0F6  162A A60A BEE4 AD8E C024
 
-To claim this, I am signing this object:
+To do so, I am signing this object:
 
 {
     "body": {
         "key": {
-            "fingerprint": "720b97a3e367acc345fca0fb68caae74bf7c250a",
+            "eldest_kid": "0101ded923f598e598718e627e6eebabb85552d046d90c6dadc8ce6f061d68b380de0a",
+            "fingerprint": "5f329878d0803479f0f6162aa60abee4ad8ec024",
             "host": "keybase.io",
-            "key_id": "68caae74bf7c250a",
+            "key_id": "a60abee4ad8ec024",
+            "kid": "0101ded923f598e598718e627e6eebabb85552d046d90c6dadc8ce6f061d68b380de0a",
             "uid": "a5500e55f89f3acb5ae64b209ea23a00",
             "username": "amit"
         },
         "service": {
             "hostname": "amitlevy.com",
-            "protocol": "http:"
+            "protocol": "https:"
         },
         "type": "web_service_binding",
         "version": 1
     },
-    "ctime": 1397192186,
+    "ctime": 1485538654,
     "expire_in": 157680000,
-    "prev": "e6c9268d0652c4e8a07d1b92e4ff262e64b5a1240e35216a709fd36d8fb901df",
-    "seqno": 13,
+    "prev": "95bf04724c461f321b2af6b9b0789c787f68e84b0936ba3b5ebde33623b2b863",
+    "seqno": 71,
     "tag": "signature"
 }
 
-with the aforementioned key, yielding the PGP signature:
+which yields the signature:
 
 -----BEGIN PGP MESSAGE-----
-Version: Keybase OpenPGP v0.1.5
-Comment: https://keybase.io/crypto
 
-yMHnAnicbVFtSBRpHJ/VTXM5rywK6Sx0tFJYbN5edlbJFyoR/NRV2wdle2bmGR1y
-Z9bZ2d3WRTg5jrtCFKQMw0IRIk2jCyJMiEU2otLosgURiSs2CNczKtLIPH1GCvrQ
-8+Xh+b0+f/7x7HTMYbtUULTzzy4hx/Y4thjEfq0Jfo7ioi5HcHcUPw03LkXVGqHh
-N1TNxN04TxGiwAMa0hwPJIlmWEUChCJyLgkAyDOiwksUSwDciTfpAcuBYkQQgKWq
-jjD08KoyQn+gD24QgGUJArKs4hIUGkgiCyDHiBQhQEDRgCAsYQAaGvBBS+1TTbzN
-iSMkpEoIiW7Ufsc2w1CkVNJ9yOc3dFOX9GbENJmm320ZzYjfUoah6P2a4RVVTUYz
-I0MIGgFV13A3iZSSqVqhJC3wpECRLs6JwzN+1YBe1VKwPOci0LFqYAhFQk4SKM4l
-ExxLSQx0AYKXSVGgIKMoFEdZU7GApBgC0ixFcoAnBEWmOdmliAJBygrqD8AWTbcq
-0T9BI8oMqI0aMIMGxNsmYvV2zObAMjalWWvDHFlbvy1ziNmMdUTjnu3F53qPjPxd
-9XK52973mqmstu3oezB5v4v+C7tY1Fu1evufnxZrI8datZmTWZ2Tb+Ktu5fam6eG
-ljt72MHDS9erM/OnG7KTY/tWPGsrF4RrWY5+Wzz2oeDg1QZf3fuhxK7ZJyMpzXbo
-t6eDC2WfVv8dPT9mT+b1hZ9XtmB+T273UuJEwVh7MpW4l6xYOPsLVZf2qqcGlOhv
-B2euXPYeT38Rrv/ZPnVr+ll5bYk4PO9Jwxcyb5Rz+/ek1o5G95aN3hl41J4/Os8v
-B/4/ULst9bB7eHblv7W5wpwtRkUst7/ipvPdRF4i+/fxuVN32YEerpDIGJ+VP3Z8
-+SNcnLsOF0QUfg==
-=cKia
+owGtUm1MU1cYLt+hAWo0ki2AGxcHAhVO71fvrRmMJRCdGJjIguCo99x7LpSPtrS1
+QhiMmbiMAZsuQlBHJlaEZDBCNqeODaQlovtIhMAmYQgMBnQggkyGccrudTPZj/3c
+SU5Ozvs+z/M+7znviUAvhdLjorJnpuODa9s9vnNDRVbNcViOQZNQhunKsUL09EBF
+ArLa9IUGAdNhQAM0AhJYnBAplkHS1moYRONaRCMEOQgZiqJwAZC0wAKeFjiBZ3hE
+i4DWCDQDCQYICHCYGhMNxjxkMVsMRpskS4kELkkxAmAAQWpZEYi0hsY5jgYcRIjk
+BAbxACclYr7JKjMkc5CzojiDSYpJF/1Te/+B/599H/m7DkUBgChKZFiR4HhIcYgm
+IQ5YxOEEB4AMtCKLkStGMrrYYMMq1JgUsRt4JD+q3MW/skXIXhbHm4olntlispl4
+U5GUybfZzFadzLSVmWXoUQT1/4joocEoSG8oMezIYjWYjJhOIyF5m0FW1ZBSQwRD
+U6QaQ6VmgwXpDTKC0tIMkJZcB9klSZaCIiC1OMmTmbRG+gYNxDmRhiwEWobltYxW
+pBnEkBCwBA05AlIICoggaJyAOGRoApP7KjGaMJ1WIxnl8iRRqyHPyNmOWBBWoaz2
+JLwVHkpFWHC4tx5vLL1VRZYtrwXHPBs8H0956hRK/03PIgkHVU9AQU3fT/3r4r3J
+d0unTh/Y7Z62pXq1H13rwzJSCjr33s9ZuPuyf/lU+a+Pr3y94Xk6dPRVz3OHpqdq
+F8Zqr3sWLE3zjr7AlcU0R1FWunXoQUBzfCSh7VRWOukd1+hHdTtzb+6bW/SLDgSO
+ycDV5HuHa0Iip5p2DfSkBLi35re1pRXNLW1LZMVLYarW+ahR3/O9uS+NOA/s3JT8
+IZY3/0P8VX/ncm64b5C9yd3yRvjYmcr21rI7aWeN16n1sU8iTK62HtW0CW8NmklV
+d3/ju62VTngtu2um45fO8sqSrd9+vLl6ePDher7Ty584hVdcjtjScD7VdS6qIWBu
+/G7hC40n44Lm4eiLSy1P7AGrOdsX4ocbnjfXvZcUU7LyKL0gefzzAJ8E935qD/7H
+wsHY0ZB3HF2Oat+khYs53RnpXn7jSXvqY2Mf9NPANby34+fD9duVn0bN3ndcmcjU
+xRx/8xgbWhmVVTVZfafusk83vFn1/YWl9mx74MjE6MRunwzhLaz3M3t6v372q8LX
+6z9KPGOu6zvr9xueEhmctWPmUuONjkNlpS6gHKzITnhl6Efq/dqB2dtrc82Zfw66
+jqmqVA1NX2QPvH21/sSqNdG5y9ulOBly46F6I75A5Q67MOIkXfuju05FVzwXUePY
+N++b+Hvs2ublW1sySEXo4kbLUPPjL1fipup71bf/Ag==
+=7eLp
 -----END PGP MESSAGE-----
 
 And finally, I am proving ownership of this host by posting or
@@ -63,3 +70,4 @@ appending to this document.
 View my publicly-auditable identity here: https://keybase.io/amit
 
 ==================================================================
+
