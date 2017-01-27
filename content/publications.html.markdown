@@ -35,6 +35,8 @@ Paper: _\[[PDF](papers/vanish-usenixsec09.pdf)\]_
 
 ## Demos
 
+* Rebooting the Embedded System. With [Brad Campbell], [Branden Ghena], Shane Leonard, [Pat Pannuto], [Phil Levis] and [Prabal Dutta]. In Proceedings of SenSys, Stanford, USA, November 2016. \[[PDF](papers/rebooting-sensys2016.pdf)\]
+
 * A networked embedded system platform for the post-mote era. With [Pat Pannuto], Michael Andersen, Thomas Bauer, [Brad Campbell], [David Culler] and [Phil Levis]. In Proceedings of SenSys, Memphis, USA, November 2014.
 
 * Making Web Applications -XSafe. With [David Terei], [Deian Stefan] and [David Mazières]. In Proceedings of Haskell Symposium, Chalmers, Sweden, September 2014.
