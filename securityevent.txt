@@ -1,0 +1,26 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Hi!
+
+If you're able to verify this message was signed with my PGP key, you've completed a big milestone!
+
+<3
+- -amit
+-----BEGIN PGP SIGNATURE-----
+
+iQJGBAEBCAAwFiEEXzKYeNCANHnw9hYqpgq+5K2OwCQFAliM0NQSHGFtaXRAYW1p
+dGxldnkuY29tAAoJEKYKvuStjsAkdpkP/i0Pe8CCMswx4RroLhvnW3+K6xJfOtnh
+pJNKYB2/KyejxKhUMeVbvdl2UoYO5mjWMgycwAgE1mcOcx01PCAYSHuagF/CpVgz
+D97c8JHikGruG4Ci8yfxc2caUjqLwLtmeUuyyM7nWUKB6zJ1XPKL9Wa0gFvKP/ai
+PvQ2rYrD+SQSjjcqc/71KawtcHXNScRCpbv7Dhucu+PjAhUgnVvNvZzDulXRmB3R
+d3xYiFGIp5iM9F3lzp0yjZ+hVk8wXbgsVrXtzxulhSLqwHVmTSinMfeb217EA23i
+YjHI92y1GKngUJ1fDEt1x/uanGn83RKA9B75/nF6nZXP52yGK1Hm63OQTa1KSI7l
+bGdg1eKEIjB39ISa+chQfBwJRljbqYXMaMLLSCEqYQ665e+tAizyv75GHkJnVWbO
++zYBbJLneW8Dd+NtF8VLdIIy3UxFhkUiX+8FXa907WrxWLqF8OLa9dGEsFLpfem8
+p13xPBdx/UrR6nHrqThsZ6j3QTaoekcoYK0UfH4l1Vr0rzLqJQleTM+I11Rxfnlu
+wRJhln6FF6reVnQLt2MLl5K5KD+5wfSs8/JENZobkcxgRwRYWHp6obsjFGnCCBpq
+v5Bo/OSEoB0XIj+dVaAP3+UjXK3NeLL48NrXMtpCMyfCUESxaCULMt1/OKeVjBRs
+8PcEhRQTzhPa
+=2ZiB
+-----END PGP SIGNATURE-----
