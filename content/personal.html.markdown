@@ -57,26 +57,28 @@ is mostly for me to remember where I've been. Alphabetically by region, then
 country, I've been to:
 
 - Americas:
+  - Brazil: Manaus
   - Canada: Vancouver, Victoria, Montreal, Jasper, Lake Louise
-  - Mexico: Cancun, Chichen Itza, Tulum, Valladolid, Playa del Carmen, Cozumel
-  - Guatemala: Antigua
-  - El Salvador: San Salvador, Los Cobanos, Morazan
-  - Honduras: San Pedro Sula, Utila
-  - Nicaragua: Leon, San Juan Del Sur
   - Costa Rica: San Jose, Alajuale, Monteverde, Tamarindo, Samara
+  - El Salvador: San Salvador, Los Cobanos, Morazan
+  - Guatemala: Antigua
+  - Honduras: San Pedro Sula, Utila
+  - Mexico: Cancun, Chichen Itza, Mexico City, Tulum, Valladolid, Playa del Carmen, Cozumel
+  - Nicaragua: Leon, San Juan Del Sur
+  - Peru: Lima
 - Asia:
-  - Thailand: Chiang Mai, Ko Tao
+  - Thailand: Bangkok, Chiang Mai, Ko Tao
   - Singapore
 - Europe:
   - Belgium: Bruges
   - Denmark: Copenhagen
-  - France: Paris, La Plagne, Chamonix
-  - Germany: Frankfurt, Berlin, Lübeck, Cologn
+  - France: Chamonix, La Plagne, Paris, La Plagne
+  - Germany: Berlin, Cologn, Frankfurt, Lübeck
   - Hungary: Budapest
   - Italy: Rome, Florence, Bologna, Milan, Venice, Padua, Treviso, Trieste, Ischia
+  - Netherlands: Amsterdam
   - Spain: Barcelona, Granada, Seville
   - Switzerland: Geneva, Zurich, Gimmelwald
-  - Netherlands: Amsterdam
   - Sweden: Gothenburg
   - UK: London, Edinburgh
 - Middle East:
