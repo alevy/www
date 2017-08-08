@@ -1,7 +1,12 @@
 ## Conferences
 
+* Safely and Efficiently Multiprogramming a 64 kB Computer. With [Daniel
+  Giffin], [Brad Campbell], [Branden Ghena], [Pat Pannuto], [Prabal Dutta],
+  [Phil Levis]. (to appear) In proceedings of the ACM Symposium on Operating
+  Systems Principles (SOSP) 2017.
+
 * __Beetle__: Flexible Communication for Bluetooth Low Energy. With James
-  Hong, [Laurynas Riliskis], [Phil Levis], [Keith Winstein]. (to appear) In
+  Hong, [Laurynas Riliskis], [Phil Levis], [Keith Winstein]. In
   The 14th International Conference on Mobile Systems, Applications and
   Services (MobiSys) 2016. Paper _\[[PDF](papers/beetle-mobisys2016.pdf)\]_
   Slides: _\[[PDF](talks/beetle-mobisys2016.pdf)\]_
