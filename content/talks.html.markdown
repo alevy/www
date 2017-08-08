@@ -1,5 +1,10 @@
 ## Talks
 
+### 2017
+
+  * _Safely and Efficiently Multiprogramming a 64kB Computer_. Secure Internet
+    of Things Project Retreat 2017. Slides: _\[[PDF](talks/tock-sitp17.pdf)\]_
+
 ### 2016
 
   * _Beetle_: Sharing, flexibility and access control for Bluetooth Low Energy. Mobisys 2016  
