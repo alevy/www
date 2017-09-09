@@ -58,7 +58,7 @@ country, I've been to:
 
 - Americas:
   - Brazil: Manaus
-  - Canada: Vancouver, Victoria, Montreal, Jasper, Lake Louise
+  - Canada: Gabriola Island, Nanaimo, Vancouver, Victoria, Montreal, Jasper, Lake Louise
   - Costa Rica: San Jose, Alajuale, Monteverde, Tamarindo, Samara
   - El Salvador: San Salvador, Los Cobanos, Morazan
   - Guatemala: Antigua
@@ -67,6 +67,8 @@ country, I've been to:
   - Nicaragua: Leon, San Juan Del Sur
   - Peru: Lima
 - Asia:
+  - India: Mumbai, Udaipur
+  - Japan: Tokyo, Kyoto
   - Thailand: Bangkok, Chiang Mai, Ko Tao
   - Singapore
 - Europe:
