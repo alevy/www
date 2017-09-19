@@ -1,15 +1,13 @@
 
 ![At a coffee shop in Chiang Mai, Thailand](images/me.jpg "DOMO!!!")
 
-I'm a sixth year Computer Science PhD student at Stanford University. I work
+I'm a terminal year Computer Science PhD student at Stanford University. I work
 with [David Mazières] in the [Secure Computer Systems] group and [Phil Levis]
 in the [Stanford Information Networks Group].
 
-My partner-in-crime, [Kaitlin Morrison], is a law clerk for a judge on the
-Southern District of New York (yeah... she's kind of a big deal). So,
-while I'm still a student at Stanford, I live in New York and spend most of my
-days at Columbia thanks to [Roxana Geambasu]'s generosity. So that's where
-you'll find me.
+My partner-in-crime, [Kaitlin Morrison], is doing a fellowship at the National
+Resource Defense Council in New York. So, while I'm still a student at
+Stanford, I live and sometimes work in New York.
 
 I'm currently working on a new secure operating system for embedded devices
 called [TockOS](http://www.tockos.org). I also work on

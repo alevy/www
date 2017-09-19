@@ -68,7 +68,7 @@ country, I've been to:
   - Peru: Lima
 - Asia:
   - India: Mumbai, Udaipur
-  - Japan: Tokyo, Kyoto
+  - Japan: Tokyo, Kyoto, Nara, Mount Koya
   - Thailand: Bangkok, Chiang Mai, Ko Tao
   - Singapore
 - Europe:
