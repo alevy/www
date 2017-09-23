@@ -28,7 +28,7 @@ Paper: _\[[PDF](papers/vanish-usenixsec09.pdf)\]_
 
 ## Workshops
 
-* The Case for Writing a Kernel in Rust. With [Brad Campbell][], [Prabal Dutta][], [Branden Ghena][], [Phil Levis][] and [Pat Pannuto][]. Asia-Pacific Workshop on Systems (APSYS), Mumbai, Indai, 2017. Paper: \[[PDF](papers/rust-kernel-apsys2017.pdf)\] Slides: _\[[PDF](talks/rust-kernel-apsys2017.pdf)\]_
+* The Case for Writing a Kernel in Rust. With [Brad Campbell][], [Prabal Dutta][], [Branden Ghena][], [Phil Levis][] and [Pat Pannuto][]. Asia-Pacific Workshop on Systems (APSYS), Mumbai, Indai, 2017. Paper: _\[[PDF](papers/rust-kernel-apsys2017.pdf)\]_ Slides: _\[[PDF](talks/rust-kernel-apsys2017.pdf)\]_
 
 * Ownership is Theft: Experiences Building an Embedded OS in Rust. With Michael
   Andersen, [Brad Campbell][], [David Culler][], [Prabal Dutta][], [Branden
