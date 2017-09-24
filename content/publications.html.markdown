@@ -3,7 +3,7 @@
 * Safely and Efficiently Multiprogramming a 64 kB Computer. With [Daniel
   Giffin], [Brad Campbell], [Branden Ghena], [Pat Pannuto], [Prabal Dutta],
   [Phil Levis]. (to appear) In proceedings of the ACM Symposium on Operating
-  Systems Principles (SOSP) 2017.
+  Systems Principles (SOSP) 2017. Paper _\[[PDF](papers/tock-sosp2017.pdf)\]_
 
 * __Beetle__: Flexible Communication for Bluetooth Low Energy. With James
   Hong, [Laurynas Riliskis], [Phil Levis], [Keith Winstein]. In
