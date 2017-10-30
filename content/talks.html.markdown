@@ -2,6 +2,9 @@
 
 ### 2017
 
+  * _Safely and Efficiently Multiprogramming a 64kB Computer_. SOSP 2017.
+    Slides: _\[[ODP](talks/tock-sosp17.odp)\]_
+
   * _Safely and Efficiently Multiprogramming a 64kB Computer_. Secure Internet
     of Things Project Retreat 2017. Slides: _\[[PDF](talks/tock-sitp17.pdf)\]_
 
