@@ -22,8 +22,8 @@ memcache-as-a-service for web applications hosted on platforms like
 [Heroku](http://www.heroku.com), [cloudControl](http://www.cloudcontrol.com) or
 directly on [EC2](http://aws.amazon.com). I do not generally recommended
 starting a business while in grad school, but if you have to -- and sometimes
-you have to -- I highly recommend doing it with someone pleasant, like my
-co-conspirator [David Terei].
+you have to -- I highly recommend doing it with pleasant people, like [Lindsey
+Jacks], Ian Ross, [Sascha Trifunovic] and my co-conspirator [David Terei].
 
 If you want a job that involves interacting with human begins, programming in Go
 and Haskell, running a distributed storage system and relatively little work,
@@ -53,5 +53,5 @@ a performing arts camp.
 
 Once, I met [Eben Moglen](http://moglen.law.columbia.edu/) and he asked me if I
 worked for Mossad, which seems like a silly question to ask someone you think
-works for Mossad.
+might work for Mossad.
 

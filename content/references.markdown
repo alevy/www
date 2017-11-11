@@ -49,6 +49,8 @@
 [Silvio Lattanzi]:    http://sites.google.com/site/silviolattanzi/
 [Sascha Trifunivic]:  http://www.csg.ethz.ch/people/sachat
 [Aaron Block]:        https://plus.google.com/111656247334398575735/about
+[Lindsey Jacks]:      https://linzjacks.github.io
+[Sascha Trifunovic]:  https://www.linkedin.com/in/sascha-trifunovic/
 
 [Secure Computer Systems]:  http://www.scs.stanford.edu
 [Stanford Information Networks Group]:  http://sing.stanford.edu
