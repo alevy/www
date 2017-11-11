@@ -4,11 +4,15 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  font-size: 11pt;
+  font-size: 16px/24px;
   background-image: url('../images/monterey.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+}
+
+#copyleft {
+  font-size: 75%;
 }
 
 #container {
