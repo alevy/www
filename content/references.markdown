@@ -45,7 +45,7 @@
 [Lucie Baker]:        http://luciebaker.weebly.com/
 [Daniel Dor]:         https://www.facebook.com/danieldor12
 [Ronen Shmueli]:      http://www.myspace.com/ronenshmueli
-[Kaitlin Morrison]:   http://vindika.it
+[Kaitlin Morrison]:   https://www.nrdc.org/experts/kaitlin-morrison
 [Silvio Lattanzi]:    http://sites.google.com/site/silviolattanzi/
 [Sascha Trifunivic]:  http://www.csg.ethz.ch/people/sachat
 [Aaron Block]:        https://plus.google.com/111656247334398575735/about

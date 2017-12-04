@@ -5,7 +5,7 @@ I'm a terminal year Computer Science PhD student at Stanford University. I work
 with [David Mazières] in the [Secure Computer Systems] group and [Phil Levis]
 in the [Stanford Information Networks Group].
 
-My partner-in-crime, [Kaitlin Morrison], is doing a fellowship at the National
+My partner-in-crime, [Kaitlin Morrison], is doing a fellowship at the Natural
 Resource Defense Council in New York. So, while I'm still a student at
 Stanford, I live and sometimes work in New York.
 
