@@ -6,7 +6,7 @@ with [David Mazières] in the [Secure Computer Systems] group and [Phil Levis]
 in the [Stanford Information Networks Group].
 
 My partner-in-crime, [Kaitlin Morrison], is doing a fellowship at the Natural
-Resource Defense Council in New York. So, while I'm still a student at
+Resources Defense Council in New York. So, while I'm still a student at
 Stanford, I live and sometimes work in New York.
 
 I'm currently working on a new secure operating system for embedded devices
