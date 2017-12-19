@@ -1,5 +1,11 @@
+---
+title: About
+layout: default
+---
 
-![At a coffee shop in Chiang Mai, Thailand](images/me.jpg "DOMO!!!")
+{% include references.md %}
+
+![At a coffee shop in Chiang Mai, Thailand](/assets/images/me.jpg "DOMO!!!")
 
 I'm a terminal year Computer Science PhD student at Stanford University. I work
 with [David Mazières] in the [Secure Computer Systems] group and [Phil Levis]

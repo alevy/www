@@ -56,3 +56,4 @@
 [Stanford Information Networks Group]:  http://sing.stanford.edu
 [Grameen Foundation]:       http://www.grameenfoundation.org/
 [MIFOS]:                    http://www.mifos.org/
+

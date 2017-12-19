@@ -1,3 +1,9 @@
+---
+title: Research
+layout: default
+---
+
+{% include references.md %}
 
 ## Current Projects
 

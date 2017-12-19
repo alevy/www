@@ -1,3 +1,10 @@
+---
+title: Code
+layout: default
+---
+
+{% include references.md %}
+
 ### Simple
 _Source: [GitHub](https://github.com/alevy/simple)_
 _Package: [Hackage](http://hackage.haskell.org/package/simple)_
