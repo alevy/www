@@ -5,4 +5,54 @@ h1, h2, h3, h4 {
 body {
   font-family: $body-font;
   font-size: $text-base-size;
+  padding: $spacer;
+}
+
+header {
+  > h1 {
+    font-family: $masthead-font;
+    font-size: 3.5em;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+  }
+
+  .h-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "title email"
+                         "dept  gpg"
+                         "inst  inst";
+    > span {
+      display: block;
+    }
+    .p-job-title {
+      grid-area: title;
+      text-align: left;
+    }
+    .p-organization-unit {
+      grid-area: dept;
+      text-align: left;
+    }
+    .p-organization-name {
+      grid-area: inst;
+      text-align: left;
+    }
+    .p-email {
+      grid-area: email;
+      text-align: right;
+    }
+    .p-gpg {
+      grid-area: gpg;
+      text-align: right;
+    }
+  }
+}
+
+article > p > img {
+  display: block;
+  width: 100%;
+  max-width: 20em;
+  border-radius: 0.2em;
 }

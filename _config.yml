@@ -14,15 +14,19 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: amit levy
-email: amit@amitlevy.com
 description: >- # this means to ignore newlines until "baseurl:"
   A Computer Science PhD student in the Secure Computer Systems group at
   Stanford. Research, publications, projects and contact information.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: pretty
-twitter_username: aalevy
-github_username:  alevy
+
+# Contact Info
+job:
+  title: "PhD Candidate"
+  department: "Computer Science"
+  institution: "Stanford University"
+email: amit@amitlevy.com
 
 # Build settings
 markdown: kramdown
