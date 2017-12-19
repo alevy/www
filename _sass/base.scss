@@ -1,0 +1,204 @@
+h1, h2, h3, h4 {
+  font-family: $heading-font;
+}
+
+body {
+  font-family: $body-font;
+  font-size: $text-base-size;
+  @media screen and (min-width: $desktop) {
+    background-size: cover;
+    background-image: url('/assets/images/monterey.jpg');
+  }
+}
+
+body > .wrapper {
+  max-width: $tablet;
+  margin: 0 auto;
+  padding: $spacer;
+  display: grid;
+  grid-template-areas: "header"
+                       "content";
+  background-color: white;
+  @media screen and (min-width: $desktop) {
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 0.3em;
+    margin: 5em auto;
+    padding: 5em 5em;
+  }
+}
+
+header {
+  position: relative;
+  grid-area: header;
+  display: grid;
+  grid-template-areas: "title"
+                       "contact"
+                       "nav";
+  @media screen and (max-width: $tablet) {
+    grid-template-columns: 3em 1fr;
+    grid-template-areas: "nav title"
+                         "contact contact";
+  }
+
+  > h1 {
+    grid-area: title;
+    font-family: $masthead-font;
+    font-size: 4em;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    @media screen and (max-width: $tablet) {
+      font-size: 3.3em;
+    }
+    @media screen and (min-width: $desktop) {
+      text-align: left;
+    }
+  }
+
+  .h-card {
+    grid-area: contact;
+    display: grid;
+    grid-template-areas: "title email"
+                         "dept  gpg"
+                         "inst  inst";
+    > span {
+      display: block;
+    }
+    .p-job-title {
+      grid-area: title;
+      text-align: left;
+    }
+    .p-organization-unit {
+      grid-area: dept;
+      text-align: left;
+    }
+    .p-organization-name {
+      grid-area: inst;
+      text-align: left;
+    }
+    .p-email {
+      grid-area: email;
+      text-align: right;
+    }
+    .p-gpg {
+      grid-area: gpg;
+      text-align: right;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  > nav {
+    grid-area: nav;
+
+    .hamburger {
+      > input {
+        display: none;
+      }
+
+      > i {
+        display: none;
+      }
+
+      i {
+        font-family: 'Material Icons';
+        font-size: 3rem;
+        line-height: 100%;
+        background-color: white;
+      }
+    }
+
+    i {
+      display: none;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-transform: lowercase;
+      display: grid;
+      grid-auto-flow: column;
+
+      li {
+        display: block;
+        text-align: center;
+
+        a {
+          color: inherit;
+          text-decoration: none;
+          font-size: 1.3em;
+
+          &:hover {
+            text-decoration: underline;
+          }
+          &.current {
+            font-weight: bold;
+            font-style: italic;
+            &:hover {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: $tablet) {
+      ul {
+        display: none;
+        position: absolute;
+        width: 100%;
+        padding: $spacer;
+        background-color: white;
+
+        li {
+          text-align: left;
+          a {
+            font-size: 1.5em;
+            &:hover {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+
+      i.menu {
+        display: block;
+      }
+
+      input:checked {
+        & ~ ul {
+          display: block;
+        }
+        & ~ i.close {
+          display: block;
+        }
+
+        & ~ i.menu {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+article {
+  grid-area: content;
+
+  > p > img {
+    display: block;
+    width: 100%;
+    max-width: 20em;
+    border-radius: 0.2em;
+
+    @media screen and (max-width: $phone-landscape) {
+      margin: 0 auto;
+    }
+    @media screen and (min-width: $phone-landscape) {
+      float: left;
+      margin: 1.3em 1em 0 auto;
+    }
+  }
+}

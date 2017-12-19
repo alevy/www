@@ -1,3 +1,10 @@
+---
+title: Personal
+layout: default
+toplevel: 5
+---
+
+{% include references.md %}
 
 ### Some Friends' Websites:
 - [Kaitlin Morrison][]{:rel="friend sweetheart"}

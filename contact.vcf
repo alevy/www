@@ -1,9 +1,0 @@
-BEGIN:VCARD
-VERSION:3.0
-N:Levy;Amit;;;
-FN:Amit Levy
-ORG:Stanford University;
-EMAIL;type=INTERNET;type=WORK:levya@cs.stanford.edu
-EMAIL;type=INTERNET;type=HOME:amit@amitlevy.com
-TEL;type=WORK;type=pref:(206) 651-5389
-END:VCARD

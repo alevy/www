@@ -1,3 +1,10 @@
+---
+title: Research
+layout: default
+toplevel: 1
+---
+
+{% include references.md %}
 
 ## Current Projects
 
