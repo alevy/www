@@ -5,6 +5,8 @@ h1, h2, h3, h4 {
 body {
   font-family: $body-font;
   font-size: $text-base-size;
+  max-width: 1024px;
+  margin: 0 auto;
   padding: $spacer;
   display: grid;
   grid-template-areas: "header"
@@ -12,6 +14,7 @@ body {
 }
 
 header {
+  position: relative;
   grid-area: header;
   display: grid;
   grid-template-columns: 3em 1fr;
@@ -62,14 +65,13 @@ header {
     grid-area: nav;
 
     ul {
+      display: none;
       list-style: none;
       padding: 0;
       margin: 0;
-      margin-top: -1px;
       text-transform: lowercase;
       position: absolute;
-      right: $spacer;
-      left: $spacer;
+      width: 100%;
       padding: $spacer;
       background-color: white;
 
@@ -99,12 +101,7 @@ header {
         font-size: 3rem;
         line-height: 100%;
         background-color: white;
-        //color: $primary-color-dark;
       }
-    }
-
-    ul {
-      display: none;
     }
 
     i.menu {
@@ -138,6 +135,13 @@ article {
     width: 100%;
     max-width: 20em;
     border-radius: 0.2em;
-    margin: 0 auto;
+
+    @media screen and (max-width: $tablet) {
+      margin: 0 auto;
+    }
+    @media screen and (min-width: $tablet) {
+      float: left;
+      margin: 1.3em 1em 0 auto;
+    }
   }
 }
