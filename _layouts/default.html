@@ -42,6 +42,11 @@
 </header>
 
 <article>
+  {%- if page.title -%}
+  {%- unless page.title contains "About" -%}
+  <h1>{{ page.title }}</h1>
+  {%- endunless -%}
+  {%- endif -%}
 {{ content }}
 </article>
 

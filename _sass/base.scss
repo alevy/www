@@ -17,17 +17,25 @@ header {
   position: relative;
   grid-area: header;
   display: grid;
-  grid-template-columns: 3em 1fr;
-  grid-template-areas: "nav title"
-                       "contact contact";
+  grid-template-areas: "title"
+                       "contact"
+                       "nav";
+  @media screen and (max-width: $tablet) {
+    grid-template-columns: 3em 1fr;
+    grid-template-areas: "nav title"
+                         "contact contact";
+  }
 
   > h1 {
     grid-area: title;
     font-family: $masthead-font;
-    font-size: 3.3em;
+    font-size: 4em;
     text-transform: uppercase;
     text-align: center;
     margin: 0;
+    @media screen and (max-width: $tablet) {
+      font-size: 3.3em;
+    }
   }
 
   .h-card {
@@ -59,33 +67,14 @@ header {
       grid-area: gpg;
       text-align: right;
     }
+
+    a {
+      text-decoration: none;
+    }
   }
 
   > nav {
     grid-area: nav;
-
-    ul {
-      display: none;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      text-transform: lowercase;
-      position: absolute;
-      width: 100%;
-      padding: $spacer;
-      background-color: white;
-
-      li {
-        display: block;
-        text-align: left;
-
-        a {
-          color: inherit;
-          text-decoration: none;
-          font-size: 1.5em;
-        }
-      }
-    }
 
     .hamburger {
       > input {
@@ -104,24 +93,71 @@ header {
       }
     }
 
-    i.menu {
-      display: block;
-    }
-
-    i.close {
+    i {
       display: none;
     }
 
-    input:checked {
-      & ~ ul {
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-transform: lowercase;
+      display: grid;
+      grid-auto-flow: column;
+
+      li {
         display: block;
+        text-align: center;
+
+        a {
+          color: inherit;
+          text-decoration: none;
+          font-size: 1.3em;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
       }
-      & ~ i.close {
+    }
+
+    @media screen and (max-width: $tablet) {
+      ul {
+        display: none;
+        position: absolute;
+        width: 100%;
+        padding: $spacer;
+        background-color: white;
+
+        li {
+          text-align: left;
+          a {
+            font-size: 1.5em;
+            &:hover {
+              text-decoration: none;
+            }
+            &.current {
+              font-size: 2em;
+            }
+          }
+        }
+      }
+
+      i.menu {
         display: block;
       }
 
-      & ~ i.menu {
-        display: none;
+      input:checked {
+        & ~ ul {
+          display: block;
+        }
+        & ~ i.close {
+          display: block;
+        }
+
+        & ~ i.menu {
+          display: none;
+        }
       }
     }
   }
@@ -130,16 +166,20 @@ header {
 article {
   grid-area: content;
 
+  > h1 {
+    text-align: center;
+  }
+
   > p > img {
     display: block;
     width: 100%;
     max-width: 20em;
     border-radius: 0.2em;
 
-    @media screen and (max-width: $tablet) {
+    @media screen and (max-width: $phone-landscape) {
       margin: 0 auto;
     }
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $phone-landscape) {
       float: left;
       margin: 1.3em 1em 0 auto;
     }
