@@ -1,6 +1,7 @@
 ---
 title: Publications
 layout: default
+toplevel: 2
 ---
 
 {% include references.md %}

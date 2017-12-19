@@ -28,6 +28,18 @@ job:
   institution: "Stanford University"
 email: amit@amitlevy.com
 
+# Navigation settings
+# Used to define the navigation menu items
+# > Title is the tile of the navigation item, url the url and description is
+#   the tooltip
+navigation:
+  - title: About
+  - title: Research
+  - title: Publications
+  - title: Talks
+  - title: Code
+  - title: Personal
+
 # Build settings
 markdown: kramdown
 plugins:

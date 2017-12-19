@@ -1,5 +1,7 @@
 ---
+title: About
 layout: default
+toplevel: 0
 ---
 
 {% include references.md %}
