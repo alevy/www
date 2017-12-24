@@ -3,58 +3,11 @@
 {% include head.html %}
 <body>
 <div class="wrapper">
-<header>
-  <h1>{{ site.title }}</h1>
-
-  <p class="h-card">
-    <span class="p-job-title">{{ site.job.title }}</span>
-    {%- if site.job.department %}
-    <span class="p-organization-unit">{{ site.job.department }}</span>
-    {%- endif %}
-    <span class="p-organization-name">{{ site.job.institution }}</span>
-    <span class="job-market">
-      I'm on the academic job market this year!<br/>
-      Application materials:
-      <a href="{{ site.base_url }}application_materials/cv.pdf">cv</a> |
-      <a href="{{ site.base_url }}application_materials/research_statement.pdf">research</a> |
-      <a href="{{ site.base_url }}application_materials/teaching_statement.pdf">teaching</a>
-    </span>
-    <span class="p-email">
-      <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a>
-    </span>
-    <span class="p-gpg">
-      <a href="/gpg.public.key">GPG Key</a>
-    </span>
-  </p>
-
-  <nav>
-    <label class="hamburger">
-      <input type="checkbox" class="hamburger"/>
-      <i class="menu material-icons">menu</i>
-      <i class="close material-icons">close</i>
-      <ul>
-      {% for nav in site.navigation %}
-        {%- assign current = nil -%}
-        {%- assign l = nil -%}
-        {%- for link in site.pages -%}
-          {%- if link.title == nav.title -%}
-            {%- assign l = link -%}
-          {%- endif -%}
-        {%- endfor -%}
-        <li>
-          <a href="{{ l.url | prepend: site.baseurl }}" {% if page.url == l.url %}class="current"{%endif%}{% if l.description %} title="{{ l.description }}" {% endif %}>
-            {{ l.title }}
-          </a>
-        </li>
-      {% endfor %}
-      </ul>
-    </label>
-  </nav>
-</header>
-
+{% include header.html %}
 <article>
 {{ content }}
 </article>
+{% include footer.html %}
 </div>
 </body>
 </html>
