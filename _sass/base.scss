@@ -58,12 +58,20 @@ header {
   .h-card {
     grid-area: contact;
     display: grid;
-    grid-template-areas: "title email"
-                         "dept  gpg"
-                         "inst  inst";
+    grid-template-areas: "title job email"
+                         "dept  job gpg"
+                         "inst  job gpg";
     > span {
       display: block;
     }
+
+    .job-market {
+      grid-area: job;
+      width: 100%;
+      text-align: justify;
+      font-weight: bolder;
+    }
+
     .p-job-title {
       grid-area: title;
       text-align: left;
