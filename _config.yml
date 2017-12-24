@@ -34,11 +34,8 @@ email: amit@amitlevy.com
 #   the tooltip
 navigation:
   - title: About
-  - title: Research
+  - title: Projects
   - title: Publications
-  - title: Talks
-  - title: Code
-  - title: Personal
 
 # Build settings
 markdown: kramdown

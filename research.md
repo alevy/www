@@ -1,122 +1,118 @@
 ---
-title: Research
+title: Projects
 layout: default
-toplevel: 1
 ---
 
 {% include references.md %}
 
-## Current Projects
+## Tock OS
 
-### Tock OS
+Low-power microcontrollers are increasingly prevalent in the Internet
+of Things.  These devices have extreme memory constraints---typically
+16-512 kB of RAM.  They also lack hardware features, such as virtual
+memory, that are integral to the design of modern operating systems.
+These constraints preclude traditional isolation abstractions, such as
+processes or microkernel services, leading to systems in which every
+line of code is fully trusted.
 
-Embedded operating systems have traditionally been limited to libraries that
-abstract hardware and implement common utilities. These systems provide only
-limited mechanisms, if any, to ensure the safety of drivers or isolate
-applications. Instead, developers must assume that all code is equally
-trustworthy and bug free. As embedded systems strive to provide additional
-features, developers draw on third-party source code for libraries, drivers and
-applications. Incorporating this external code safely is difficult in memory
-constrained, low power embedded microcontrollers that lack virtual memory.
-Processes, for example, require per-component stacks. On a 16-64 kB
-microcontroller, this can be prohibitive.
+The result is that device manufacturers cannot safely run third-party
+applications on their microcontroller systems. Worse, these siloed
+devices end up incorporating large quantities of third-party code
+_anyway_, in the form of open source libraries or device drivers.  A
+bug in any of this code makes the whole system vulnerable to
+attackers.  If the Internet of Things continues to grow as predicted,
+we risk ending up with vulnerable and siloed devices running the world
+around us.
 
-Tock is a safe, multitasking operating system for memory constrained devices.
-Tock is written in Rust, a type-safe systems language with no runtime or
-garbage collector.  Tock uses the Rust type system to enforce safety of
-components, called capsules, in a single-threaded event-driven kernel. In
-addition, Tock uses remaining memory to support processes written in any
-language. To support safe event-driven code that responds to requests from
-processes, Tock introduces two new abstractions: memory containers and memory
-grants.
+Tock is a new operating system for microcontrollers. Tock makes it safe for
+end-users to run untrusted third-party applications and protects the kernel
+from buggy drivers.  Tock isolates the memory and performance of applications
+using a preemptive process-like abstraction enforced in hardware by the MPU.
+The kernel is written in Rust and provides a type-safe API for building kernel
+components that ensures isolation of memory faults at virtually no runtime
+cost.
 
-### Beetle
+## Hails
 
-The next generation of computing peripherals will be low-power ubiquitous
-computing devices such as door locks, smart watches, and heart rate monitors.
-Bluetooth Low Energy is a primary protocol for connecting such peripherals to
-mobile and gateway devices. Current operating system support for Bluetooth Low
-Energy forces peripherals into vertical application silos. As a result, simple,
-intuitive applications such as opening a door with a smart watch or
-simultaneously logging and viewing heart rate data are impossible. Beetle is a
-new hardware interface that virtualizes peripherals at the application layer,
-allowing safe access by multiple programs without requiring the operating
-system to understand hardware functionality, fine-grained access control to
-peripheral device resources, and transparent access to peripherals connected
-over the network.
+A small number of large web sites, such as Facebook, curate most user data
+online.  On the surface, these sites are becoming software _platforms_ by
+giving third-party applications access to some data via APIs. In practice,
+though, most data access is reserved for the platform itself since end-users
+have to trust third-party applications completely with whatever data the
+applications can access.
 
-### Hails
+The web platform restricts _which_ applications can access data, but not _how_
+applications use the data. For example, if Facebook allows a third-party
+application to access a user's photos, it's up to that application to make sure
+the photos are not displayed to other, unauthorized users. Is it possible to
+ensure end-user security policies are enforced end-to-end without restricting
+third-party applications' capabilities?
 
-Hails is a web platform framework that obviates the traditional trade-off in
-extensible web applications between privacy/confidentiality and extensibility.
-Hails leverages language-level information flow control in Haskell to enable
-feature rich applications to share data while ensuring that security policies
-are carried over and enforced along with the data.  Traditionally, web
-applications allow extensibility by exposing an API.  "Blessed" third-party apps
-that granted access to the API (or a subset of the API) are entrusted with
-(often sensitive) user data to do what they please. This is problematic not only
-because third-party app developers may be malicious, but more practically
-because it reduces the trustworthiness of a platform to the least trustworthy
-third-party developers (who is often incentivized to prioritize features over
-security). Hails addresses this problem by tying security policies to data using
-information-flow-control labels. In Hails, a common, trusted, platform ensures
-that apps that have seen sensitive data may communicate with users, files,
-database etc, that are not privileged to see that data. Moreover, as opposed to
-traditional platforms where there is a host application that has more access to
-data than third-party apps, in Hails all apps have the same access to data. This
-enables developers to build complete alternatives to applications without
-requiring users to migrate their data or give up network effects.
+One opportunity is a shift in how developers build and deploy web applications.
+Many developers are now deploying web applications on Platforms-as-a-Service
+(PaaS), like Heroku, Amazon Beanstalk, and Google AppEngine. These platforms
+alleviate the need for developers to manage their own servers. In exchange,
+developers adhere to the platform's programming conventions, such as choice of
+language, and build applications to work with databases and other services
+available on the platform.
 
-## Previous Projects
+Perhaps the deployment platform can enforce security policies on user data
+end-to-end?  Instead of restricting which applications can access data, the
+trusted platform can track data across applications. This matches the policies
+users actually care about: who can see their data, not which developer's code
+can manipulate or access it along the way.
 
-### Comet
+Hails is a framework specifically designed to address the developer
+barriers erected by sites such as Facebook. In Hails, third-party applications
+run on the platform's servers instead of servers run by the developer. The
+trusted platform ensures that applications that have seen sensitive data can't
+communicate with users, files, databases, etc., that are not authorized to see
+that data. However, all functionality is implemented by the applications
+themselves. For example, we created a GitHub-like code sharing platform built
+entirely of untrusted applications.
 
-Comet extended the distributed key-value storage abstraction to facilitate the
-sharing of a single storage system by applications with diverse needs, allowing
-them to reap the consolidation benefits inherent in today's massive clouds.
-Distributed key-value storage systems are widely used in corporations and across
-the Internet. We wanted to greatly expand the application space for these
-systems through application-specific customization.  We designed and implemented
-Comet, an extensible, distributed key-value store.  Each Comet node stores a
-collection of active storage objects (ASOs) that consist of a key, a value, and
-a set of handlers. Comet handlers run as a result of timers or storage
-operations, such as get or put, allowing an ASO to take dynamic,
-application-specific actions to customize its behavior. Handlers are written in
-a simple sandboxed extension language, providing safety and isolation
-properties. We implemented a Comet prototype for the Vuze distributed hash
-table, deployed Comet nodes on Vuze from PlanetLab, and built and evaluated over
-a dozen Comet applications.
+## Beetle
 
-### Vanish
+Mobile phones, wireless routers, and other gateway devices allow wireless
+peripherals to communicate with local and cloud applications using specialized
+networking protocols like Bluetooth Low Energy. Unfortunately, intuitively
+simple use cases, such as logging heart rate in one application while viewing
+it in another, are impossible. Current operating systems simply do not allow
+applications to share access to Bluetooth Low Energy peripherals safely,
+resulting in barriers for developers.
 
-Today's technical and legal landscape presents formidable challenges to personal
-data privacy. First, our increasing reliance on Web services causes personal
-data to be cached, copied, and archived by third parties, often without our
-knowledge or control. Second, the disclosure of private data has become
-commonplace due to carelessness, theft, or legal actions. In Vanish our goal was
-to protect the privacy of past, archived data - such as copies of e-mails
-maintained by an email provider - against accidental, malicious, and legal
-attacks. Specifically, we wanted to ensure that all copies of data become
-unreadable after a user-specified time, without any specific action on the part
-of a user, and even if an attacker obtains both a cached copy of that data and
-the user’s cryptographic keys and passwords. Vanish achieved this by integrating
-cryptographic techniques with global-scale, peer-to-peer, distributed hash
-tables.
+Fortunately, GATT, the application layer protocol Bluetooth Low Energy devices
+already use to communicate with applications, presents an opportunity. GATT is
+an ideal protocol for multiplexing access to devices. It has an attribute
+data-model. End-points perform operations such as `GET`, `WRITE`, and `NOTIFY`
+on the attributes. This is enough information for the operating system to let
+applications safely share access to peripherals without explicit coordination,
+and without changing the peripherals or the applications.
 
-### Workload Characterization
+Beetle is a new hardware interface for Bluetooth Low Energy. Beetle interposes
+on the GATT protocol between applications and devices. The system can
+distinguish between, say, a command to discover peripheral capabilities or
+fetch a reading from one that unsubscribes from future sensor reading updates.
+As a result, Beetle allows shared access to peripherals from multiple
+applications, fine-grained access control to peripheral resources, and
+transparent access to peripherals over a network.
 
-During summer 2010, I worked with Joseph L. Hellerstein at Google. We targeted a
-set of key questions that developers scheduling jobs on a cluster care about,
-but are hard or impossible to answer with existing tools: Will a job schedule?
-What changes to a job would make it more likely to schedule? Which resources can
-a job consume more of without impacting the ability to schedule it? Our
-challenge was to define metrics that accurately and predictively describe a job
-given the cluster it was scheduled on, and to compute those metrics efficiently
-enough to allow for interactive exploration of job configuration. We chose to
-estimate the number of scheduling slots available to a job over the past two
-weeks. However, computing the actual count is too expensive to do interactively.
-Our approach was to perform continuous statistical characterization of machine
-loads, and to compute an estimate of the number of slots based on that
-characterization. As a result we were able to build tools that give developers a
-meaningful way to compare different job configurations.
+Because GATT is not specific to any particular class of peripheral devices,
+Beetle works with existing peripherals and applications without requiring the
+operating system to understand any specific peripheral's functionality.
+
+## Stickler
+
+Website  publishers  can  derive  enormous  performance  benefits  and  cost
+savings  by  directing  traffic  to  their sites  through  content
+distribution  networks  (CDNs).  However, publishers  who  use  CDNs  today
+must  trust  their  CDN  not  to modify  the  site's  JavaScript,  CSS,  images
+or  other  media en route to end users. A CDN that violates this trust could
+inject ads into  websites,  downsample  media  to  save  bandwidth  or,  worse,
+inject  malicious  JavaScript  code  to  steal  user  secrets  it  could not
+otherwise  access.  Stickler is a  system  for  website publishers
+that guarantees the end-to-end authenticity of content served  to  end  users
+while  simultaneously  allowing  publishers to  reap  the  benefits  of  CDNs.
+Crucially,  Stickler  achieves  these guarantees without requiring
+modifications  to  the  browser.
 
