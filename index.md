@@ -34,12 +34,12 @@ distributed systems. On the economics side of things I worked on writing exams
 with as little preparation as possible. In hind sight I should have taken
 classes in something useful instead. Maybe history.
 
-I interned at Google (a popular surveillance system and search engine),
-once developing distributed testing tools, again building tools to help
-developers schedule their cluster jobs, and yet again port Tock to an internal
+I interned at Google (a popular surveillance system and search engine), once
+developing distributed testing tools, again building tools to help developers
+schedule their cluster jobs, and yet again porting Tock to an internal
 platform. Before that I worked at the [Grameen Foundation][] as an intern on
-the [MIFOS][] (**M**icros **F**inance **O**pen **S**ource) project. Before
-I knew how to code I was a day-camp counselor at a performing arts camp.
+the [MIFOS][] (**M**icros **F**inance **O**pen **S**ource) project.  Before I
+knew how to code I was a day-camp counselor at a performing arts camp.
 
 Once, I met [Eben Moglen](http://moglen.law.columbia.edu/) and he asked me if I
 worked for Mossad, which seems like a silly question to ask someone you think
