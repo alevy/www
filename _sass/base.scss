@@ -61,6 +61,13 @@ header {
     grid-template-areas: "title job email"
                          "dept  job gpg"
                          "inst  job gpg";
+    @media screen and (max-width: $phone-landscape) {
+      grid-template-areas: "title email"
+                           "dept gpg"
+                           "inst gpg"
+                           "job job";
+      grid-template-rows: 1em 1em 1.5em;
+    }
     > span {
       display: block;
     }
@@ -68,7 +75,7 @@ header {
     .job-market {
       grid-area: job;
       width: 100%;
-      text-align: justify;
+      text-align: center;
       font-weight: bolder;
     }
 
