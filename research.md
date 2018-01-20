@@ -7,6 +7,12 @@ layout: default
 
 ## Tock OS
 
+<div class="video-content">
+<iframe width="100%" height="100%" src="https://www.youtube.com/embed/BvA5fICr5Gk" frameborder="0"
+allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+
+
 Low-power microcontrollers are increasingly prevalent in the Internet
 of Things.  These devices have extreme memory constraints---typically
 16-512 kB of RAM.  They also lack hardware features, such as virtual
@@ -72,6 +78,13 @@ themselves. For example, we created a GitHub-like code sharing platform built
 entirely of untrusted applications.
 
 ## Beetle
+
+
+<div class="video-content">
+<iframe
+src="https://www.youtube.com/embed/eW63Q4cRMj0?rel=0" frameborder="0"
+allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
 
 Mobile phones, wireless routers, and other gateway devices allow wireless
 peripherals to communicate with local and cloud applications using specialized

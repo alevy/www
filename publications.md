@@ -10,14 +10,15 @@ layout: default
 * Safely and Efficiently Multiprogramming a 64 kB Computer. With [Daniel
   Giffin], [Brad Campbell], [Branden Ghena], [Pat Pannuto], [Prabal Dutta],
   [Phil Levis]. In proceedings of the ACM Symposium on Operating
-  Systems Principles (SOSP) 2017. Paper _\[[PDF](/papers/tock-sosp2017.pdf)\]_
-  Slides: _\[[ODP](/talks/tock-sosp2017.odp)\]_
+  Systems Principles (SOSP) 2017. Paper: _\[[PDF](/papers/tock-sosp2017.pdf)\]_
+  Slides: _\[[ODP](/talks/tock-sosp2017.odp)\]_ Video: _\[[YouTube](https://youtu.be/BvA5fICr5Gk)\]_
 
 * __Beetle__: Flexible Communication for Bluetooth Low Energy. With James
   Hong, [Laurynas Riliskis], [Phil Levis], [Keith Winstein]. In
   The 14th International Conference on Mobile Systems, Applications and
   Services (MobiSys) 2016. Paper _\[[PDF](/papers/beetle-mobisys2016.pdf)\]_
-  Slides: _\[[PDF](/talks/beetle-mobisys2016.pdf)\]_
+  Slides: _\[[PDF](/talks/beetle-mobisys2016.pdf)\]_ Video: _\[[YouTube](https://youtu.be/eW63Q4cRMj0)\]_
+
 
 * Eliminating Cache-based Timing Attacks with Instruction-based Scheduling. With [Deian Stefan], [Pablo Buiras], [Edward Yang], [David Terei], [Alejandro Russo], [David Mazières]. In The 18th European Symposium on Research in Computer Security (ESORICS) 2013. Paper _\[[PDF](/papers/eliminating-esorics2013.pdf)\]_
 
