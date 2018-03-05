@@ -7,7 +7,7 @@ layout: default
 
 ## Conferences
 
-* Safely and Efficiently Multiprogramming a 64 kB Computer. With [Daniel
+* Multiprogramming a 64 kB Computer Safely and Efficiently. With [Daniel
   Giffin], [Brad Campbell], [Branden Ghena], [Pat Pannuto], [Prabal Dutta],
   [Phil Levis]. In proceedings of the ACM Symposium on Operating
   Systems Principles (SOSP) 2017. Paper: _\[[PDF](/papers/tock-sosp2017.pdf)\]_
