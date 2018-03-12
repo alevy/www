@@ -73,6 +73,7 @@ country, I've been to:
   - Nicaragua: Leon, San Juan Del Sur
   - Peru: Lima
 - Asia:
+  - China: Shanghai
   - India: Mumbai, Udaipur
   - Japan: Tokyo, Kyoto, Nara, Mount Koya
   - Thailand: Bangkok, Chiang Mai, Ko Tao
@@ -84,9 +85,9 @@ country, I've been to:
   - Germany: Berlin, Cologn, Frankfurt, Lübeck
   - Hungary: Budapest
   - Italy: Rome, Florence, Bologna, Milan, Venice, Padua, Treviso, Trieste, Ischia
-  - Netherlands: Amsterdam
+  - Netherlands: Amsterdam, Delf, The Hague
   - Spain: Barcelona, Granada, Seville
-  - Switzerland: Geneva, Zurich, Gimmelwald
+  - Switzerland: Geneva, Gimmelwald, Lausanne, Zurich
   - Sweden: Gothenburg
   - UK: London, Edinburgh
 - Middle East:
