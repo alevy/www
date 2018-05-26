@@ -23,9 +23,9 @@ permalink: pretty
 
 # Contact Info
 job:
-  title: "PhD Candidate"
+  title: "<s>PhD Candidate</s>"
   department: "Computer Science"
-  institution: "Stanford University"
+  institution: "<s>Stanford University</s>"
 email: amit@amitlevy.com
 
 # Navigation settings

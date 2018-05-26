@@ -6,9 +6,11 @@ layout: default
 {% include references.md %}
 
 ![At a coffee shop in Chiang Mai, Thailand](/assets/images/me.jpg "DOMO!!!")  
-I'm a Computer Science PhD student at Stanford University. I work with [David
-Mazières] in the [Secure Computer Systems] group and [Phil Levis] in the
-[Stanford Information Networks Group].
+~~I'm a Computer Science PhD student at Stanford University.~~ _**I'll be joining
+Princeton University as an Assistant Professor this Fall!**_
+
+Until recently, I worked with [David Mazières] in the [Secure Computer Systems]
+group and [Phil Levis] in the [Stanford Information Networks Group].
 
 I'm generally interested in distributed systems, operating systems, security,
 privacy, programming languages and good will towards people. I'm currently
