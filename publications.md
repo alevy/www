@@ -7,6 +7,12 @@ layout: default
 
 ## Conferences
 
+* Don't Talk Unless I Say So! Securing the Internet of Things with Default-Off
+  Networking. With James Hong, [Laurynas Riliskis], [Phil Levis]. In
+  Proceedings of the Third International Conference on Internet of Things
+  Design and Implementation (IoTDI) 2018. Paper:
+  _\[[PDF](/papers/bark-iotdi18.pdf)\]_
+
 * Multiprogramming a 64 kB Computer Safely and Efficiently. With [Daniel
   Giffin], [Brad Campbell], [Branden Ghena], [Pat Pannuto], [Prabal Dutta],
   [Phil Levis]. In proceedings of the ACM Symposium on Operating
