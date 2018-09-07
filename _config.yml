@@ -15,17 +15,17 @@
 # in the templates via {{ site.myvariable }}.
 title: amit levy
 description: >- # this means to ignore newlines until "baseurl:"
-  A Computer Science PhD student in the Secure Computer Systems group at
-  Stanford. Research, publications, projects and contact information.
+  Assistant Professor of Computer Science at Princeton University. Research,
+  publications, projects and contact information.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://amitlevy.com" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: pretty
 
 # Contact Info
 job:
-  title: "<s>PhD Candidate</s>"
+  title: "Assistant Professor"
   department: "Computer Science"
-  institution: "<s>Stanford University</s>"
+  institution: "Princeton University"
 email: amit@amitlevy.com
 
 # Navigation settings
