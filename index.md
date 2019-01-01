@@ -5,7 +5,7 @@ layout: default
 
 {% include references.md %}
 
-![At a coffee shop in Chiang Mai, Thailand](/assets/images/me.jpg "DOMO!!!")  
+![At a coffee shop in Chiang Mai, Thailand](/assets/images/me.webp "If you have a lot of money, please buy me the carpet in the background")  
 I'm an Assistant Professor in the Computer Science department at Princeton University.
 
 Until recently, I was working with [David Mazières] in the [Secure Computer Systems]

@@ -7,7 +7,8 @@ body {
   font-size: $text-base-size;
   @media screen and (min-width: $desktop) {
     background-size: cover;
-    background-image: url('/assets/images/monterey.jpg');
+    background-image: url('/assets/images/princeton.webp');
+    background-attachment: fixed;
   }
 }
 
