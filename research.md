@@ -5,6 +5,26 @@ layout: default
 
 {% include references.md %}
 
+## Leak-Avoidant Resource Provisioners (LARPs)
+
+Conventional wisdom suggests that side-channels are unavoidable in secure
+computer systems. Practitioners treat side-channels as a game of whack-a-mole,
+in which they respond to newly discovered side-channel with ad-hoc mitigations
+or defenses. Often these defenses and mitigations come with large performance
+penalties, and practitioners have no way to reason about the security vs.
+performance trade-offs they face.
+
+In this project, we aim to design a framework for system builders to eliminate
+a large class of side-channels, by design. In particular, we rely on a novel
+insight that eliminating many side-channels can be viewed as a problem of
+designing provisioners for shared resources that don't leak information through
+provisioning decisions. While most resource provisioners, such as CPU
+schedulers, memory allocators, and I/O device multiplexers, are design to
+achieve fair sharing or optimize utilization, we propose a new class of _Leak
+Avoidant Resource Provisioners_ (or _LARPs_) that avoid information leaks by
+construction, and optimize for performance or fairness subject to that
+constraint.
+
 ## Tock OS
 
 <div class="video-content">

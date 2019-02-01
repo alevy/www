@@ -5,22 +5,40 @@ layout: default
 
 {% include references.md %}
 
-![If you have a lot of money, please buy me the carpet in the background](/assets/images/me.png "If you have a lot of money, please buy me the carpet in the background")  
-I'm an Assistant Professor in the Computer Science department at Princeton University.
+![If you have a lot of money, please buy me the carpet in the
+background](/assets/images/me.png "If you have a lot of money, please buy me
+the carpet in the background")  
+Hi. My name is Amit, and I build systems.
 
-Until recently, I was working with [David Mazières] in the [Secure Computer Systems]
-group and [Phil Levis] in the [Stanford Information Networks Group].
+I'm an Assistant Professor in the Computer Science department at Princeton
+University, where I'm affiliated with the [SNS
+group](https://sns.cs.princeton.edu).
 
-I'm generally interested in distributed systems, operating systems, security,
-privacy, programming languages and good will towards people. I'm currently
-spending most of time working on a new secure operating system for low-memory
-microcontrollers called [TockOS](http://www.tockos.org).
+My research centers around the idea that well designed secure systems _empower_
+developers and their applications, rather than restrict them. This usually
+manifests in building practical and secure operating systems, embedded systems,
+distributed systems, and often leverages tools from programming languages.
 
-Way back when, in December 2010 I graduated from the University of Washington
-with an MSc in Computer Science and a BSc in Computer Science and Economics.
-On the computer science side of things, I worked with [Roxana Geambasu], [Hank
-Levy], [Tadayoshi Kohno] and [Arvind Krishnamurthy] on web privacy and
-distributed systems. On the economics side of things I worked on writing exams
-with as little preparation as possible. In hind sight I should have taken
-classes in something useful instead. Maybe history.
+I'm currently hacking mostly on [Tock](https://tockos.org), a secure operating
+system for low-resource (think 64kB of RAM) Internet of Things devices, and
+using operating system schedulers to eliminate timing channels. But if you can
+fit "extensible", "secure", and "system" into a sentence you have my
+attention.
+
+## Students
+
+### PhD
+
+  * David Liu
+
+  * Yue Tan
+
+  * Sam Ginzburg
+
+### Masters
+
+  * Joseph Eichenhofer
+
+  * Josh Zhang
+
 
