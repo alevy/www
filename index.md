@@ -29,11 +29,11 @@ attention.
 
 ### PhD
 
-  * David Liu
+  * David Liu [^1]
 
   * Yue Tan
 
-  * Sam Ginzburg
+[^1]: Co-advised with Mike Freedman
 
 ### Masters
 
