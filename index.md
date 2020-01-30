@@ -25,20 +25,13 @@ using operating system schedulers to eliminate timing channels. But if you can
 fit "extensible", "secure", and "system" into a sentence you have my
 attention.
 
-## Students
+## PhD Students
 
-### PhD
+  * [David Liu](https://www.cs.princeton.edu/~hl7/)
 
-  * David Liu [^1]
+  * [Yue Tan](https://www.cs.princeton.edu/~yuetan/)
 
-  * Yue Tan
+  * [Natalie Popescu](https://www.cs.princeton.edu/~npopescu/)
 
-[^1]: Co-advised with Mike Freedman
-
-### Masters
-
-  * Joseph Eichenhofer
-
-  * Josh Zhang
-
+  * [Pi Songkuntham](https://www.cs.princeton.edu/~pisong/)
 
