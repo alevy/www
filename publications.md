@@ -5,7 +5,12 @@ layout: default
 
 {% include references.md %}
 
-## Conferences
+## Conferences/Workshops
+
+* Position Paper: Bringing Memory Safety to WebAssembly. With Craig Disselkoen,
+  John Renner, Conrad Watt, Tal Garfinkel, and Deian Stefan. In Proceedings of
+  Hardware and Architectural Support for Security and Privacy (HASP) 2019: Paper:
+  _\[[PDF](/papers/ms-wasm-hasp19.pdf)\]_
 
 * Don't Talk Unless I Say So! Securing the Internet of Things with Default-Off
   Networking. With James Hong, [Laurynas Riliskis], [Phil Levis]. In
@@ -19,12 +24,25 @@ layout: default
   Systems Principles (SOSP) 2017. Paper: _\[[PDF](/papers/tock-sosp2017.pdf)\]_
   Slides: _\[[ODP](/talks/tock-sosp2017.odp)\]_ Video: _\[[YouTube](https://youtu.be/BvA5fICr5Gk)\]_
 
+* The Case for Writing a Kernel in Rust. With [Brad Campbell][], [Prabal Dutta][], [Branden Ghena][], [Phil Levis][] and [Pat Pannuto][]. Asia-Pacific Workshop on Systems (APSYS), Mumbai, Indai, 2017. Paper: _\[[PDF](/papers/rust-kernel-apsys2017.pdf)\]_ Slides: _\[[PDF](/talks/rust-kernel-apsys2017.pdf)\]_
+
 * __Beetle__: Flexible Communication for Bluetooth Low Energy. With James
   Hong, [Laurynas Riliskis], [Phil Levis], [Keith Winstein]. In
   The 14th International Conference on Mobile Systems, Applications and
   Services (MobiSys) 2016. Paper _\[[PDF](/papers/beetle-mobisys2016.pdf)\]_
   Slides: _\[[PDF](/talks/beetle-mobisys2016.pdf)\]_ Video: _\[[YouTube](https://youtu.be/eW63Q4cRMj0)\]_
 
+* Ownership is Theft: Experiences Building an Embedded OS in Rust. With Michael
+  Andersen, [Brad Campbell][], [David Culler][], [Prabal Dutta][], [Branden
+  Ghena][], [Phil Levis][] and [Pat Pannuto][]. Programming Languages and
+  Operating Systems (PLOS), Monterey, California, 2015.
+  Paper: _\[[PDF](/papers/tock-plos2015.pdf)\]_ Slides: _\[[PDF](/talks/tock-plos2015.pdf)\]_
+
+* __Stickler__: Defending Against Malicious CDNs in an Unmodified Browser. With
+  [Henry Corrigan-Gibbs][] and [Dan Boneh][]. In Web 2.0 Security & Privacy
+  (W2SP), San Jose, California, 2015. (_Invited to appear in IEEE Security and
+  Privacy Magazine_)
+  Paper: _\[[PDF](/papers/stickler-w2sp15.pdf)\]_
 
 * Eliminating Cache-based Timing Attacks with Instruction-based Scheduling. With [Deian Stefan], [Pablo Buiras], [Edward Yang], [David Terei], [Alejandro Russo], [David Mazières]. In The 18th European Symposium on Research in Computer Security (ESORICS) 2013. Paper _\[[PDF](/papers/eliminating-esorics2013.pdf)\]_
 
@@ -40,22 +58,6 @@ Paper: _\[[PDF](/papers/comet-osdi2010.pdf)\]_ Poster: _\[[PDF](/papers/comet-po
 * __Vanish__: Increasing Data Privacy with DHTs that forget. With [Roxana Geambasu][], [Tadayoshi Kohno][], and [Hank Levy][]. In Proceedings of the USENIX Security Symposium, Montreal, Canada, August 2009.
 Won the Outstanding Student Paper Award.
 Paper: _\[[PDF](/papers/vanish-usenixsec09.pdf)\]_
-
-## Workshops
-
-* The Case for Writing a Kernel in Rust. With [Brad Campbell][], [Prabal Dutta][], [Branden Ghena][], [Phil Levis][] and [Pat Pannuto][]. Asia-Pacific Workshop on Systems (APSYS), Mumbai, Indai, 2017. Paper: _\[[PDF](/papers/rust-kernel-apsys2017.pdf)\]_ Slides: _\[[PDF](/talks/rust-kernel-apsys2017.pdf)\]_
-
-* Ownership is Theft: Experiences Building an Embedded OS in Rust. With Michael
-  Andersen, [Brad Campbell][], [David Culler][], [Prabal Dutta][], [Branden
-  Ghena][], [Phil Levis][] and [Pat Pannuto][]. Programming Languages and
-  Operating Systems (PLOS), Monterey, California, 2015.
-  Paper: _\[[PDF](/papers/tock-plos2015.pdf)\]_ Slides: _\[[PDF](/talks/tock-plos2015.pdf)\]_
-
-* __Stickler__: Defending Against Malicious CDNs in an Unmodified Browser. With
-  [Henry Corrigan-Gibbs][] and [Dan Boneh][]. In Web 2.0 Security & Privacy
-  (W2SP), San Jose, California, 2015. (_Invited to appear in IEEE Security and
-  Privacy Magazine_)
-  Paper: _\[[PDF](/papers/stickler-w2sp15.pdf)\]_
 
 ## Demos
 
