@@ -60,3 +60,5 @@ google_analytics: 'UA-111598282-1'
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+theme: jekyll-theme-slate
