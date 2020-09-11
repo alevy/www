@@ -1,4 +1,4 @@
-{ pkgs ? import (fetchTarball "https://github.com/NixOS/nixpkgs/archive/nixos-20.03-small.tar.gz") {} }:
+{ pkgs ? import <nixpkgs> {} }:
 
 with pkgs;
 let
