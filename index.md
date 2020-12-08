@@ -6,7 +6,7 @@ layout: default
 {% include references.md %}
 
 ![If you have a lot of money, please buy me the carpet in the
-background](/assets/images/me.png "If you have a lot of money, please buy me
+background](/assets/images/me.webp "If you have a lot of money, please buy me
 the carpet in the background")  
 Hi. My name is Amit, and I build systems.
 
