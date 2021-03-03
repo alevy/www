@@ -7,9 +7,16 @@ layout: default
 
 ## Conferences/Workshops
 
+* Power Clocks: Dynamic Multi-Clock Management for Embedded Systems". with Holly Chiang, Hudson Ayers, Daniel Giffin, and Philip Levis.
+  In Proceedings of International Conference on Embedded Wireless Systems and Networks (EWSN) 2021. Paper:
+  _\[[PDF](/papers/2021-ewsn-chiang.pdf)\]_
+
+
+- Design considerations for low power internet protocols. with Hudson Ayers, Paul Crews, Hubert Teo, Conor McAvity, and Philip Levis. In Proceedings of International Conference on Distributed Computing in Sensor Systems (DCOSS) 2020. Paper: _\[[PDF](/papers/2020-dcoss-ayers.pdf)\]_
+
 * Position Paper: Bringing Memory Safety to WebAssembly. With Craig Disselkoen,
   John Renner, Conrad Watt, Tal Garfinkel, and Deian Stefan. In Proceedings of
-  Hardware and Architectural Support for Security and Privacy (HASP) 2019: Paper:
+  Hardware and Architectural Support for Security and Privacy (HASP) 2019. Paper:
   _\[[PDF](/papers/ms-wasm-hasp19.pdf)\]_
 
 * Don't Talk Unless I Say So! Securing the Internet of Things with Default-Off
