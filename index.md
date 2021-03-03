@@ -33,5 +33,5 @@ attention.
 
   * [Natalie Popescu](https://www.cs.princeton.edu/~npopescu/)
 
-  * [Pi Songkuntham](https://www.cs.princeton.edu/~pisong/)
+  * [Anja Kalaba](https://www.cs.princeton.edu/~akalaba/)
 
