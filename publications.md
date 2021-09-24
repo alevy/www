@@ -7,6 +7,10 @@ layout: default
 
 ## Conferences/Workshops
 
+* Safer at Any Speed: Automatic Context-Aware Safety Enhancement for Rust. with Natalie Popescu, Ziyang Xu, Sotiris Apostolakis, and David August.
+  In Proceedings of ACM Programming Languages, OOPSLA, 2021. Paper:
+  _\[[PDF](/papers/nader-oopsla21.pdf)\]_
+
 * Power Clocks: Dynamic Multi-Clock Management for Embedded Systems". with Holly Chiang, Hudson Ayers, Daniel Giffin, and Philip Levis.
   In Proceedings of International Conference on Embedded Wireless Systems and Networks (EWSN) 2021. Paper:
   _\[[PDF](/papers/2021-ewsn-chiang.pdf)\]_
