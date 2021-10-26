@@ -35,3 +35,5 @@ attention.
 
   * [Anja Kalaba](https://www.cs.princeton.edu/~akalaba/)
 
+  * [Shai Caspin](https://www.cs.princeton.edu/~akalaba/)
+
