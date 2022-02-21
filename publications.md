@@ -7,6 +7,8 @@ layout: default
 
 ## Conferences/Workshops
 
+* Regular Sequential Serializability and Regular Sequential Consistency. with Jeffrey Helt, Matthew Burke, and Wyatt Lloyd. In proceedings of the ACM Symposium on Operating Systems Principles (SOSP) 2021. Paper: _\[[PDF](/papers/rss-sosp21.pdf)\]_
+
 * Safer at Any Speed: Automatic Context-Aware Safety Enhancement for Rust. with Natalie Popescu, Ziyang Xu, Sotiris Apostolakis, and David August.
   In Proceedings of ACM Programming Languages, OOPSLA, 2021. Paper:
   _\[[PDF](/papers/nader-oopsla21.pdf)\]_
