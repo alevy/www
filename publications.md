@@ -7,6 +7,8 @@ layout: default
 
 ## Conferences/Workshops
 
+* Tiered Trust for Useful Embedded Systems Security. with Hudson Ayers, Prabal Dutta, Philip Levis, Pat Pannuto, Johnathan Van Why and Jean-Luc Watson. In proceedings of the European Workshop on Systems Security (EuroSec) 2022. Paper: _\[[PDF](/papers/2022-eurosec-ayers.pdf)\]_
+
 * Regular Sequential Serializability and Regular Sequential Consistency. with Jeffrey Helt, Matthew Burke, and Wyatt Lloyd. In proceedings of the ACM Symposium on Operating Systems Principles (SOSP) 2021. Paper: _\[[PDF](/papers/rss-sosp21.pdf)\]_
 
 * Safer at Any Speed: Automatic Context-Aware Safety Enhancement for Rust. with Natalie Popescu, Ziyang Xu, Sotiris Apostolakis, and David August.
