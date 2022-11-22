@@ -37,3 +37,11 @@ attention.
 
   * [Shai Caspin](https://www.cs.princeton.edu/~sc4479/)
 
+  * Christopher Branner-Augmon
+
+  * Jingyuan (Leo) Chen
+
+  * [Gongqi Huang](https://gongqihuang.com/)
+
+  * [Leon Schuermann](https://leon.schuermann.io)
+
