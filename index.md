@@ -33,11 +33,11 @@ attention.
 
   * [Natalie Popescu](https://www.cs.princeton.edu/~npopescu/)
 
-  * [Anja Kalaba](https://www.cs.princeton.edu/~akalaba/)
+  * [Anja Kalaba](https://www.cs.princeton.edu/~akalaba/)[^wyatt]
 
   * [Shai Caspin](https://www.cs.princeton.edu/~sc4479/)
 
-  * Christopher Branner-Augmon
+  * Christopher Branner-Augmon[^jrex]
 
   * Jingyuan (Leo) Chen
 
@@ -45,3 +45,5 @@ attention.
 
   * [Leon Schuermann](https://leon.schuermann.io)
 
+[^wyatt]: Co-advised with [Wyatt Lloyd](https://www.cs.princeton.edu/~wlloyd/)
+[^jrex]: Co-advised with [Jennifer Rexford](https://www.cs.princeton.edu/~jrex/)
