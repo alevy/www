@@ -45,5 +45,9 @@ attention.
 
   * [Leon Schuermann](https://leon.schuermann.io)
 
+## Masters Students
+
+  * Ryan Torok
+
 [^wyatt]: Co-advised with [Wyatt Lloyd](https://www.cs.princeton.edu/~wlloyd/)
 [^jrex]: Co-advised with [Jennifer Rexford](https://www.cs.princeton.edu/~jrex/)
