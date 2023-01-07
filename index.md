@@ -27,8 +27,6 @@ attention.
 
 ## PhD Students
 
-  * [David Liu](https://www.cs.princeton.edu/~hl7/)
-
   * [Yue Tan](https://www.cs.princeton.edu/~yuetan/)
 
   * [Natalie Popescu](https://www.cs.princeton.edu/~npopescu/)
@@ -48,6 +46,10 @@ attention.
 ## Masters Students
 
   * Ryan Torok
+
+## Alumni
+
+  * [David Liu](https://www.cs.princeton.edu/~hl7/) (PhD, 2022)
 
 [^wyatt]: Co-advised with [Wyatt Lloyd](https://www.cs.princeton.edu/~wlloyd/)
 [^jrex]: Co-advised with [Jennifer Rexford](https://www.cs.princeton.edu/~jrex/)
