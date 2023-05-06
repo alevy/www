@@ -206,7 +206,7 @@ article {
   > p > img {
     display: block;
     width: 100%;
-    max-width: 20em;
+    max-width: 12em;
     border-radius: 0.2em;
 
     @media screen and (max-width: $phone-landscape) {
@@ -214,8 +214,12 @@ article {
     }
     @media screen and (min-width: $phone-landscape) {
       float: left;
-      margin: 1.3em 1em 0 auto;
+      margin: 1.3em 1em 1em auto;
     }
+  }
+
+  h2 {
+    clear: both;
   }
 
   .footnotes {

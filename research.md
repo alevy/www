@@ -3,27 +3,53 @@ title: Projects
 layout: default
 ---
 
-{% include references.md %}
+I'm particularly excited about developing and deploying research beyond
+publication. The [active](#active) projects below may are those that have
+ongoing research associated with them, or are past the point of the main
+research goals but I still hack on them actively.
 
-## Leak-Avoidant Resource Provisioners (LARPs)
+# Active
 
-Conventional wisdom suggests that side-channels are unavoidable in secure
-computer systems. Practitioners treat side-channels as a game of whack-a-mole,
-in which they respond to newly discovered side-channel with ad-hoc mitigations
-or defenses. Often these defenses and mitigations come with large performance
-penalties, and practitioners have no way to reason about the security vs.
-performance trade-offs they face.
+## User-centric cloud computing
 
-In this project, we aim to design a framework for system builders to eliminate
-a large class of side-channels, by design. In particular, we rely on a novel
-insight that eliminating many side-channels can be viewed as a problem of
-designing provisioners for shared resources that don't leak information through
-provisioning decisions. While most resource provisioners, such as CPU
-schedulers, memory allocators, and I/O device multiplexers, are design to
-achieve fair sharing or optimize utilization, we propose a new class of _Leak
-Avoidant Resource Provisioners_ (or _LARPs_) that avoid information leaks by
-construction, and optimize for performance or fairness subject to that
-constraint.
+* Information Flow Control for FaaS
+* End-to-end secure applications
+* Verifiable decentralized computation with incentives
+* Defending you from advertising networks
+
+## Less may be more in the cloud
+
+* Multi-dispatch consistency models
+
+* Fixpoint: a functional approach to burst scalable computations
+
+* Distributed debugging
+
+## Foundational Secure Systems
+
+* Property-testing for low-level concurrent code
+
+* Using types to enforce safety properties in the kernel
+
+* Leak-Avoidant Resource Provisioners (LARPs)
+
+    Conventional wisdom suggests that side-channels are unavoidable in secure
+    computer systems. Practitioners treat side-channels as a game of whack-a-mole,
+    in which they respond to newly discovered side-channel with ad-hoc mitigations
+    or defenses. Often these defenses and mitigations come with large performance
+    penalties, and practitioners have no way to reason about the security vs.
+    performance trade-offs they face.
+
+    In this project, we aim to design a framework for system builders to eliminate
+    a large class of side-channels, by design. In particular, we rely on a novel
+    insight that eliminating many side-channels can be viewed as a problem of
+    designing provisioners for shared resources that don't leak information through
+    provisioning decisions. While most resource provisioners, such as CPU
+    schedulers, memory allocators, and I/O device multiplexers, are design to
+    achieve fair sharing or optimize utilization, we propose a new class of _Leak
+    Avoidant Resource Provisioners_ (or _LARPs_) that avoid information leaks by
+    construction, and optimize for performance or fairness subject to that
+    constraint.
 
 ## Tock OS
 
@@ -57,6 +83,8 @@ using a preemptive process-like abstraction enforced in hardware by the MPU.
 The kernel is written in Rust and provides a type-safe API for building kernel
 components that ensures isolation of memory faults at virtually no runtime
 cost.
+
+# Previous
 
 ## Hails
 
