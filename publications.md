@@ -11,8 +11,6 @@ layout: default
 
 * Doing More with Less: Orchestrating Serverless Applications without an Orchestrator. with David Liu, Shadi Noghabi, and Sebastian Burckhardt. (to appear) In proceedings of the 20th USENIX Symposium on Networked Systems Design and Implementation (NSDI) 2023. Paper: _\[[PDF](/papers/2023-nsdi-unum.pdf)\]_
 
-* Doing More with Less: Orchestrating Serverless Applications without an Orchestrator. with David Liu, Shadi Noghabi, and Sebastian Burckhardt. (to appear) In proceedings of the 20th USENIX Symposium on Networked Systems Design and Implementation (NSDI) 2023. Paper: _\[[PDF](/papers/2023-nsdi-unum.pdf)\]_
-
 * Computation-Centric Networking. with Yuhan Deng, Angela Montemayor, and Keith Winstein. In Proceedings of the 21st ACM Workshop on Hot Topics in Networks (HotNets) 2022. Paper: _\[[PDF](/papers/2022-hotnets-fixpoint.pdf)\]_
 
 * Speculative Recovery: Cheap, Highly Available Fault Tolerance with Disaggregated Storage. with Nanqinqin Li, Anja Kalaba, Mike Freedman, and Wyatt Lloyd. In proceedings of the USENIX Annual Technical Conference (USENIX ATC) 2022. Paper: _\[[PDF](/papers/2022-atc-specreds.pdf)\]_
