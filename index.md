@@ -11,7 +11,7 @@ the carpet in the background")
 Hi. My name is Amit, and I build systems.
 
 I'm an Assistant Professor in the Computer Science department at Princeton
-University, where lead the Praxis lab and co-lead the [SNS
+University, where I lead the Praxis lab and co-lead the [SNS
 group](https://sns.cs.princeton.edu).
 
 My research centers around the idea that well designed secure systems _empower_
