@@ -5,6 +5,9 @@ layout: default
 
 {% include references.md %}
 
+_**Applying for PhD programs?** We admit applicants as a department, so you should apply through normal channels <https://gradschool.princeton.edu/admission-onboarding/apply> rather than writing to me directly. If you're interested in working with me, you should also consider Professor Milano <https://www.languagesforsyste.ms/post/looking-for-students/> who recently joined Princeton and works at the intersection of programming languages and systems_
+
+
 ![If you have a lot of money, please buy me the carpet in the
 background](/assets/images/me.webp "If you have a lot of money, please buy me
 the carpet in the background")  
