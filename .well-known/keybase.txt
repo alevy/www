@@ -4,9 +4,9 @@ https://keybase.io/amit
 
 I hereby claim:
 
-  * I am an admin of http://amitlevy.com
+  * I am an admin of https://www.amitlevy.com
   * I am amit (https://keybase.io/amit) on keybase.
-  * I have a public key with fingerprint 5F32 9878 D080 3479 F0F6  162A A60A BEE4 AD8E C024
+  * I have a public key ASD6b6zZ4eixar4kSE7mAcxyKzVkLzLfHdnrUM7q0vkXcwo
 
 To do so, I am signing this object:
 
@@ -14,68 +14,39 @@ To do so, I am signing this object:
   "body": {
     "key": {
       "eldest_kid": "0101ded923f598e598718e627e6eebabb85552d046d90c6dadc8ce6f061d68b380de0a",
-      "fingerprint": "5f329878d0803479f0f6162aa60abee4ad8ec024",
       "host": "keybase.io",
-      "key_id": "a60abee4ad8ec024",
-      "kid": "0101ded923f598e598718e627e6eebabb85552d046d90c6dadc8ce6f061d68b380de0a",
+      "kid": "0120fa6facd9e1e8b16abe24484ee601cc722b35642f32df1dd9eb50ceead2f917730a",
       "uid": "a5500e55f89f3acb5ae64b209ea23a00",
       "username": "amit"
     },
     "merkle_root": {
-      "ctime": 1524875302,
-      "hash_meta": "8224afb3038e7efa18871fdcb7b5a64d9567217804432cc80f7a8306f795ab13",
-      "seqno": 2452489
-    },
-    "revoke": {
-      "sig_ids": [
-        "07f80cb0cf26e695d814a48f6c9d960e8c440e570c67384d12bb2f553175311f0f"
-      ]
+      "ctime": 1699503422,
+      "hash": "0a2bad540bb577f7e330e25bd98186aac50c460ee79ce63c87bcc2f57e73e40916286c43de0d700e87ff14c2ac10ea94b9fe80959c2bfc06ad553f9a654d3c0c",
+      "hash_meta": "df350382696f4c07126d259cd52a0798d8e88c4751e3ade329068c269dbd93eb",
+      "seqno": 25124195
     },
     "service": {
-      "hostname": "amitlevy.com",
-      "protocol": "http:"
+      "entropy": "YvvVwCcU3EEsY5yiqFB+Hvp+",
+      "hostname": "www.amitlevy.com",
+      "protocol": "https:"
     },
     "type": "web_service_binding",
-    "version": 1
+    "version": 2
   },
-  "ctime": 1524875323,
-  "expire_in": 157680000,
-  "prev": "a110ce5c15d4421b170e3bb59622df1fe1809fb4fca47b7b83b5ad7703f87f80",
-  "seqno": 105,
+  "client": {
+    "name": "keybase.io go client",
+    "version": "6.0.2"
+  },
+  "ctime": 1699503462,
+  "expire_in": 504576000,
+  "prev": "136f0c7b5916ca577997a4e25841bb8c5446f86103f34e173d9aaf1229627e65",
+  "seqno": 158,
   "tag": "signature"
 }
 
 which yields the signature:
 
------BEGIN PGP MESSAGE-----
-
-owGtk3tsFEUcx4+TSgUK5RFe0lTWAkpLmdmd3Z09UFoUUCAQC1oD4jm7M3td2rs9
-9q6lpa20UARUKihaROUZCe+CaICq2ApqiTyKpgkPgbQFUZCHWCstAs6iRGP80002
-m5n5/n7f73xmZ0ncPZ7Ydus77j27tbw6qd3XP+qeqU3VaYWCbtMCwVcoZLM7H5ZD
-WSTqz7ao4BMABJAyqomSKWuY8VeFmCmiyhTGdKLrWJZlkQKkUA0YCiXUwAZTTKBA
-qmBdwoAyQIQUwbRCAeaEHSsU5W1lUxJ5K0wBBhJSNROYClREQhRAdMYQoZgZQES8
-MMuOuBU8nE4iLNWy+Rwf+O/E+w/9/5w7908fWQaAybKJNVMihi4TpiBdBBojokQA
-cIUR5oRIkLnqoBUVilOEIHOyc5jfse2oC9aIWu4ylEWEVVkCIt8ciWT5gyxKeBUW
-RURMXQISZiozCcQ8s0kNXeV2CqKarKgiVDFASBINAwNTJVgCiqlqMtGhxDNE2MyQ
-LfhE5FpoPIHD8uxs5ppHrABHFhF80wSgmhgYOqiOGKaoMEWTKYaIIGwqhkY1BTBs
-IMS3q3IyqoQRhaKui6YsS5DnhpCfljC92LVz8izjTnv3lP6x+xyWV5Bq2EGeKezY
-Uduwc/hKVjQa9rlgogVhVzmL6f6/evh1K0T5L8IL8pgTsewQB8WV/2ImSikCyw9b
-DvNbrkJWFQz449qwPNccQmAw2YAyRUiEOlQBk3Rd1hRRpCY0GcRAM3VkGgSpnCyW
-OFyqqkAysYvlb4gQyDwoCfCmnF2IRHMdJhR3XOSV2nvaxXoSeg1o7xeX59eVoIKr
-Lb2G3L1XMV73Unk63hd/d8bZ0PUWLErts/yLkeBq0pKGdwoeOTRxWtnV3Lp9k891
-W9+j7dGXTwbKWncGWitqWlYETk6YUzliy9bVZePjD87+5Ibn2safmrPr98zv0Ja0
-aUplFb5U111+4FLp3MPeD8CFnqM9vT3vp2043X9QhqM1n765suxG5qz4xtj07fUX
-S678Vhr3es+5F1Jb1IWw24llLXj3sFPHzxfMaezdt7DLsUObv2+a0AValYlFn3Xa
-5a+Fx8cw/4v5TzfFzL3/VL5Vum3v2NWt33if8l4nvR8fWz34sdqhI6ed7jtqYy0K
-/y6dX5fqfajr5CnDr637cM3S2szyDM/b4f2rnFX7A3G+n286n+7ZtXOl2tp07OCb
-rR/HHU04U1g16OHLhzs/UZNQltTjXLeYw1MPlPcT3vu1aPiYcQsWpzRcWQPHZR6t
-bngls9fY7bcX0JivJt+2rR1tRWuPnulS3D/YLP5SknBc2ihkVF3fEdfZ81ZN44VO
-nydnbU6bOT1x6CJ775n4LbXFFX1yvm05svbdwEs7B2y3ZuSeXO1LfjJZoh3qlyXH
-ei5Pqjow9Vj9JDZkeHPCzRpC7k3ESyu9FdNf2wDCNXlN6CP91XFlC7vT4JdvLL+1
-r9QTDA17dmD5kR/qGlNGjE57ft6MZ5rjtjYdyGpYMb8CrB1W3rZl9wsDz24KoouL
-07Pkef2e+25iSQYafyK98dxQ37YHB88eHTtqTuKlPwA=
-=bBP1
------END PGP MESSAGE-----
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg+m+s2eHosWq+JEhO5gHMcis1ZC8y3x3Z61DO6tL5F3MKp3BheWxvYWTES5cCzJ7EIBNvDHtZFspXeZek4lhBu4xURvhhA/NOFz2arxIpYn5lxCCuBSmZy4Gegie2y+ayznmegPQ+mFYwwscTUlX/UW01GgIBwqNzaWfEQPzgIjq8OVhimfZggIKEeXXs5vtbNFANNIawOUoTPIvVWFIsEGb56jI5+9K9sjRQ5RgDRo7ti8lv5Yjl8o82Ewyoc2lnX3R5cGUgpGhhc2iCpHR5cGUIpXZhbHVlxCBjyHQpOw2XzIBtLBmF3SAC1X6bVMMIv0Jf0UEjpQt3IqN0YWfNAgKndmVyc2lvbgE=
 
 And finally, I am proving ownership of this host by posting or
 appending to this document.
