@@ -2,21 +2,36 @@
 
 with pkgs;
 let
+  gitignoreSource = (
+    import (
+      pkgs.fetchFromGitHub {
+        owner = "hercules-ci";
+        repo = "gitignore.nix";
+        rev = "9e21c80adf67ebcb077d75bd5e7d724d21eeafd6";
+        sha256 = "sha256-vky6VPK1n1od6vXbqzOXnekrQpTL4hbPAwUhT5J9c9E=";
+      }
+    ) {
+      inherit (pkgs) lib;
+    }
+  ).gitignoreSource;
+
   gems = bundlerEnv {
-    name = "amitlevy.com";
-    inherit ruby;
-    gemdir = ./.;
+    name = "amitlevy-www";
+    ruby = ruby_3_2;
+    gemfile = ./Gemfile;
+    lockfile = ./Gemfile.lock;
+    gemset = ./gemset.nix;
   };
 
 in stdenv.mkDerivation {
-  name = "amitlevy.com";
-  buildInputs = [ gems ruby ];
+  name = "amitlevy-www";
+  buildInputs = [ gems ruby_3_2 ];
   builder = writeText "builder.sh" ''
     source ${stdenv}/setup
     cp -r $src/* .
-    jekyll build
+    JEKYLL_ENV=production jekyll build
     mkdir -p $out
     cp -r _site/* $out/
     '';
-  src = ./.;
+  src = gitignoreSource ./.;
 }
