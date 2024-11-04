@@ -40,29 +40,26 @@ _Safer at Any Speed: Automatic Context-Aware Safety Enhancement for Rust_. OOPSL
 
 ## PhD Students
 
-  * [Yue Tan](https://www.cs.princeton.edu/~yuetan/)
-
   * [Natalie Popescu](https://www.cs.princeton.edu/~npopescu/)
 
   * [Anja Kalaba](https://www.cs.princeton.edu/~akalaba/)[^wyatt]
 
   * [Shai Caspin](https://www.cs.princeton.edu/~sc4479/)
 
-  * Christopher Branner-Augmon[^jrex]
+  * Christopher Branner-Augmon[^wyatt]
 
-  * Jingyuan (Leo) Chen
+  * [Jingyuan (Leo) Chen](https://leochanj105.github.io/)
 
   * [Gongqi Huang](https://gongqihuang.com/)
 
   * [Leon Schuermann](https://leon.schuermann.io)
 
-## Masters Students
-
-  * Ryan Torok
-
 ## Alumni
 
   * [David Liu](https://www.cs.princeton.edu/~hl7/) (PhD, 2022)
 
+  * [Ryan Torok](https://ryantorok.net/) (Masters, 2022)
+
+  * [Yue Tan](https://www.cs.princeton.edu/~yuetan/) (PhD, 2024)
+
 [^wyatt]: Co-advised with [Wyatt Lloyd](https://www.cs.princeton.edu/~wlloyd/)
-[^jrex]: Co-advised with [Jennifer Rexford](https://www.cs.princeton.edu/~jrex/)
